@@ -3,7 +3,6 @@
 *.bk
 *.db
 *.xbt
-*.xpr
 excludes.txt
 tools/
 BUILD/
