@@ -1,0 +1,13 @@
+<skin>
+	<defaultresolution>720p</defaultresolution>
+	<defaultresolutionwide>720p</defaultresolutionwide>
+	<defaultthemename>Textures.xpr</defaultthemename>
+	<effectslowdown>0.75</effectslowdown>
+	<version>4.0</version>
+	<credits>
+		<skinname>Rapier</skinname>
+		<name>Rapier skin by Scarfa.</name>
+		<name>XBOX version modified by WannabeGT4</name>
+		<name>The goal is to provide a simple to use but clean and elegant interface that focuses on efficiency when browsing your media. Important considerations are put on usability, performance, and providing the user with flexibility when it comes to customization. Rapier tries to support all the latest features XBMC has to offer as long as it fits in with the skin's design goals.</name>
+	</credits>
+</skin>
