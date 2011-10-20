@@ -917,9 +917,9 @@
 						<visible>Skin.HasSetting(EditVideosSubMenuBtn6)</visible>
 					</item>
 					<item id="7">
-						<description>Video Add-ons</description>
-						<label>$LOCALIZE[24001]</label>
-						<onclick>ActivateWindow(VideoLibrary,Addons,Return)</onclick>
+						<description>Video Plugins</description>
+						<label>$LOCALIZE[1037]</label>
+						<onclick>ActivateWindow(VideoFiles,Video Plugins,Return)</onclick>
 						<visible>!Skin.HasSetting(EditVideosSubMenuBtn7)</visible>
 					</item>
 					<item id="7">
