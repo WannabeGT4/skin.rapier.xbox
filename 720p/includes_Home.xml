@@ -817,9 +817,9 @@
 						<visible>Skin.HasSetting(EditMusicSubMenuBtn6)</visible>
 					</item>
 					<item id="7">
-						<description>Music Add-ons</description>
-						<label>$LOCALIZE[24001]</label>
-						<onclick>ActivateWindow(MusicLibrary,Addons,Return)</onclick>
+						<description>Genres</description>
+						<label>$LOCALIZE[135]</label>
+						<onclick>ActivateWindow(MusicLibrary,Genres,Return)</onclick>
 						<visible>!Skin.HasSetting(EditMusicSubMenuBtn7)</visible>
 					</item>
 					<item id="7">
