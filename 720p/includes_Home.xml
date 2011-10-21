@@ -919,7 +919,7 @@
 					<item id="7">
 						<description>Video Plugins</description>
 						<label>$LOCALIZE[1037]</label>
-						<onclick>ActivateWindow(VideoFiles,Video Plugins,Return)</onclick>
+						<onclick>ActivateWindow(VideoLibrary,Plugins)</onclick>
 						<visible>!Skin.HasSetting(EditVideosSubMenuBtn7)</visible>
 					</item>
 					<item id="7">
