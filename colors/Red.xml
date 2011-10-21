@@ -1,0 +1,37 @@
+<colors>
+	<color name="WhiteColor">fff3f3f3</color>
+	<color name="BlackColor">ff000000</color>
+	<color name="GreyColor">ffBBBBBB</color>
+	<color name="GreyColor2">ffa1a1a1</color>
+	<color name="DefaultColor">ffDC0404</color> <!-- red -->
+	<color name="DefaultColor2">ffDC4343</color> <!-- dark red -->
+	<color name="DefaultColor3">ffFBBBBB</color> <!-- light red -->
+	<color name="SelectedColor">ffffffff</color>
+	<color name="SelectedColor2">ffDC0404</color>
+	<color name="DisabledColor">ff8e8e8e</color>
+	<color name="ShadowColor">ff000000</color>
+	<color name="ButtonColor">ffbcbcbc</color>
+	<color name="ButtonFocusColor">ffffffff</color>
+	<color name="MenuItemColor">ffCFCFCF</color>
+	<color name="MenuItemFocusColor">ffffffff</color>
+	<color name="HomeSubMenuColor">ff8e8e8e</color>
+	<color name="BreadCrumbColor">ffBBBBBB</color>
+	<color name="InfoPaneColor">ffFBBBBB</color>
+	<color name="InfoPaneColor2">ffDC4343</color>
+	<color name="ListColor">ffBBBBBB</color>
+	<color name="ListColor2">ffa1a1a1</color>
+	<color name="ListColor3">ffDC4343</color>
+	<color name="MediaInfoColor">ffd2d2d2</color>
+	<color name="MediaInfoTitleColor">ffDC0404</color>
+	<color name="MediaInfoTitleColor2">ffa1a1a1</color>
+	<color name="MediaInfoItemColor">ffDC4343</color>
+	<color name="MediaInfoItemColor2">ffBBBBBB</color>
+	<color name="DialogTitleColor">ffDC0404</color>
+	<color name="StatusBarColor">ffBBBBBB</color>
+	<color name="StatusBarColor2">ffa1a1a1</color>
+	<color name="ProgressColor">ffb8b8b8</color>
+	<color name="ProgressColor2">ffDC4343</color>
+	<color name="SettingsCatColor">ffDC0404</color>
+	<color name="SettingsContentColor">ffBBBBBB</color>
+	<color name="ContentTitleColor">ffDC4343</color>
+</colors>
