@@ -13,7 +13,7 @@
 				<width>1200</width>
 				<height>548</height>
 				<pagecontrol>916</pagecontrol>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>56</onup>
 				<ondown>56</ondown>
 				<onleft>850</onleft>
@@ -237,7 +237,7 @@
 				<width>1188</width>
 				<height>536</height>
 				<pagecontrol>910</pagecontrol>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>76</onup>
 				<ondown>76</ondown>
 				<onleft>850</onleft>
@@ -1153,7 +1153,7 @@
 				<width>505</width>
 				<height>296</height>
 				<pagecontrol>905</pagecontrol>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>61</onup>
 				<ondown>61</ondown>
 				<onleft>850</onleft>
@@ -1867,7 +1867,7 @@
 				<width>620</width>
 				<height>518</height>
 				<pagecontrol>906</pagecontrol>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>65</onup>
 				<ondown>65</ondown>
 				<onleft>850</onleft>
@@ -2775,7 +2775,7 @@
 			<pagecontrol>918</pagecontrol>
 			<scrolltime>100</scrolltime>
 			<orientation>vertical</orientation>
-			<preloaditems>2</preloaditems>
+			<preloaditems>1</preloaditems>
 			<onleft>850</onleft>
 			<onright>150</onright>
 			<onup>100</onup>
@@ -2944,7 +2944,7 @@
 			<pagecontrol>918</pagecontrol>
 			<scrolltime>100</scrolltime>
 			<orientation>vertical</orientation>
-			<preloaditems>2</preloaditems>
+			<preloaditems>1</preloaditems>
 			<onleft>850</onleft>
 			<onright>150</onright>
 			<onup>100</onup>

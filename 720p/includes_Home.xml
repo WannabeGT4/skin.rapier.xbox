@@ -537,7 +537,7 @@
 			<pagecontrol>-</pagecontrol>
 			<orientation>horizontal</orientation>
 			<itemgap>0</itemgap>
-			<preloaditems>2</preloaditems>
+			<preloaditems>1</preloaditems>
 			<onup>110</onup>
 			<ondown>-</ondown>
 			<include>HomeMenuOpenCloseAnim</include>	

@@ -23,7 +23,7 @@
 				<width>1188</width>
 				<height>536</height>
 				<pagecontrol>910</pagecontrol>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>75</onup>
 				<ondown>75</ondown>
 				<onleft>850</onleft>
@@ -551,7 +551,7 @@
 				<width>505</width>
 				<height>296</height>
 				<pagecontrol>905</pagecontrol>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>58</onup>
 				<ondown>58</ondown>
 				<onleft>850</onleft>
@@ -931,7 +931,7 @@
 				<width>620</width>
 				<height>518</height>
 				<pagecontrol>906</pagecontrol>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>66</onup>
 				<ondown>66</ondown>
 				<onleft>850</onleft>
@@ -1552,7 +1552,7 @@
 				<width>354</width>
 				<height>518</height>
 				<pagecontrol>917</pagecontrol>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>95</onup>
 				<ondown>95</ondown>
 				<onleft>850</onleft>
@@ -1891,7 +1891,7 @@
 				<pagecontrol>918</pagecontrol>
 				<scrolltime>100</scrolltime>
 				<orientation>vertical</orientation>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onleft>850</onleft>
 				<onright>150</onright>
 				<onup>97</onup>
@@ -2326,7 +2326,7 @@
 			<pagecontrol>908</pagecontrol>
 			<scrolltime>300</scrolltime>
 			<orientation>horizontal</orientation>
-			<preloaditems>4</preloaditems>
+			<preloaditems>1</preloaditems>
 			<onup>850</onup>
 			<ondown>150</ondown>
 			<visible>Container.Content(Movies)</visible>
@@ -2701,7 +2701,7 @@
 			<pagecontrol>908</pagecontrol>
 			<scrolltime>360</scrolltime>
 			<orientation>horizontal</orientation>
-			<preloaditems>4</preloaditems>
+			<preloaditems>1</preloaditems>
 			<onup>850</onup>
 			<ondown>150</ondown>
 			<visible>Container.Content(Movies)</visible>
@@ -2898,7 +2898,7 @@
 				<pagecontrol>909</pagecontrol>
 				<scrolltime>100</scrolltime>
 				<orientation>horizontal</orientation>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>850</onup>
 				<ondown>150</ondown>
 				<visible>Container.Content(Movies)</visible>

@@ -150,7 +150,7 @@
 				<width>620</width>
 				<height>518</height>
 				<pagecontrol>906</pagecontrol>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>590</onup>
 				<ondown>590</ondown>
 				<onleft>850</onleft>
@@ -577,7 +577,7 @@
 				<width>620</width>
 				<height>518</height>
 				<pagecontrol>906</pagecontrol>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>591</onup>
 				<ondown>591</ondown>
 				<onleft>850</onleft>
@@ -1004,7 +1004,7 @@
 				<width>620</width>
 				<height>518</height>
 				<pagecontrol>906</pagecontrol>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onup>592</onup>
 				<ondown>592</ondown>
 				<onleft>850</onleft>
@@ -1436,7 +1436,7 @@
 				<pagecontrol>918</pagecontrol>
 				<scrolltime>100</scrolltime>
 				<orientation>vertical</orientation>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onleft>850</onleft>
 				<onright>150</onright>
 				<onup>593</onup>
@@ -1760,7 +1760,7 @@
 				<pagecontrol>918</pagecontrol>
 				<scrolltime>100</scrolltime>
 				<orientation>vertical</orientation>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onleft>850</onleft>
 				<onright>150</onright>
 				<onup>594</onup>
@@ -2084,7 +2084,7 @@
 				<pagecontrol>918</pagecontrol>
 				<scrolltime>100</scrolltime>
 				<orientation>vertical</orientation>
-				<preloaditems>2</preloaditems>
+				<preloaditems>1</preloaditems>
 				<onleft>850</onleft>
 				<onright>150</onright>
 				<onup>595</onup>
@@ -2435,7 +2435,7 @@
 			<pagecontrol>908</pagecontrol>
 			<scrolltime>300</scrolltime>
 			<orientation>horizontal</orientation>
-			<preloaditems>4</preloaditems>
+			<preloaditems>1</preloaditems>
 			<onup>850</onup>
 			<ondown>150</ondown>
 			<visible>Substring(Container.FolderPath,plugin://plugin.program)</visible>
@@ -2740,7 +2740,7 @@
 			<pagecontrol>908</pagecontrol>
 			<scrolltime>360</scrolltime>
 			<orientation>horizontal</orientation>
-			<preloaditems>4</preloaditems>
+			<preloaditems>1</preloaditems>
 			<onup>850</onup>
 			<ondown>150</ondown>
 			<visible>Substring(Container.FolderPath,plugin://plugin.program)</visible>
@@ -3083,7 +3083,7 @@
 			<pagecontrol>908</pagecontrol>
 			<scrolltime>300</scrolltime>
 			<orientation>horizontal</orientation>
-			<preloaditems>4</preloaditems>
+			<preloaditems>1</preloaditems>
 			<onup>850</onup>
 			<ondown>150</ondown>
 			<visible>Substring(Container.FolderPath,plugin://plugin.program)</visible>
@@ -3388,7 +3388,7 @@
 			<pagecontrol>908</pagecontrol>
 			<scrolltime>360</scrolltime>
 			<orientation>horizontal</orientation>
-			<preloaditems>4</preloaditems>
+			<preloaditems>1</preloaditems>
 			<onup>850</onup>
 			<ondown>150</ondown>
 			<visible>Substring(Container.FolderPath,plugin://plugin.program)</visible>
@@ -3730,7 +3730,7 @@
 			<pagecontrol>908</pagecontrol>
 			<scrolltime>360</scrolltime>
 			<orientation>horizontal</orientation>
-			<preloaditems>4</preloaditems>
+			<preloaditems>1</preloaditems>
 			<onup>850</onup>
 			<ondown>150</ondown>
 			<visible>Substring(Container.FolderPath,plugin://plugin.program)</visible>
