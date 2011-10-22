@@ -201,10 +201,10 @@
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
 			<control type="label">
-				<description>Countries</description>
+				<description>Sets</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[20451][/UPPERCASE]</label>
-				<visible>StringCompare(Container.FolderPath,videodb://1/8/)</visible>
+				<label>[UPPERCASE]$LOCALIZE[20434][/UPPERCASE]</label>
+				<visible>StringCompare(Container.FolderPath,videodb://1/7/)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>					
 			<control type="label">
