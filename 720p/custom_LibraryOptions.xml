@@ -67,10 +67,10 @@
 				<onclick>Dialog.Close(3004)</onclick>
 			</control>
 			<control type="button" id="8">
-				<description>Countries</description>
+				<description>Sets</description>
 				<include>DropDownMenuBtn</include>
-				<label>$LOCALIZE[20451]</label>
-				<onclick>ActivateWindow(VideoLibrary,MovieCountries)</onclick>
+				<label>$LOCALIZE[20434]</label>
+				<onclick>ActivateWindow(VideoLibrary,videodb://1/7/)</onclick>
 				<onclick>Dialog.Close(3004)</onclick>
 			</control>		
 			<control type="button" id="7">
