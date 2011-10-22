@@ -1021,9 +1021,9 @@
 						<visible>Skin.HasSetting(EditMoviesSubMenuBtn5)</visible>
 					</item>
 					<item id="6">
-						<description>Countries</description>
-						<label>$LOCALIZE[20451]</label>
-						<onclick>ActivateWindow(VideoLibrary,MovieCountries,Return)</onclick>	
+						<description>Sets</description>
+						<label>$LOCALIZE[20434]</label>
+						<onclick>ActivateWindow(VideoLibrary,videodb://1/7/,Return)</onclick>	
 						<visible>!Skin.HasSetting(EditMoviesSubMenuBtn6)</visible>
 					</item>
 					<item id="6">
