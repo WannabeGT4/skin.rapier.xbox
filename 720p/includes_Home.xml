@@ -833,9 +833,9 @@
 						<visible>Skin.HasSetting(EditMusicSubMenuBtn6)</visible>
 					</item>
 					<item id="7">
-						<description>Genres</description>
-						<label>$LOCALIZE[135]</label>
-						<onclick>ActivateWindow(MusicLibrary,Genres,Return)</onclick>
+						<description>Plugins</description>
+						<label>$LOCALIZE[1038]</label>
+						<onclick>ActivateWindow(MusicLibrary,Plugins)</onclick>
 						<visible>!Skin.HasSetting(EditMusicSubMenuBtn7)</visible>
 					</item>
 					<item id="7">
@@ -1149,9 +1149,9 @@
 				<include>HomeSubMenuItemLayout</include>
 				<content>
 					<item id="1">
-						<description>Program Add-ons</description>
-						<label>$LOCALIZE[24001]</label>
-						<onclick>ActivateWindow(Programs,Addons,Return)</onclick>
+						<description>Program Plugins</description>
+						<label>$LOCALIZE[1043]</label>
+						<onclick>ActivateWindow(1,plugin://program/,Return)</onclick>
 						<visible>!Skin.HasSetting(EditProgramsSubMenuBtn1)</visible>
 					</item>
 					<item id="1">
@@ -1213,9 +1213,9 @@
 				<include>HomeSubMenuItemLayout</include>
 				<content>
 					<item id="1">
-						<description>Picture Add-ons</description>
-						<label>$LOCALIZE[24001]</label>
-						<onclick>ActivateWindow(Pictures,Addons,Return)</onclick>
+						<description>Picture Plugins</description>
+						<label>$LOCALIZE[1039]</label>
+						<onclick>ActivateWindow(1,plugin://pictures/,Return)</onclick>
 						<visible>!Skin.HasSetting(EditPicturesSubMenuBtn1)</visible>
 					</item>
 					<item id="1">
@@ -1374,9 +1374,9 @@
 						<onclick>ActivateWindow(3001)</onclick>		
 					</item>
 					<item id="4">
-						<description>Add-ons</description>
-						<label>$LOCALIZE[24001]</label>
-						<onclick>ActivateWindow(AddonBrowser)</onclick>		
+						<description>Plugins</description>
+						<label>Plugins</label>
+						<onclick>ActivateWindow(1,plugin://,Return)</onclick>
 					</item>
 					<item id="5">
 						<description>Profiles</description>
