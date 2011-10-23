@@ -640,7 +640,7 @@
 	
 	<include name="StudioMediaFlag">
 		<control type="group">
-			<visible>!IsEmpty(ListItem.Studio) + !Window.IsActive(VideoScan) + !Window.IsActive(MusicScan) + !Window.IsActive(InfoDialog)</visible>
+			<visible>!IsEmpty(ListItem.Studio) + !Window.IsActive(scandialog) + !Window.IsActive(InfoDialog)</visible>
 			
 			<control type="image" id="667">
 				<posx>1182</posx>
@@ -1305,7 +1305,7 @@
 	
 	<include name="StudioAltMediaFlag">
 		<control type="group">
-			<visible>!IsEmpty(ListItem.Studio) + !Window.IsActive(VideoScan) + !Window.IsActive(MusicScan) + !Window.IsActive(InfoDialog)</visible>
+			<visible>!IsEmpty(ListItem.Studio) + !Window.IsActive(scandialog) + !Window.IsActive(InfoDialog)</visible>
 			
 			<control type="image" id="736">
 				<posx>1182</posx>

@@ -100,7 +100,7 @@
 			<itemgap>5</itemgap>
 			<align>right</align>
 			<usecontrolcoords>true</usecontrolcoords>
-			<visible>!Window.IsActive(VideoScan) + !Window.IsActive(MusicScan) + !Window.IsActive(InfoDialog)</visible>
+			<visible>!Window.IsActive(scandialog) + + !Window.IsActive(InfoDialog)</visible>
 			<orientation>horizontal</orientation>
 			<include>InfoPaneElementOpenCloseAnim</include>
 			<include>MediaFlagFadeAnim</include>
@@ -124,7 +124,7 @@
 			<height>41</height>
 			<texture background="true">$INFO[ListItem.Rating]</texture>
 			<aspectratio align="right" aligny="top">keep</aspectratio>
-			<visible>!Window.IsActive(VideoScan) + !Window.IsActive(MusicScan) + !Window.IsActive(InfoDialog)</visible>
+			<visible>!Window.IsActive(scandialog) + !Window.IsActive(InfoDialog)</visible>
 			<include>MediaFlagFadeAnim</include>
 		</control>
 	</include>
