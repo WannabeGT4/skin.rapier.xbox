@@ -83,7 +83,7 @@
 		<control type="button" id="6887">
 			<description>Recently Added Script Trigger</description>
 			<include>RedirectBtn</include>
-			<onfocus>XBMC.RunScript(script.recentlyadded,limit=8&amp;albums=True&amp;totals=True)</onfocus>
+			<onfocus>XBMC.RunScript(special://skin/scripts/RecentlyAdded.py,limit=8&amp;albums=True&amp;totals=True)</onfocus>
 			<onfocus>Control.SetFocus(6100)</onfocus>
 		</control>
 		
