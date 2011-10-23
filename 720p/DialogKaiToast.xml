@@ -15,7 +15,7 @@
 		<control type="group">
 			<posx>824</posx>
 			<posy>640</posy>
-			<visible>![Window.IsVisible(Home) | Window.IsActive(MovieInformation) | Window.IsActive(MusicInformation) | Window.IsActive(AddonInformation) | Window.IsActive(FullscreenVideo) | Window.IsActive(Visualisation)]</visible>
+			<visible>![Window.IsVisible(Home) | Window.IsActive(MovieInformation) | Window.IsActive(MusicInformation) | Window.IsActive(FullscreenVideo) | Window.IsActive(Visualisation)]</visible>
 			<include>BottomPaneOpenCloseAnim</include>
 			
 			<control type="image">
