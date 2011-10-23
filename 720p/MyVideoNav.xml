@@ -2,7 +2,7 @@
 	<defaultcontrol always="true">500</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>Home</previouswindow>
-	<views>50,51,52,54,53,71,75,58,66,95,97,56,76,61,65,100,74,73,68,94,69,63,90,91,93</views>
+	<views>50,51,52,54,53,75,58,66,95,97,56,76,61,65,100,74,73,68,94,69,63,90,91,93</views>
 	
 	<controls>
 		<control type="group">
@@ -27,7 +27,6 @@
 			<include>ListView</include> <!-- 52 -->
 			<include>DVDThumbsView</include> <!-- 54 -->
 			<include>MoviesWrapListInfoView</include> <!-- 53 -->
-			<include>MoviesWrapListInfoFanartView</include> <!-- 71 -->
 			<include>MoviesWideListView</include> <!-- 75 -->
 			<include>MoviesListInfoView</include> <!-- 58 -->
 			<include>MoviesListInfoView2</include> <!-- 66 -->
