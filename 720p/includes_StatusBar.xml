@@ -16,7 +16,6 @@
 				<bordersize>1</bordersize>
 				<aspectratio>keep</aspectratio>
 				<visible>Player.HasAudio + !Window.IsActive(Home)</visible>
-				<include condition="System.HasAddon(script.tvtunes) + Window.IsActive(VideoLibrary)">TVTunesDisableVizCond</include>
 			</control>
 			<control type="label">
 				<description>Audio Playing Line 1</description>
@@ -30,7 +29,6 @@
 				<scroll>yes</scroll>
 				<scrollsuffix> - </scrollsuffix>
 				<visible>Player.HasAudio + !Window.IsActive(Home)</visible>
-				<include condition="System.HasAddon(script.tvtunes) + Window.IsActive(VideoLibrary)">TVTunesDisableVizCond</include>
 			</control>			
 			<control type="fadelabel">
 				<description>Audio Playing Line 2</description>
@@ -49,7 +47,6 @@
 				<pauseatend>1500</pauseatend>
 				<resetonlabelchange>false</resetonlabelchange>
 				<visible>Player.HasAudio + !Window.IsActive(Home)</visible>
-				<include condition="System.HasAddon(script.tvtunes) + Window.IsActive(VideoLibrary)">TVTunesDisableVizCond</include>
 			</control>
 			<control type="image">
 				<width>43</width>

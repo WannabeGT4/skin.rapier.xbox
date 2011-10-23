@@ -196,7 +196,6 @@
 	<include name="BackgroundMusicPlaying">
 		<control type="group">
 			<visible>Player.HasAudio</visible>
-			<include condition="System.HasAddon(script.tvtunes)">TVTunesDisableVizCond</include>
 			<include>BackgroundVisibleAnim</include>
 			
 			<control type="visualisation">
@@ -494,10 +493,6 @@
 	
 	<include name="TVShowsFanartBGPath">
 		<imagepath background="true">special://profile/Thumbnails/Video/Fanart</imagepath>
-	</include>
-	
-	<include name="TVTunesDisableVizCond">
-		 <visible>!SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
 	</include>
 	
 	<include name="IsMediaPlayingCondition">
