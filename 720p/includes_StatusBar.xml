@@ -100,7 +100,7 @@
 				<texture>gui/notification-downloading.png</texture>
 				<bordersize>4</bordersize>
 				<aspectratio>keep</aspectratio>
-				<visible>[Window.IsActive(VideoScan) | Window.IsActive(MusicScan)] + !Window.IsActive(Home)</visible>
+				<visible>Window.IsActive(scandialog) + !Window.IsActive(Home)</visible>
 				<include>NotificationPulseAnim</include>
 			</control>
 			<control type="button">
