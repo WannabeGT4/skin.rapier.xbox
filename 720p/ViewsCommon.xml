@@ -2504,7 +2504,6 @@
 							<width>231</width>
 							<height>231</height>
 							<texture background="true" border="14">covers/cover-case-thumbnail-focus.png</texture>
-							<include>AlbumThumbViewItemFocusAnim</include>
 						</control>
 						<control type="image">
 							<description>Cover</description>
@@ -2541,7 +2540,6 @@
 							<width>231</width>
 							<height>231</height>
 							<texture background="true" border="14">covers/cover-case-thumbnail-focus.png</texture>
-							<include>AlbumThumbViewItemFocusAnim</include>
 						</control>
 						<control type="image">
 							<description>Cover</description>
@@ -2642,7 +2640,6 @@
 							<width>168</width>
 							<height>168</height>
 							<texture background="true" border="14">covers/cover-case-thumbnail-focus.png</texture>
-							<include>AlbumThumbViewItemFocusAnim</include>
 						</control>
 						<control type="image">
 							<description>Cover</description>
@@ -2679,7 +2676,6 @@
 							<width>168</width>
 							<height>168</height>
 							<texture background="true" border="14">covers/cover-case-thumbnail-focus.png</texture>
-							<include>AlbumThumbViewItemFocusAnim</include>
 						</control>
 						<control type="image">
 							<description>Cover</description>
