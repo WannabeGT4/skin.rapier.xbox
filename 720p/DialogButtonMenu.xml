@@ -283,7 +283,7 @@
 			<control type="button" id="113">
 				<description>Add-ons</description>
 				<include>ContextMenuBtn</include>
-				<label>$LOCALIZE[24001]</label>
+				<label>Plugins</label>
 				<onclick>ActivateWindow(AddonBrowser)</onclick>
 				<visible>Skin.HasSetting(HideSystemCategory)</visible>
 			</control>

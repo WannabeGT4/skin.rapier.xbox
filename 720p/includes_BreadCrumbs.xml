@@ -72,14 +72,14 @@
 			<control type="label">
 				<description>Add-ons</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24001][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugins[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,addons:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
 			<control type="label">
 				<description>Add-on</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24000][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugin[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,plugin:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
@@ -225,14 +225,14 @@
 			<control type="label">
 				<description>Add-ons</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24001][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugins[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,addons:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
 			<control type="label">
 				<description>Add-on</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24000][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugin[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,plugin:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
@@ -348,14 +348,14 @@
 			<control type="label">
 				<description>Add-ons</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24001][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugins[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,addons:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
 			<control type="label">
 				<description>Add-on</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24000][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugin[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,plugin:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
@@ -492,14 +492,14 @@
 			<control type="label">
 				<description>Add-ons</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24001][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugins[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,addons:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
 			<control type="label">
 				<description>Add-on</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24000][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugin[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,plugin:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
@@ -635,14 +635,14 @@
 			<control type="label">
 				<description>Add-ons</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24001][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugins[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,addons:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
 			<control type="label">
 				<description>Add-on</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24000][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugin[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,plugin:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
@@ -697,14 +697,14 @@
 			<control type="label">
 				<description>Add-ons</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24001][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugins[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,addons:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
 			<control type="label">
 				<description>Add-on</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24000][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugin[/UPPERCASE]</label>
 				<visible>Substring(Container.FolderPath,plugin:,Left)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
@@ -735,7 +735,7 @@
 			<control type="label">
 				<description>Add-ons</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24001][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugins[/UPPERCASE]</label>
 				<include>BreadCrumbSlideLvl2Anim</include>
 			</control>
 			<control type="image">
@@ -956,7 +956,7 @@
 			<control type="label">
 				<description>Add-on</description>
 				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[24000][/UPPERCASE]</label>
+				<label>[UPPERCASE]Plugin[/UPPERCASE]</label>
 				<visible>Window.IsActive(AddonInformation)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>

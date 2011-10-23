@@ -100,7 +100,7 @@
 			<itemgap>5</itemgap>
 			<align>right</align>
 			<usecontrolcoords>true</usecontrolcoords>
-			<visible>!Window.IsActive(scandialog) + + !Window.IsActive(InfoDialog)</visible>
+			<visible>!Window.IsActive(scandialog) + !Window.IsActive(InfoDialog)</visible>
 			<orientation>horizontal</orientation>
 			<include>InfoPaneElementOpenCloseAnim</include>
 			<include>MediaFlagFadeAnim</include>

@@ -16,7 +16,7 @@
 			<control type="button" id="5000">
 				<description>General Label</description>
 				<include>SettingsHeaderBtn</include>
-				<label>$LOCALIZE[24001]</label>
+				<label>Plugins</label>
 			</control>
 			<control type="radiobutton" id="5001">
 				<description>Show Subtitles Button</description>

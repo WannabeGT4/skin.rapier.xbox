@@ -134,14 +134,14 @@
 				<control type="button" id="5">
 					<Description>Add-ons</Description>
 					<include>SettingsCatBtn</include>
-					<label>$LOCALIZE[24001]</label>
+					<label>Plugins</label>
 					<onfocus>Skin.SetString(SkinSettingsCategory,5)</onfocus>
 					<visible>!ControlGroup(904).HasFocus</visible>
 				</control>
 				<control type="button" id="11">
 					<Description>Add-ons</Description>
 					<include>SettingsInactiveCatBtn</include>
-					<label>$LOCALIZE[24001]</label>
+					<label>Plugins</label>
 					<onfocus>Skin.SetString(SkinSettingsCategory,5)</onfocus>
 					<visible>ControlGroup(904).HasFocus</visible>
 				</control>
