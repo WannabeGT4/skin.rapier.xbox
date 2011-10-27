@@ -4,7 +4,7 @@
 			<include>BackgroundSize</include>
 			<texture>dim.png</texture>
 			<include>BackgroundTransAnim</include>
-			<animation effect="fade" end="60" condition="true">Conditional</animation> 
+			<colordiffuse>99FFFFFF</colordiffuse> 
 		</control>	
 	</include>
 	
@@ -386,7 +386,7 @@
 	<include name="HomeBackgroundDim">
 		<control type="image">
 			<include>BackgroundDim</include>
-			<animation effect="fade" end="30" condition="true">Conditional</animation>
+			<colordiffuse>4CFFFFFF</colordiffuse>
 		</control>
 	</include>
 	

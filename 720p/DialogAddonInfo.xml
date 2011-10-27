@@ -29,7 +29,7 @@
 				<bordersize>50</bordersize>
 				<aspectratio>keep</aspectratio>
 				<visible>IsEmpty(ListItem.Thumb)</visible>
-				<animation effect="fade" end="60" condition="true">Conditional</animation>
+				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>
 		</control>
 		

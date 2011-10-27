@@ -47,7 +47,7 @@
 						<texture background="true">music/$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>IsEmpty(ListItem.Thumb)</visible>
-						<animation effect="fade" end="40" condition="true">Conditional</animation>
+						<colordiffuse>66FFFFFF</colordiffuse>
 					</control>	
 					<control type="group">
 						<visible>!IsEmpty(ListItem.Album)</visible>
@@ -92,7 +92,7 @@
 							<texture background="true">music/$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>IsEmpty(ListItem.Thumb)</visible>
-							<animation effect="fade" end="40" condition="true">Conditional</animation>
+							<colordiffuse>66FFFFFF</colordiffuse>
 						</control>									
 						<control type="label">
 							<description>Label</description>
@@ -126,7 +126,7 @@
 							<texture background="true">$INFO[ListItem.StarRating]</texture>
 							<aspectratio align="left">keep</aspectratio>
 							<visible>!Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 						<control type="label">
 							<description>Year</description>
@@ -194,7 +194,7 @@
 						<texture background="true">music/$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>IsEmpty(ListItem.Thumb)</visible>
-						<animation effect="fade" end="40" condition="true">Conditional</animation>
+						<colordiffuse>66FFFFFF</colordiffuse>
 					</control>	
 					<control type="group">
 						<visible>!IsEmpty(ListItem.Title)</visible>
@@ -239,7 +239,7 @@
 							<texture background="true">music/$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>IsEmpty(ListItem.Thumb)</visible>
-							<animation effect="fade" end="40" condition="true">Conditional</animation>
+							<colordiffuse>66FFFFFF</colordiffuse>
 						</control>									
 						<control type="label">
 							<description>Label</description>
@@ -273,7 +273,7 @@
 							<texture background="true">$INFO[ListItem.StarRating]</texture>
 							<aspectratio align="left">keep</aspectratio>
 							<visible>!Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 						<control type="label">
 							<description>Album</description>
@@ -341,7 +341,7 @@
 						<texture background="true">music/$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>IsEmpty(ListItem.Thumb)</visible>
-						<animation effect="fade" end="40" condition="true">Conditional</animation>
+						<colordiffuse>66FFFFFF</colordiffuse>
 					</control>
 					<control type="group">
 						<visible>!IsEmpty(ListItem.Artist)</visible>
@@ -386,7 +386,7 @@
 							<texture background="true">music/$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>IsEmpty(ListItem.Thumb)</visible>
-							<animation effect="fade" end="40" condition="true">Conditional</animation>
+							<colordiffuse>66FFFFFF</colordiffuse>
 						</control>									
 						<control type="label">
 							<description>Label</description>
@@ -564,7 +564,7 @@
 							<texture background="true">$INFO[ListItem.StarRating]</texture>
 							<aspectratio align="left">keep</aspectratio>
 							<visible>!Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 						<control type="label">
 							<description>Year</description>
@@ -720,7 +720,7 @@
 							<texture background="true">$INFO[ListItem.StarRating]</texture>
 							<aspectratio align="left">keep</aspectratio>
 							<visible>!Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 						<control type="label">
 							<description>Album</description>
@@ -969,7 +969,7 @@
 					<texture border="4">covers/cover-case2.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<animation effect="fade" end="60" condition="true">Conditional</animation>
+					<colordiffuse>99FFFFFF</colordiffuse>
 				</control>	
 
 				<control type="image">
@@ -983,7 +983,7 @@
 					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<visible>IsEmpty(ListItem.Thumb)</visible>
-					<animation effect="fade" end="60" condition="true">Conditional</animation>
+					<colordiffuse>99FFFFFF</colordiffuse>
 				</control>		
 				
 				<control type="image">
@@ -1170,7 +1170,7 @@
 					<texture border="4">covers/cover-case2.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<animation effect="fade" end="60" condition="true">Conditional</animation>
+					<colordiffuse>99FFFFFF</colordiffuse>
 				</control>		
 				
 				<control type="image">
@@ -1184,7 +1184,7 @@
 					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<visible>IsEmpty(ListItem.Thumb)</visible>
-					<animation effect="fade" end="60" condition="true">Conditional</animation>
+					<colordiffuse>99FFFFFF</colordiffuse>
 				</control>		
 				
 				<control type="image">
@@ -1377,7 +1377,7 @@
 						<height>16</height>		
 						<texture background="true">$INFO[ListItem.StarRating]</texture>
 						<aspectratio align="right">keep</aspectratio>
-						<animation effect="fade" end="70" condition="true">Conditional</animation>
+						<colordiffuse>B2FFFFFF</colordiffuse>
 						<visible>!Skin.HasSetting(DoNotUseStarRatingMusic) + !IsEmpty(ListItem.Album)</visible>
 					</control>
 				</itemlayout>		
@@ -1463,7 +1463,7 @@
 							<height>16</height>		
 							<texture background="true">$INFO[ListItem.StarRating]</texture>
 							<aspectratio align="right">keep</aspectratio>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 							<visible>!Skin.HasSetting(DoNotUseStarRatingMusic) + !IsEmpty(ListItem.Album)</visible>
 						</control>
 					</control>
@@ -1526,7 +1526,7 @@
 						<width>554</width>
 						<height>373</height>
 						<texture border="4">panels/panel2.png</texture>
-						<animation effect="fade" end="20" condition="true">Conditional</animation>
+						<colordiffuse>33FFFFFF</colordiffuse>
 					</control>
 					
 					<control type="image">
@@ -1535,7 +1535,7 @@
 						<height>310</height>
 						<texture border="4">covers/cover-case2.png</texture>
 						<bordersize>1</bordersize>
-						<animation effect="fade" end="50" condition="true">Conditional</animation>
+						<colordiffuse>7FFFFFFF</colordiffuse>
 					</control>
 					
 					<control type="largeimage">
@@ -1825,7 +1825,7 @@
 						<width>554</width>
 						<height>373</height>
 						<texture border="4">panels/panel2.png</texture>
-						<animation effect="fade" end="20" condition="true">Conditional</animation>
+						<colordiffuse>33FFFFFF</colordiffuse>
 					</control>
 					
 					<control type="image">
@@ -1834,7 +1834,7 @@
 						<height>310</height>
 						<texture border="4">covers/cover-case2.png</texture>
 						<bordersize>1</bordersize>
-						<animation effect="fade" end="50" condition="true">Conditional</animation>
+						<colordiffuse>7FFFFFFF</colordiffuse>
 					</control>
 					
 					<control type="largeimage">
@@ -2075,7 +2075,7 @@
 				<height>16</height>		
 				<texture background="true">$INFO[ListItem.StarRating]</texture>
 				<aspectratio align="right">keep</aspectratio>
-				<animation effect="fade" end="70" condition="true">Conditional</animation>
+				<colordiffuse>B2FFFFFF</colordiffuse>
 				<visible>!Skin.HasSetting(DoNotUseStarRatingMusic) + !IsEmpty(ListItem.Album)</visible>
 			</control>	
 		</itemlayout>	
@@ -2163,7 +2163,7 @@
 					<height>16</height>		
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingMusic) + !IsEmpty(ListItem.Album)</visible>
 				</control>
 			</control>
@@ -2212,7 +2212,7 @@
 				<texture background="true">music/$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>IsEmpty(ListItem.Thumb)</visible>
-				<animation effect="fade" end="40" condition="true">Conditional</animation>
+				<colordiffuse>66FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
 				<description>Default Cover</description>
@@ -2224,7 +2224,7 @@
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>IsEmpty(ListItem.Thumb) + Container.Content(Artists)</visible>
-				<animation effect="fade" end="40" condition="true">Conditional</animation>
+				<colordiffuse>66FFFFFF</colordiffuse>
 			</control>			
 			<control type="group">
 				<visible>Container.Content(Albums)</visible>
@@ -2271,7 +2271,7 @@
 					<height>16</height>		
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 					<visible>!IsEmpty(ListItem.Album) + !Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
 				</control>
 			</control>
@@ -2320,7 +2320,7 @@
 					<height>16</height>		
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 					<visible>!IsEmpty(ListItem.Album) + !Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
 				</control>
 			</control>
@@ -2477,7 +2477,7 @@
 					<height>16</height>		
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 					<visible>!IsEmpty(ListItem.Album) + !Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
 				</control>
 			</control>
@@ -2528,7 +2528,7 @@
 					<height>16</height>		
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 					<visible>!IsEmpty(ListItem.Album) + !Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
 				</control>
 			</control>
@@ -2605,7 +2605,7 @@
 						<width>400</width>
 						<height>286</height>
 						<texture border="4">panels/panel2.png</texture>
-						<animation effect="fade" end="20" condition="true">Conditional</animation>
+						<colordiffuse>33FFFFFF</colordiffuse>
 					</control>
 					
 					<control type="image">
@@ -2614,7 +2614,7 @@
 						<height>225</height>
 						<texture border="4">covers/cover-case2.png</texture>
 						<bordersize>1</bordersize>
-						<animation effect="fade" end="50" condition="true">Conditional</animation>
+						<colordiffuse>7FFFFFFF</colordiffuse>
 					</control>
 					
 					<control type="largeimage">
@@ -2923,7 +2923,7 @@
 						<width>400</width>
 						<height>286</height>
 						<texture border="4">panels/panel2.png</texture>
-						<animation effect="fade" end="20" condition="true">Conditional</animation>
+						<colordiffuse>33FFFFFF</colordiffuse>
 					</control>
 					
 					<control type="image">
@@ -2932,7 +2932,7 @@
 						<height>225</height>
 						<texture border="4">covers/cover-case2.png</texture>
 						<bordersize>1</bordersize>
-						<animation effect="fade" end="50" condition="true">Conditional</animation>
+						<colordiffuse>7FFFFFFF</colordiffuse>
 					</control>
 					
 					<control type="largeimage">
@@ -3113,7 +3113,7 @@
 						<texture background="true" border="4">covers/cover-case2.png</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordersize>6</bordersize>
-						<animation effect="fade" end="50" condition="true">Conditional</animation>
+						<colordiffuse>7FFFFFFF</colordiffuse>
 					</control>
 					<control type="image">
 						<description>Cover</description>
@@ -3141,7 +3141,7 @@
 						<texture background="true">music/$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>IsEmpty(ListItem.Thumb)</visible>
-						<animation effect="fade" end="50" condition="true">Conditional</animation>
+						<colordiffuse>7FFFFFFF</colordiffuse>
 					</control>
 				</itemlayout>
 				<focusedlayout width="129" height="129" condition="!IsEmpty(ListItem.Thumb) + Container.Column(0) + Container.Row(0)">
@@ -3319,7 +3319,7 @@
 			<width>755</width>
 			<height>326</height>
 			<texture flipy="true">gui/background-glow.png</texture>
-			<animation effect="fade" end="20" condition="true">Conditional</animation>
+			<colordiffuse>33FFFFFF</colordiffuse>
 		</control> 
 		
 		<control type="image">
@@ -3471,7 +3471,7 @@
 					<texture align="center">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="center">keep</aspectratio>
 					<visible>!IsEmpty(ListItem.Album) + !Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</control>
 		</control>
@@ -3523,7 +3523,7 @@
 					<bordersize>22</bordersize>
 					<aspectratio>keep</aspectratio>
 					<visible>IsEmpty(ListItem.Thumb)</visible>
-					<animation effect="fade" end="30" condition="true">Conditional</animation>
+					<colordiffuse>4CFFFFFF</colordiffuse>
 				</control>	
 				<control type="image">
 					<description>Reflection</description>
@@ -3535,7 +3535,7 @@
 					<bordertexture flipy="true" diffuse="views/reflection.png" border="4">covers/cover-case2.png</bordertexture>
 					<bordersize>5</bordersize>
 					<aspectratio>stretch</aspectratio>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</itemlayout>    
 			<focusedlayout width="115">
@@ -3586,7 +3586,7 @@
 						<bordertexture flipy="true" diffuse="views/reflection.png" border="4">covers/cover-case2.png</bordertexture>
 						<bordersize>6</bordersize>
 						<aspectratio>stretch</aspectratio>
-						<animation effect="fade" end="70" condition="true">Conditional</animation>
+						<colordiffuse>B2FFFFFF</colordiffuse>
 						<visible>Control.HasFocus(64)</visible>
 					</control>
 				</control>
@@ -3636,7 +3636,7 @@
 						<bordertexture flipy="true" diffuse="views/reflection.png" border="4">covers/cover-case2.png</bordertexture>
 						<bordersize>6</bordersize>
 						<aspectratio>stretch</aspectratio>
-						<animation effect="fade" end="70" condition="true">Conditional</animation>
+						<colordiffuse>B2FFFFFF</colordiffuse>
 					</control>
 				</control>
 			</focusedlayout>                    
@@ -3661,7 +3661,7 @@
 			<width>755</width>
 			<height>388</height>
 			<texture flipy="true">gui/background-glow.png</texture>
-			<animation effect="fade" end="20" condition="true">Conditional</animation>
+			<colordiffuse>33FFFFFF</colordiffuse>
 		</control> 
 		
 		<control type="image">
@@ -3813,7 +3813,7 @@
 					<texture align="center">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="center">keep</aspectratio>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</control>
 		</control>
@@ -3864,7 +3864,7 @@
 					<texture background="true">music/$INFO[ListItem.Icon]</texture>
 					<bordersize>30</bordersize>
 					<aspectratio>keep</aspectratio>
-					<animation effect="fade" end="30" condition="true">Conditional</animation>
+					<colordiffuse>4CFFFFFF</colordiffuse>
 					<visible>IsEmpty(ListItem.Thumb)</visible>
 				</control>			
 				<control type="image">
@@ -3877,7 +3877,7 @@
 					<bordertexture flipy="true" diffuse="views/reflection.png" border="4">covers/cover-case2.png</bordertexture>
 					<bordersize>8</bordersize>
 					<aspectratio>stretch</aspectratio>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</itemlayout>    
 			<focusedlayout width="200">
@@ -3928,7 +3928,7 @@
 						<bordertexture flipy="true" diffuse="views/reflection.png" border="4">covers/cover-case2.png</bordertexture>
 						<bordersize>8</bordersize>
 						<aspectratio>stretch</aspectratio>
-						<animation effect="fade" end="70" condition="true">Conditional</animation>
+						<colordiffuse>B2FFFFFF</colordiffuse>
 						<visible>Control.HasFocus(64)</visible>
 					</control>
 				</control>
@@ -3966,7 +3966,7 @@
 						<texture background="true">music/$INFO[ListItem.Icon]</texture>
 						<bordersize>30</bordersize>
 						<aspectratio>keep</aspectratio>
-						<animation effect="fade" end="30" condition="true">Conditional</animation>
+						<colordiffuse>4CFFFFFF</colordiffuse>
 						<visible>IsEmpty(ListItem.Thumb)</visible>
 					</control>			
 					<control type="image">
@@ -3979,7 +3979,7 @@
 						<bordertexture flipy="true" diffuse="views/reflection.png" border="4">covers/cover-case2.png</bordertexture>
 						<bordersize>8</bordersize>
 						<aspectratio>stretch</aspectratio>
-						<animation effect="fade" end="70" condition="true">Conditional</animation>
+						<colordiffuse>B2FFFFFF</colordiffuse>
 					</control>
 				</control>
 			</focusedlayout>                    
@@ -4017,7 +4017,7 @@
 						<texture border="2">covers/cover-case-noshadow-nofocus.png</texture>
 						<aspectratio>stretch</aspectratio>
 						<visible>IsEmpty(ListItem.Thumb)</visible>
-						<animation effect="fade" end="70" condition="true">Conditional</animation>
+						<colordiffuse>B2FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
 						<description>Cover</description>
@@ -4033,7 +4033,7 @@
 						<bordersize>40</bordersize>
 						<texture background="true">music/$INFO[ListItem.Icon]</texture>
 						<visible>IsEmpty(ListItem.Thumb)</visible>
-						<animation effect="fade" end="70" condition="true">Conditional</animation>
+						<colordiffuse>B2FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
 						<description>Dim</description>

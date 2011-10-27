@@ -31,7 +31,7 @@
 						<width>134</width>
 						<height>134</height>
 						<texture border="25">covers/item-focus-background.png</texture>
-						<animation effect="fade" end="40" condition="true">Conditional</animation>
+						<colordiffuse>66FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
 						<width>134</width>
@@ -39,7 +39,7 @@
 						<bordersize>25</bordersize>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
-						<animation effect="fade" end="50" condition="true">Conditional</animation>
+						<colordiffuse>7FFFFFFF</colordiffuse>
 					</control>		
 				</itemlayout>
 				<focusedlayout width="138" height="138">
@@ -54,7 +54,7 @@
 						<height>134</height>
 						<texture border="25">covers/item-focus-background.png</texture>
 						<visible>!Control.HasFocus(52)</visible>
-						<animation effect="fade" end="70" condition="true">Conditional</animation>
+						<colordiffuse>B2FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
 						<width>134</width>

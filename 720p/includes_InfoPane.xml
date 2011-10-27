@@ -17,7 +17,7 @@
 		<height>33</height>
 		<aspectratio>stretch</aspectratio>
 		<fadetime>IconCrossfadeTime</fadetime>
-		<animation effect="fade" end="40" condition="true">Conditional</animation>
+		<colordiffuse>66FFFFFF</colordiffuse>
 	</include>
 	
 	<include name="InfoPaneHeadLabel">

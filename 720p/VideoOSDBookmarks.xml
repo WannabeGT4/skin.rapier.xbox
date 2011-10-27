@@ -35,7 +35,7 @@
 					<bordertexture border="5">controls/button-nofocus.png</bordertexture>
 					<bordersize>4</bordersize>
 					<info>ListItem.Icon</info>
-					<animation effect="fade" end="50" condition="true">Conditional</animation>
+					<colordiffuse>7FFFFFFF</colordiffuse>
   				</control>
   				<control type="label">
   					<posx>99</posx>

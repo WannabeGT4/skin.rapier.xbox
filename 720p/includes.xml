@@ -74,14 +74,14 @@
 			<height>47</height>
 			<texture border="0,0,0,6">gui/top-bar-background.png</texture>
 			<aspectratio>stretch</aspectratio>
-			<animation effect="fade" end="83" condition="true">Conditional</animation>
+			<colordiffuse>D3FFFFFF</colordiffuse>
 		</control>	
 		
 		<control type="image">
 			<width>ScreenWidth</width>
 			<height>43</height>
 			<texture>gui/bottom-bar-overlay.png</texture>
-			<animation effect="fade" end="68" condition="true">Conditional</animation>
+			<colordiffuse>ADFFFFFF</colordiffuse>
 		</control>
 	</include>
 	
@@ -91,7 +91,7 @@
 			<height>47</height>
 			<texture border="0,0,0,6">gui/top-bar-background.png</texture>
 			<aspectratio>stretch</aspectratio>
-			<animation effect="fade" end="83" condition="true">Conditional</animation>
+			<colordiffuse>D3FFFFFF</colordiffuse>
 		</control>	
 	</include>
 	
@@ -100,7 +100,7 @@
 			<width>ScreenWidth</width>
 			<height>43</height>
 			<texture>gui/bottom-bar-overlay.png</texture>
-			<animation effect="fade" end="68" condition="true">Conditional</animation>
+			<colordiffuse>ADFFFFFF</colordiffuse>
 		</control>
 	</include>
 
@@ -536,7 +536,7 @@
 			 <include>BackgroundSize</include>
 			 <texture>views/fanart-dim.png</texture>
 			 <include>MediaViewOpenCloseAnim</include>
-			 <animation effect="fade" end="60" condition="true">Conditional</animation>
+			 <colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include> 
 

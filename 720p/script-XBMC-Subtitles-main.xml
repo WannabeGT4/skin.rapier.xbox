@@ -114,7 +114,7 @@
 						<height>15</height>
 						<texture>xbmcsubtitles/icon_sync.png</texture>
 						<visible>!ListItem.property(sync)</visible>
-						<animation effect="fade" end="10" condition="true">Conditional</animation>
+						<colordiffuse>19FFFFFF</colordiffuse>
 					</control>  
 					<control type="label">
 						<posx>183</posx>
@@ -181,7 +181,7 @@
 							<height>15</height>
 							<texture>xbmcsubtitles/icon_sync.png</texture>
 							<visible>!ListItem.property(sync)</visible>
-							<animation effect="fade" end="10" condition="true">Conditional</animation>
+							<colordiffuse>19FFFFFF</colordiffuse>
 						</control>   
 						<control type="label">
 							<posx>183</posx>

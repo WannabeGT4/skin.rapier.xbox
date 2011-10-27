@@ -7,7 +7,7 @@
 			<height>22</height>
 			<texture>xbmc-logo.png</texture>
 			<aspectratio>stretch</aspectratio>
-			<animation effect="fade" end="75" condition="true">Conditional</animation>
+			<colordiffuse>BFFFFFFF</colordiffuse>
 		</control>
 	</include>	
 	
@@ -28,7 +28,7 @@
 			<height>114</height>
 			<texture border="0,8,0,0">gui/home-menu-bar-background.png</texture>
 			<aspectratio>stretch</aspectratio>
-			<animation effect="fade" end="85" condition="true">Conditional</animation>
+			<colordiffuse>D8FFFFFF</colordiffuse>
 		</control>
 
 		<control type="image">
@@ -36,7 +36,7 @@
 			<width>ScreenWidth</width>
 			<height>8</height>
 			<texture>gui/bottom-bar-top.png</texture>
-			<animation effect="fade" end="30" condition="true">Conditional</animation> 
+			<colordiffuse>4CFFFFFF</colordiffuse> 
 		</control>
 	</include>
 
@@ -46,7 +46,7 @@
 			<width>ScreenWidth</width>
 			<height>112</height>
 			<texture>gui/bottom-bar-overlay.png</texture>
-			<animation effect="fade" end="68" condition="true">Conditional</animation>
+			<colordiffuse>ADFFFFFF</colordiffuse>
 		</control>	
 	</include>
 	

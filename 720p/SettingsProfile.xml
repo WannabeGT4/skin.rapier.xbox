@@ -57,7 +57,7 @@
 						<height>185</height>
 						<texture border="4">views/list-focus.png</texture>
 						<aspectratio>stretch</aspectratio>
-						<animation effect="fade" end="60" condition="true">Conditional</animation>
+						<colordiffuse>99FFFFFF</colordiffuse>
 					</control>	
 					<control type="image">
 						<description>Cover</description>

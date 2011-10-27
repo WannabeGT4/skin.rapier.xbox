@@ -30,7 +30,7 @@
 				<bordersize>50</bordersize>
 				<aspectratio>keep</aspectratio>
 				<visible>Container.Content(Albums) + IsEmpty(ListItem.Thumb)</visible>
-				<animation effect="fade" end="60" condition="true">Conditional</animation>
+				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>
 
 			<control type="image">
@@ -53,7 +53,7 @@
 				<bordersize>50</bordersize>
 				<aspectratio>keep</aspectratio>
 				<visible>Container.Content(Artists) + IsEmpty(ListItem.Thumb)</visible>
-				<animation effect="fade" end="60" condition="true">Conditional</animation>
+				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>
 		</control>
 	

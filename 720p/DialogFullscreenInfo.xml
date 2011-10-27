@@ -76,7 +76,7 @@
 							<height>32</height>		
 							<texture>$INFO[Player.StarRating]</texture>
 							<aspectratio align="left">keep</aspectratio>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 					</control>
 					
@@ -171,7 +171,7 @@
 							<height>32</height>		
 							<texture>$INFO[Player.StarRating]</texture>
 							<aspectratio align="left">keep</aspectratio>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 					</control>
 					
@@ -277,7 +277,7 @@
 							<height>32</height>		
 							<texture>$INFO[Player.StarRating]</texture>
 							<aspectratio align="left">keep</aspectratio>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 					</control>
 					

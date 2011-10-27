@@ -26,7 +26,7 @@
 						<height>127</height>	
 						<texture border="7">covers/cover-case-nofocus.png</texture>
 						<aspectratio>stretch</aspectratio>
-						<animation effect="fade" end="60" condition="true">Conditional</animation>
+						<colordiffuse>99FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
 						<posy>10</posy>
@@ -35,7 +35,7 @@
 						<bordersize>20</bordersize>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<visible>IsEmpty(ListItem.Title)</visible>
-						<animation effect="fade" end="60" condition="true">Conditional</animation>
+						<colordiffuse>99FFFFFF</colordiffuse>
 					</control>
 					<control type="group">
 						<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(EnableWideIconTVShowsLogo)</visible>
@@ -65,7 +65,7 @@
 							<bordersize>20</bordersize>
 							<texture background="true">tv/$INFO[ListItem.Icon]</texture>
 							<visible>IsEmpty(ListItem.Thumb)</visible>
-							<animation effect="fade" end="60" condition="true">Conditional</animation>
+							<colordiffuse>99FFFFFF</colordiffuse>
 						</control>
 						<control type="image">
 							<description>Overlay</description>
@@ -76,7 +76,7 @@
 							<texture background="true">$INFO[ListItem.Overlay]</texture>
 							<aspectratio align="right">keep</aspectratio>
 							<visible>!Skin.HasSetting(HideTVShowsWideIconOverlay)</visible>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 					</control>
 					<control type="group">
@@ -98,7 +98,7 @@
 							<texture background="true">$INFO[ListItem.Overlay]</texture>
 							<aspectratio align="right">keep</aspectratio>
 							<visible>!Skin.HasSetting(HideTVShowsWideIconOverlay)</visible>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 					</control>
 				</itemlayout>															
@@ -157,7 +157,7 @@
 							<texture background="true">$INFO[ListItem.Overlay]</texture>
 							<aspectratio align="right">keep</aspectratio>
 							<visible>!Skin.HasSetting(HideTVShowsWideIconOverlay)</visible>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 					</control>
 					<control type="group">
@@ -179,7 +179,7 @@
 							<texture background="true">$INFO[ListItem.Overlay]</texture>
 							<aspectratio align="right">keep</aspectratio>
 							<visible>!Skin.HasSetting(HideTVShowsWideIconOverlay)</visible>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 					</control>	
 				</focusedlayout>			
@@ -290,7 +290,7 @@
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>IsEmpty(ListItem.Title)</visible>
-				<animation effect="fade" end="40" condition="true">Conditional</animation>
+				<colordiffuse>66FFFFFF</colordiffuse>
 			</control>	
 			<control type="group">
 				<visible>!IsEmpty(ListItem.Title)</visible>
@@ -335,7 +335,7 @@
 					<texture background="true">tv/$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>IsEmpty(ListItem.Thumb)</visible>
-					<animation effect="fade" end="40" condition="true">Conditional</animation>
+					<colordiffuse>66FFFFFF</colordiffuse>
 				</control>	
 				<control type="label">
 					<description>Label</description>
@@ -372,7 +372,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
 					<description>Genre</description>
@@ -409,7 +409,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsWideListOverlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</control>
 		</itemlayout>
@@ -430,7 +430,7 @@
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>IsEmpty(ListItem.Title)</visible>
-				<animation effect="fade" end="40" condition="true">Conditional</animation>
+				<colordiffuse>66FFFFFF</colordiffuse>
 			</control>	
 			<control type="group">
 				<visible>!IsEmpty(ListItem.Title)</visible>
@@ -479,7 +479,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
 					<description>Genre</description>
@@ -516,7 +516,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsWideListOverlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</control>
 		</itemlayout>		
@@ -628,7 +628,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
 					<description>Genre</description>
@@ -665,7 +665,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsWideListOverlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</control>
 		</focusedlayout>
@@ -755,7 +755,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
 					<description>Genre</description>
@@ -792,7 +792,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsWideListOverlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</control>
 		</focusedlayout>		
@@ -817,7 +817,7 @@
 				<texture background="true">tv/$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>IsEmpty(ListItem.Thumb)</visible>
-				<animation effect="fade" end="40" condition="true">Conditional</animation>
+				<colordiffuse>66FFFFFF</colordiffuse>
 			</control>	
 			<control type="group">
 				<visible>!IsEmpty(ListItem.Title)</visible>
@@ -862,7 +862,7 @@
 					<texture background="true">tv/$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>IsEmpty(ListItem.Thumb)</visible>
-					<animation effect="fade" end="40" condition="true">Conditional</animation>
+					<colordiffuse>66FFFFFF</colordiffuse>
 				</control>									
 				<control type="label">
 					<description>Label</description>
@@ -885,7 +885,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="left">keep</aspectratio>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
 					<description>Rating</description>
@@ -953,7 +953,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsWideListOverlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</control>
 		</itemlayout>		
@@ -1052,7 +1052,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="left">keep</aspectratio>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="label">
 					<description>Rating</description>
@@ -1120,7 +1120,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsWideListOverlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</control>
 		</focusedlayout>		
@@ -1211,7 +1211,7 @@
 						<texture background="true">$INFO[ListItem.StarRating]</texture>
 						<aspectratio align="right">keep</aspectratio>
 						<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-						<animation effect="fade" end="70" condition="true">Conditional</animation>	
+						<colordiffuse>B2FFFFFF</colordiffuse>	
 					</control>
 					<control type="image">
 						<description>Overlay</description>
@@ -1297,7 +1297,7 @@
 							<texture background="true">$INFO[ListItem.StarRating]</texture>
 							<aspectratio align="right">keep</aspectratio>
 							<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-							<animation effect="fade" end="70" condition="true">Conditional</animation>
+							<colordiffuse>B2FFFFFF</colordiffuse>
 						</control>
 						<control type="image">
 							<description>Overlay</description>
@@ -1355,7 +1355,7 @@
 					<texture border="4">covers/cover-case2.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<animation effect="fade" end="60" condition="true">Conditional</animation>
+					<colordiffuse>99FFFFFF</colordiffuse>
 				</control>	
 				
 				<control type="image">
@@ -1369,7 +1369,7 @@
 					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<visible>IsEmpty(ListItem.Thumb)</visible>
-					<animation effect="fade" end="60" condition="true">Conditional</animation>
+					<colordiffuse>99FFFFFF</colordiffuse>
 				</control>		
 					
 				<control type="image">
@@ -1528,7 +1528,7 @@
 				<texture border="4">covers/cover-case2.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<animation effect="fade" end="60" condition="true">Conditional</animation>
+				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>	
 			
 			<control type="image">
@@ -1542,7 +1542,7 @@
 				<aspectratio>keep</aspectratio>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>IsEmpty(ListItem.Thumb)</visible>
-				<animation effect="fade" end="60" condition="true">Conditional</animation>
+				<colordiffuse>99FFFFFF</colordiffuse>
 			</control>	
 			
 			<control type="image">
@@ -1695,7 +1695,7 @@
 						<width>554</width>
 						<height>373</height>
 						<texture border="4">panels/panel2.png</texture>
-						<animation effect="fade" end="20" condition="true">Conditional</animation>
+						<colordiffuse>33FFFFFF</colordiffuse>
 					</control>
 					
 					<control type="image">
@@ -1704,7 +1704,7 @@
 						<height>310</height>
 						<texture border="4">covers/cover-case2.png</texture>
 						<bordersize>1</bordersize>
-						<animation effect="fade" end="50" condition="true">Conditional</animation>
+						<colordiffuse>7FFFFFFF</colordiffuse>
 					</control>
 					
 					<control type="largeimage">
@@ -1959,7 +1959,7 @@
 				<texture background="true">$INFO[ListItem.StarRating]</texture>
 				<aspectratio align="right">keep</aspectratio>
 				<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-				<animation effect="fade" end="70" condition="true">Conditional</animation>
+				<colordiffuse>B2FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
 				<description>Overlay</description>
@@ -2048,7 +2048,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<description>Overlay</description>
@@ -2105,7 +2105,7 @@
 				<texture background="true">tv/$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>IsEmpty(ListItem.Thumb)</visible>
-				<animation effect="fade" end="40" condition="true">Conditional</animation>
+				<colordiffuse>66FFFFFF</colordiffuse>
 			</control>								
 			<control type="label">
 				<description>Label</description>
@@ -2151,7 +2151,7 @@
 				<texture background="true">$INFO[ListItem.StarRating]</texture>
 				<aspectratio align="right">keep</aspectratio>
 				<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-				<animation effect="fade" end="70" condition="true">Conditional</animation>
+				<colordiffuse>B2FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
 				<description>Overlay</description>
@@ -2267,7 +2267,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<description>Overlay</description>
@@ -2303,7 +2303,7 @@
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>IsEmpty(ListItem.Title)</visible>
-				<animation effect="fade" end="40" condition="true">Conditional</animation>
+				<colordiffuse>66FFFFFF</colordiffuse>
 			</control>
 			<control type="group">
 				<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(EnableListInfo2TVShowsLogo)</visible>
@@ -2337,7 +2337,7 @@
 					<texture background="true">tv/$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>IsEmpty(ListItem.Thumb)</visible>
-					<animation effect="fade" end="40" condition="true">Conditional</animation>
+					<colordiffuse>66FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<description>Star Rating</description>
@@ -2348,7 +2348,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<description>Overlay</description>
@@ -2359,7 +2359,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsListInfo2Overlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>	
 			</control>
 			<control type="group">
@@ -2382,7 +2382,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<description>Overlay</description>
@@ -2393,7 +2393,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsListInfo2Overlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</control>
 		</itemlayout>	
@@ -2469,7 +2469,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<description>Overlay</description>
@@ -2480,7 +2480,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsListInfo2Overlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</control>
 			<control type="group">
@@ -2504,7 +2504,7 @@
 					<texture background="true">$INFO[ListItem.StarRating]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(DoNotUseStarRatingTVShows)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<description>Overlay</description>
@@ -2515,7 +2515,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsListInfo2Overlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>
 			</control>
 		</focusedlayout>					
@@ -2551,7 +2551,7 @@
 						<width>400</width>
 						<height>286</height>
 						<texture border="4">panels/panel2.png</texture>
-						<animation effect="fade" end="20" condition="true">Conditional</animation>
+						<colordiffuse>33FFFFFF</colordiffuse>
 					</control>
 					
 					<control type="image">
@@ -2560,7 +2560,7 @@
 						<height>225</height>
 						<texture border="4">covers/cover-case2.png</texture>
 						<bordersize>1</bordersize>
-						<animation effect="fade" end="50" condition="true">Conditional</animation>
+						<colordiffuse>7FFFFFFF</colordiffuse>
 					</control>
 					
 					<control type="largeimage">
@@ -2789,7 +2789,7 @@
 					<texture background="true" border="4">covers/cover-case2.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<bordersize>6</bordersize>
-					<animation effect="fade" end="50" condition="true">Conditional</animation>
+					<colordiffuse>7FFFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<description>Cover</description>
@@ -2817,7 +2817,7 @@
 					<texture background="true">tv/$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>IsEmpty(ListItem.Thumb)</visible>
-					<animation effect="fade" end="50" condition="true">Conditional</animation>
+					<colordiffuse>7FFFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<description>Overlay</description>
@@ -2828,7 +2828,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio>stretch</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsThumbsInfoOverlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>	
 			</itemlayout>
 			<focusedlayout width="129" height="172" condition="!IsEmpty(ListItem.Thumb) + Container.Column(0) + Container.Row(0)">
@@ -2958,7 +2958,7 @@
 					<texture background="true" border="4">covers/cover-case2.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<bordersize>6</bordersize>
-					<animation effect="fade" end="50" condition="true">Conditional</animation>
+					<colordiffuse>7FFFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<description>Cover</description>
@@ -2975,7 +2975,7 @@
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<bordersize>20</bordersize>
-					<animation effect="fade" end="50" condition="true">Conditional</animation>
+					<colordiffuse>7FFFFFFF</colordiffuse>
 					<visible>IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="image">
@@ -2987,7 +2987,7 @@
 					<texture background="true">$INFO[ListItem.Overlay]</texture>
 					<aspectratio>stretch</aspectratio>
 					<visible>!Skin.HasSetting(HideTVShowsThumbsInfoOverlay)</visible>
-					<animation effect="fade" end="70" condition="true">Conditional</animation>
+					<colordiffuse>B2FFFFFF</colordiffuse>
 				</control>	
 			</itemlayout>
 			<focusedlayout condition="IsEmpty(ListItem.Title)" width="129" height="129">

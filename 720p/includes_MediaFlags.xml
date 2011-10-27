@@ -659,7 +659,7 @@
 				<height>41</height>
 				<aspectratio>keep</aspectratio>
 				<texture>studios/$INFO[ListItem.Studio].png</texture>
-				<animation effect="fade" end="50" condition="true">Conditional</animation>
+				<colordiffuse>7FFFFFFF</colordiffuse>
 			</control>
 		</control>
 	</include>
@@ -1324,7 +1324,7 @@
 				<height>41</height>
 				<aspectratio>keep</aspectratio>
 				<texture>studios/$INFO[ListItem.Studio].png</texture>
-				<animation effect="fade" end="50" condition="true">Conditional</animation>
+				<colordiffuse>7FFFFFFF</colordiffuse>
 			</control>
 		</control>
 	</include>

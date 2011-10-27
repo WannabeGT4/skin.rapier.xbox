@@ -119,11 +119,11 @@
 	</include>
 		
 	<include name="StatusIconFadeAnim">
-		<animation effect="fade" end="45" condition="true">conditional</animation>
+		<colordiffuse>72FFFFFF</colordiffuse>
 	</include>
 	
 	<include name="StatusIconBGFadeAnim">
-		<animation effect="fade" end="45" condition="true">conditional</animation>
+		<colordiffuse>72FFFFFF</colordiffuse>
 	</include>
 	
 	<include name="MenuBarOpenCloseAnim">		
@@ -365,23 +365,23 @@
 	</include>
 	
 	<include name="WideListHeaderFadeAnim">
-		<animation effect="fade" end="60" condition="true">Conditional</animation>
+		<colordiffuse>99FFFFFF</colordiffuse>
 	</include>
 	
 	<include name="ListViewSelectFadeAnim">
-		<animation effect="fade" end="60" condition="true">Conditional</animation>
+		<colordiffuse>99FFFFFF</colordiffuse>
 	</include>
 	
 	<include name="ListViewSelectFadeAnim2">
-		<animation effect="fade" end="20" condition="true">Conditional</animation>
+		<colordiffuse>33FFFFFF</colordiffuse>
 	</include>
 	
 	<include name="ListViewIconFadeAnim">
-		<animation effect="fade" end="80" condition="true">Conditional</animation>
+		<colordiffuse>CCFFFFFF</colordiffuse>
 	</include>
 	
 	<include name="ListViewOverlayFadeAnim">
-		<animation effect="fade" end="80" condition="true">Conditional</animation>
+		<colordiffuse>CCFFFFFF</colordiffuse>
 	</include>
 	
 	<include name="MediaInfoListScrollAnim">
@@ -425,7 +425,7 @@
 	</include>
 	
 	<include name="CoverDimAnim">
-		<animation effect="fade" end="25" condition="true">Conditional</animation>
+		<colordiffuse>3FFFFFFF</colordiffuse>
 	</include>
 	
 	<include name="WrapListInfoCoverGlowScrollAnim">
@@ -476,7 +476,7 @@
 	</include>
 	
 	<include name="MediaFlagFadeAnim">
-		<animation effect="fade" end="70" condition="true">Conditional</animation>
+		<colordiffuse>B2FFFFFF</colordiffuse>
 	</include>
 	
 	<include name="MoviesWallViewTopLeftCornerFocusAnim">
@@ -780,6 +780,6 @@
 	</include>
 	
 	<include name="PanelFadeAnim">
-		<animation effect="fade" end="60" condition="true">Conditional</animation>
+		<colordiffuse>99FFFFFF</colordiffuse>
 	</include>
 </includes>
