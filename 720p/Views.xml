@@ -72,8 +72,13 @@
 		<control type="image">
 			<width>160</width>
 			<height>225</height>
+			<texture>covers/cover-case-thumbnail-focus.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="image">
+			<width>160</width>
+			<height>225</height>
 			<bordersize>10</bordersize>
-			<bordertexture border="7">covers/cover-case-focus.png</bordertexture>
 			<texture background="true">$INFO[ListItem.Thumb]</texture>
 			<aspectratio>stretch</aspectratio>
 		</control>
