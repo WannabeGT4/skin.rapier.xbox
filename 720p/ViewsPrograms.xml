@@ -2315,7 +2315,7 @@
 			<width>600</width>
 			<height>345</height>
 			<texture>views/cover-glow.png</texture>
-			<aspectratio aligny="bottom">center</aspectratio>
+			<aspectratio aligny="bottom">scale</aspectratio>
 			<visible>!Container.OnNext + !Container.OnPrevious</visible>
 			<include>WrapListInfoCoverGlowScrollAnim</include>
 		</control>
@@ -2620,7 +2620,7 @@
 			<width>744</width>
 			<height>415</height>
 			<texture>views/cover-glow.png</texture>
-			<aspectratio aligny="bottom">center</aspectratio>
+			<aspectratio aligny="bottom">scale</aspectratio>
 			<visible>!Container.OnNext + !Container.OnPrevious</visible>
 			<include>WrapListInfoCoverGlowScrollAnim2</include>
 		</control>
@@ -2963,7 +2963,7 @@
 			<width>600</width>
 			<height>345</height>
 			<texture>views/cover-glow.png</texture>
-			<aspectratio aligny="bottom">center</aspectratio>
+			<aspectratio aligny="bottom">scale</aspectratio>
 			<visible>!Container.OnNext + !Container.OnPrevious</visible>
 			<include>WrapListInfoCoverGlowScrollAnim</include>
 		</control>
@@ -3268,7 +3268,7 @@
 			<width>744</width>
 			<height>415</height>
 			<texture>views/cover-glow.png</texture>
-			<aspectratio aligny="bottom">center</aspectratio>
+			<aspectratio aligny="bottom">scale</aspectratio>
 			<visible>!Container.OnNext + !Container.OnPrevious</visible>
 			<include>WrapListInfoCoverGlowScrollAnim2</include>
 		</control>
@@ -3610,7 +3610,7 @@
 			<width>600</width>
 			<height>345</height>
 			<texture>views/cover-glow.png</texture>
-			<aspectratio aligny="bottom">center</aspectratio>
+			<aspectratio aligny="bottom">scale</aspectratio>
 			<visible>!Container.OnNext + !Container.OnPrevious</visible>
 			<include>WrapListInfoCoverGlowScrollAnim</include>
 		</control>
