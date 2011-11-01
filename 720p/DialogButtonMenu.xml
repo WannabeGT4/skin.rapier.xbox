@@ -24,18 +24,6 @@
 			<control type="image">
 				<width>344</width>
 				<height>37</height>
-				<texture border="40,2,40,2">gui/context-menu-middle.png</texture>	
-				<visible>System.CanSuspend</visible>
-			</control>
-			<control type="image">
-				<width>344</width>
-				<height>37</height>
-				<texture border="40,2,40,2">gui/context-menu-middle.png</texture>
-				<visible>System.CanHibernate</visible>	
-			</control>
-			<control type="image">
-				<width>344</width>
-				<height>37</height>
 				<texture border="40,2,40,2">gui/context-menu-middle.png</texture>
 				<visible>System.CanReboot</visible>
 			</control>
@@ -114,7 +102,7 @@
 				<onclick>AlarmClock(ShutdownTimer,Shutdown(),30)</onclick>	
 				<visible allowhiddenfocus="true">Control.HasFocus(202)</visible>
 				<onup>110</onup>
-				<ondown>100</ondown>
+				<ondown>102</ondown>
 				<onleft>201</onleft>
 				<onright>203</onright>
 			</control>
@@ -125,7 +113,7 @@
 				<onclick>AlarmClock(ShutdownTimer,Shutdown(),60)</onclick>
 				<visible allowhiddenfocus="true">Control.HasFocus(203)</visible>
 				<onup>110</onup>
-				<ondown>100</ondown>
+				<ondown>102</ondown>
 				<onleft>202</onleft>
 				<onright>204</onright>
 			</control>
@@ -136,7 +124,7 @@
 				<onclick>AlarmClock(ShutdownTimer,Shutdown(),120)</onclick>
 				<visible allowhiddenfocus="true">Control.HasFocus(204)</visible>
 				<onup>110</onup>
-				<ondown>100</ondown>
+				<ondown>102</ondown>
 				<onleft>203</onleft>
 				<onright>205</onright>
 			</control>
@@ -147,7 +135,7 @@
 				<onclick>AlarmClock(ShutdownTimer,Shutdown())</onclick>
 				<visible allowhiddenfocus="true">Control.HasFocus(205)</visible>
 				<onup>110</onup>
-				<ondown>100</ondown>
+				<ondown>102</ondown>
 				<onleft>204</onleft>
 				<onright>201</onright>
 			</control>
@@ -159,7 +147,7 @@
 				<onclick>Shutdown()</onclick>
 				<visible allowhiddenfocus="true">!Control.HasFocus(202) + !Control.HasFocus(203) + !Control.HasFocus(204) + !Control.HasFocus(205)</visible>
 				<onup>110</onup>
-				<ondown>100</ondown>
+				<ondown>102</ondown>
 				<onleft>205</onleft>
 				<onright>202</onright>	
 			</control>
@@ -190,22 +178,6 @@
 			<onup>201</onup>
 			<ondown>201</ondown>
 			<visible>System.LoggedOn</visible>
-			<control type="button" id="100">
-				<description>Suspend</description>
-				<include>ContextMenuBtn</include>
-				<label>$LOCALIZE[13011]</label>
-				<onclick>Dialog.Close(all,true)</onclick>
-				<onclick>Suspend()</onclick>
-				<visible>System.CanSuspend</visible>
-			</control>	
-			<control type="button" id="101">
-				<description>Hibernate</description>
-				<include>ContextMenuBtn</include>
-				<label>$LOCALIZE[13010]</label>
-				<onclick>Dialog.Close(all,true)</onclick>
-				<onclick>Hibernate()</onclick>
-				<visible>System.CanHibernate</visible>
-			</control>
 			<control type="button" id="102">
 				<description>Reboot</description>
 				<include>ContextMenuBtn</include>
@@ -281,10 +253,10 @@
 				<visible>Skin.HasSetting(HideSystemCategory)</visible>
 			</control>
 			<control type="button" id="113">
-				<description>Add-ons</description>
+				<description>Plugins</description>
 				<include>ContextMenuBtn</include>
 				<label>Plugins</label>
-				<onclick>ActivateWindow(AddonBrowser)</onclick>
+				<onclick>ActivateWindow(1)</onclick>
 				<visible>Skin.HasSetting(HideSystemCategory)</visible>
 			</control>
 		</control>
