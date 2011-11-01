@@ -213,9 +213,7 @@
 					<itemgap>15</itemgap>
 					<onup>938</onup>
 					<ondown>938</ondown>
-					<onleft>Skin.Reset(ExpandCategoryToggleSettings)</onleft>
-					<onleft>Skin.Reset(ExpandedSettings)</onleft>
-					<onleft>Control.SetFocus(2009)</onleft>
+					<onleft>1938</onleft>
 					<onright>2308</onright>
 					<include>ControlsOpenCloseAnim</include>
 					<control type="radiobutton" id="2301">
@@ -284,11 +282,16 @@
 					<onleft>938</onleft>
 				</control>
 				
-				<control type="button">
+				<control type="button" id="1938">
 					<description>Back</description>
 					<include>SettingsBackBtn</include>
+					<onright>938</onright>
+					<onleft>Skin.Reset(ExpandCategoryToggleSettings)</onleft>
+					<onleft>Skin.Reset(ExpandedSettings)</onleft>
+					<onleft>Control.SetFocus(2009)</onleft>
 					<onclick>Skin.Reset(ExpandCategoryToggleSettings)</onclick>
 					<onclick>Skin.Reset(ExpandedSettings)</onclick>
+					<onclick>Control.SetFocus(2009)</onclick>
 				</control>
 			</control>
 			
@@ -311,9 +314,7 @@
 					<itemgap>15</itemgap>
 					<onup>939</onup>
 					<ondown>939</ondown>
-					<onleft>Skin.Reset(ExpandAddMoreCategorySettings)</onleft>
-					<onleft>Skin.Reset(ExpandedSettings)</onleft>
-					<onleft>Control.SetFocus(2010)</onleft>
+					<onleft>1939</onleft>
 					<onright>920</onright>
 					<include>ControlsOpenCloseAnim</include>
 					<control type="radiobutton" id="2301">
@@ -816,11 +817,16 @@
 					</control>
 				</control>
 				
-				<control type="button">
+				<control type="button" id="1939">
 					<description>Back</description>
 					<include>SettingsBackBtn</include>
+					<onright>939</onright>
+					<onleft>Skin.Reset(ExpandAddMoreCategorySettings)</onleft>
+					<onleft>Skin.Reset(ExpandedSettings)</onleft>
+					<onleft>Control.SetFocus(2010)</onleft>
 					<onclick>Skin.Reset(ExpandAddMoreCategorySettings)</onclick>
 					<onclick>Skin.Reset(ExpandedSettings)</onclick>
+					<onclick>Control.SetFocus(2010)</onclick>
 				</control>
 			</control>
 			
@@ -843,9 +849,7 @@
 					<itemgap>15</itemgap>
 					<onup>940</onup>
 					<ondown>940</ondown>
-					<onleft>Skin.Reset(ExpandAddMoreCategorySettings2)</onleft>
-					<onleft>Skin.Reset(ExpandedSettings)</onleft>
-					<onleft>Control.SetFocus(2023)</onleft>
+					<onleft>1940</onleft>
 					<onright>920</onright>
 					<include>ControlsOpenCloseAnim</include>
 					<control type="radiobutton" id="2301">
@@ -1348,11 +1352,16 @@
 					</control>
 				</control>
 				
-				<control type="button">
+				<control type="button" id="1940">
 					<description>Back</description>
 					<include>SettingsBackBtn</include>
+					<onright>940</onright>
+					<onleft>Skin.Reset(ExpandAddMoreCategorySettings2)</onleft>
+					<onleft>Skin.Reset(ExpandedSettings)</onleft>
+					<onleft>Control.SetFocus(2023)</onleft>
 					<onclick>Skin.Reset(ExpandAddMoreCategorySettings2)</onclick>
 					<onclick>Skin.Reset(ExpandedSettings)</onclick>
+					<onclick>Control.SetFocus(2023)</onclick>
 				</control>
 			</control>
 			
@@ -1375,9 +1384,7 @@
 					<itemgap>15</itemgap>
 					<onup>931</onup>
 					<ondown>931</ondown>
-					<onleft>Skin.Reset(ExpandMusicSubMenuSettings)</onleft>
-					<onleft>Skin.Reset(ExpandedSettings)</onleft>
-					<onleft>Control.SetFocus(2001)</onleft>
+					<onleft>1931</onleft>
 					<onright>920</onright>
 					<include>ControlsOpenCloseAnim</include>
 					<control type="radiobutton" id="2301">
@@ -2186,12 +2193,16 @@
 						</control>
 					</control>
 				</control>
-				
-				<control type="button">
+				<control type="button" id="1931">
 					<description>Back</description>
 					<include>SettingsBackBtn</include>
+					<onright>931</onright>
+					<onleft>Skin.Reset(ExpandMusicSubMenuSettings)</onleft>
+					<onleft>Skin.Reset(ExpandedSettings)</onleft>
+					<onleft>Control.SetFocus(2001)</onleft>
 					<onclick>Skin.Reset(ExpandMusicSubMenuSettings)</onclick>
 					<onclick>Skin.Reset(ExpandedSettings)</onclick>
+					<onclick>Control.SetFocus(2001)</onclick>
 				</control>
 			</control>
 			
@@ -2214,9 +2225,7 @@
 					<itemgap>15</itemgap>
 					<onup>932</onup>
 					<ondown>932</ondown>
-					<onleft>Skin.Reset(ExpandVideosSubMenuSettings)</onleft>
-					<onleft>Skin.Reset(ExpandedSettings)</onleft>
-					<onleft>Control.SetFocus(2002)</onleft>
+					<onleft>1932</onleft>
 					<onright>920</onright>
 					<include>ControlsOpenCloseAnim</include>
 					<control type="radiobutton" id="2301">
@@ -3026,11 +3035,16 @@
 					</control>
 				</control>
 				
-				<control type="button">
+				<control type="button" id="1932">
 					<description>Back</description>
 					<include>SettingsBackBtn</include>
+					<onright>932</onright>
+					<onleft>Skin.Reset(ExpandVideosSubMenuSettings)</onleft>
+					<onleft>Skin.Reset(ExpandedSettings)</onleft>
+					<onleft>Control.SetFocus(2002)</onleft>
 					<onclick>Skin.Reset(ExpandVideosSubMenuSettings)</onclick>
 					<onclick>Skin.Reset(ExpandedSettings)</onclick>
+					<onclick>Control.SetFocus(2002)</onclick>
 				</control>
 			</control>
 			
@@ -3053,9 +3067,7 @@
 					<itemgap>15</itemgap>
 					<onup>933</onup>
 					<ondown>933</ondown>
-					<onleft>Skin.Reset(ExpandMoviesSubMenuSettings)</onleft>
-					<onleft>Skin.Reset(ExpandedSettings)</onleft>
-					<onleft>Control.SetFocus(2003)</onleft>
+					<onleft>1933</onleft>
 					<onright>920</onright>
 					<include>ControlsOpenCloseAnim</include>
 					<control type="radiobutton" id="2301">
@@ -3865,11 +3877,16 @@
 					</control>
 				</control>
 				
-				<control type="button">
+				<control type="button" id="1933">
 					<description>Back</description>
 					<include>SettingsBackBtn</include>
+					<onright>933</onright>
+					<onleft>Skin.Reset(ExpandMoviesSubMenuSettings)</onleft>
+					<onleft>Skin.Reset(ExpandedSettings)</onleft>
+					<onleft>Control.SetFocus(2003)</onleft>
 					<onclick>Skin.Reset(ExpandMoviesSubMenuSettings)</onclick>
 					<onclick>Skin.Reset(ExpandedSettings)</onclick>
+					<onclick>Control.SetFocus(2003)</onclick>
 				</control>
 			</control>
 			
@@ -3892,9 +3909,7 @@
 					<itemgap>15</itemgap>
 					<onup>934</onup>
 					<ondown>934</ondown>
-					<onleft>Skin.Reset(ExpandTVShowsSubMenuSettings)</onleft>
-					<onleft>Skin.Reset(ExpandedSettings)</onleft>
-					<onleft>Control.SetFocus(2004)</onleft>
+					<onleft>1934</onleft>
 					<onright>920</onright>
 					<include>ControlsOpenCloseAnim</include>
 					<control type="radiobutton" id="2301">
@@ -4704,11 +4719,16 @@
 					</control>
 				</control>
 				
-				<control type="button">
+				<control type="button" id="1934">
 					<description>Back</description>
 					<include>SettingsBackBtn</include>
+					<onright>934</onright>
+					<onleft>Skin.Reset(ExpandTVShowsSubMenuSettings)</onleft>
+					<onleft>Skin.Reset(ExpandedSettings)</onleft>
+					<onleft>Control.SetFocus(2004)</onleft>
 					<onclick>Skin.Reset(ExpandTVShowsSubMenuSettings)</onclick>
 					<onclick>Skin.Reset(ExpandedSettings)</onclick>
+					<onclick>Control.SetFocus(2004)</onclick>
 				</control>
 			</control>
 			
@@ -4731,9 +4751,7 @@
 					<itemgap>15</itemgap>
 					<onup>935</onup>
 					<ondown>935</ondown>
-					<onleft>Skin.Reset(ExpandProgramsSubMenuSettings)</onleft>
-					<onleft>Skin.Reset(ExpandedSettings)</onleft>
-					<onleft>Control.SetFocus(2005)</onleft>
+					<onleft>1935</onleft>
 					<onright>920</onright>
 					<include>ControlsOpenCloseAnim</include>
 					<control type="radiobutton" id="2301">
@@ -5543,11 +5561,16 @@
 					</control>
 				</control>
 				
-				<control type="button">
+				<control type="button" id="1935">
 					<description>Back</description>
 					<include>SettingsBackBtn</include>
+					<onright>935</onright>
+					<onleft>Skin.Reset(ExpandProgramsSubMenuSettings)</onleft>
+					<onleft>Skin.Reset(ExpandedSettings)</onleft>
+					<onleft>Control.SetFocus(2005)</onleft>
 					<onclick>Skin.Reset(ExpandProgramsSubMenuSettings)</onclick>
 					<onclick>Skin.Reset(ExpandedSettings)</onclick>
+					<onclick>Control.SetFocus(2005)</onclick>
 				</control>
 			</control>
 			
@@ -5570,9 +5593,7 @@
 					<itemgap>15</itemgap>
 					<onup>936</onup>
 					<ondown>936</ondown>
-					<onleft>Skin.Reset(ExpandPicturesSubMenuSettings)</onleft>
-					<onleft>Skin.Reset(ExpandedSettings)</onleft>
-					<onleft>Control.SetFocus(2006)</onleft>
+					<onleft>1936</onleft>
 					<onright>920</onright>
 					<include>ControlsOpenCloseAnim</include>
 					<control type="radiobutton" id="2301">
@@ -6382,11 +6403,16 @@
 					</control>
 				</control>
 				
-				<control type="button">
+				<control type="button" id="1936">
 					<description>Back</description>
 					<include>SettingsBackBtn</include>
+					<onright>936</onright>
+					<onleft>Skin.Reset(ExpandPicturesSubMenuSettings)</onleft>
+					<onleft>Skin.Reset(ExpandedSettings)</onleft>
+					<onleft>Control.SetFocus(2006)</onleft>
 					<onclick>Skin.Reset(ExpandPicturesSubMenuSettings)</onclick>
 					<onclick>Skin.Reset(ExpandedSettings)</onclick>
+					<onclick>Control.SetFocus(2006)</onclick>
 				</control>
 			</control>
 			
@@ -6409,9 +6435,7 @@
 					<itemgap>15</itemgap>
 					<onup>937</onup>
 					<ondown>937</ondown>
-					<onleft>Skin.Reset(ExpandGeneralSubMenuSettings)</onleft>
-					<onleft>Skin.Reset(ExpandedSettings)</onleft>
-					<onleft>Control.SetFocus(2007)</onleft>
+					<onleft>1937</onleft>
 					<onright>920</onright>
 					<include>ControlsOpenCloseAnim</include>
 					<control type="radiobutton" id="2301">
@@ -7221,11 +7245,16 @@
 					</control>
 				</control>
 				
-				<control type="button">
+				<control type="button" id="1937">
 					<description>Back</description>
 					<include>SettingsBackBtn</include>
+					<onright>937</onright>
+					<onleft>Skin.Reset(ExpandGeneralSubMenuSettings)</onleft>
+					<onleft>Skin.Reset(ExpandedSettings)</onleft>
+					<onleft>Control.SetFocus(2007)</onleft>
 					<onclick>Skin.Reset(ExpandGeneralSubMenuSettings)</onclick>
 					<onclick>Skin.Reset(ExpandedSettings)</onclick>
+					<onclick>Control.SetFocus(2007)</onclick>
 				</control>
 			</control>
 			
@@ -7249,9 +7278,7 @@
 					<itemgap>0</itemgap>
 					<onup>940</onup>
 					<ondown>940</ondown>
-					<onleft>Skin.Reset(ExpandCustomCategoryIconsSettings)</onleft>
-					<onleft>Skin.Reset(ExpandedSettings)</onleft>
-					<onleft>Control.SetFocus(2013)</onleft>
+					<onleft>1940</onleft>
 					<onright>-</onright>
 					<include>ControlsOpenCloseAnim</include>
 					<control type="button" id="2301">
@@ -7375,11 +7402,16 @@
 					<label>$LOCALIZE[31085]</label>
 				</control>
 				
-				<control type="button">
+				<control type="button" id="1940">
 					<description>Back</description>
 					<include>SettingsBackBtn</include>
+					<onright>940</onright>
+					<onleft>Skin.Reset(ExpandCustomCategoryIconsSettings)</onleft>
+					<onleft>Skin.Reset(ExpandedSettings)</onleft>
+					<onleft>Control.SetFocus(2013)</onleft>
 					<onclick>Skin.Reset(ExpandCustomCategoryIconsSettings)</onclick>
 					<onclick>Skin.Reset(ExpandedSettings)</onclick>
+					<onclick>Control.SetFocus(2013)</onclick>
 				</control>
 			</control>
 		</control>
