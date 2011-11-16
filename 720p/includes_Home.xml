@@ -301,7 +301,7 @@
 	<include name="HomeCustomCategory1">
 		<item id="7">
 			<label>-</label>
-			<icon fallback="homecategories/custom1-text-nofocus.png">$INFO[Skin.String(Custom1NoFocusImagePath)]</icon>
+			<icon fallback="special://skin/media/homecategories/custom1-text-nofocus.png">$INFO[Skin.String(Custom1NoFocusImagePath)]</icon>
 			<thumb>$INFO[Skin.String(Custom1BackgroundImagePath)]</thumb>
 			<onclick>$INFO[Skin.String(Custom1BtnParam)]</onclick>
 		</item>
@@ -310,7 +310,7 @@
 	<include name="HomeCustomCategory2">
 		<item id="8">
 			<label>-</label>
-			<icon fallback="homecategories/custom2-text-nofocus.png">$INFO[Skin.String(Custom2NoFocusImagePath)]</icon>
+			<icon fallback="special://skin/media/homecategories/custom2-text-nofocus.png">$INFO[Skin.String(Custom2NoFocusImagePath)]</icon>
 			<thumb>$INFO[Skin.String(Custom2BackgroundImagePath)]</thumb>
 			<onclick>$INFO[Skin.String(Custom2BtnParam)]</onclick>
 		</item>
@@ -319,7 +319,7 @@
 	<include name="HomeCustomCategory3">
 		<item id="9">
 			<label>-</label>
-			<icon fallback="homecategories/custom3-text-nofocus.png">$INFO[Skin.String(Custom3NoFocusImagePath)]</icon>
+			<icon fallback="special://skin/media/homecategories/custom3-text-nofocus.png">$INFO[Skin.String(Custom3NoFocusImagePath)]</icon>
 			<thumb>$INFO[Skin.String(Custom3BackgroundImagePath)]</thumb>
 			<onclick>$INFO[Skin.String(Custom3BtnParam)]</onclick>
 		</item>
@@ -328,7 +328,7 @@
 	<include name="HomeCustomCategory4">
 		<item id="10">
 			<label>-</label>
-			<icon fallback="homecategories/custom4-text-nofocus.png">$INFO[Skin.String(Custom4NoFocusImagePath)]</icon>
+			<icon fallback="special://skin/media/homecategories/custom4-text-nofocus.png">$INFO[Skin.String(Custom4NoFocusImagePath)]</icon>
 			<thumb>$INFO[Skin.String(Custom4BackgroundImagePath)]</thumb>
 			<onclick>$INFO[Skin.String(Custom4BtnParam)]</onclick>
 		</item>
@@ -337,7 +337,7 @@
 	<include name="HomeCustomCategory5">
 		<item id="11">
 			<label>-</label>
-			<icon fallback="homecategories/custom5-text-nofocus.png">$INFO[Skin.String(Custom5NoFocusImagePath)]</icon>
+			<icon fallback="special://skin/media/homecategories/custom5-text-nofocus.png">$INFO[Skin.String(Custom5NoFocusImagePath)]</icon>
 			<thumb>$INFO[Skin.String(Custom5BackgroundImagePath)]</thumb>
 			<onclick>$INFO[Skin.String(Custom5BtnParam)]</onclick>
 		</item>
@@ -346,7 +346,7 @@
 	<include name="HomeCustomCategory6">
 		<item id="12">
 			<label>-</label>
-			<icon fallback="homecategories/custom6-text-nofocus.png">$INFO[Skin.String(Custom6NoFocusImagePath)]</icon>
+			<icon fallback="special://skin/media/homecategories/custom6-text-nofocus.png">$INFO[Skin.String(Custom6NoFocusImagePath)]</icon>
 			<thumb>$INFO[Skin.String(Custom6BackgroundImagePath)]</thumb>
 			<onclick>$INFO[Skin.String(Custom6BtnParam)]</onclick>
 		</item>
@@ -355,7 +355,7 @@
 	<include name="HomeCustomCategory7">
 		<item id="13">
 			<label>-</label>
-			<icon fallback="homecategories/custom7-text-nofocus.png">$INFO[Skin.String(Custom7NoFocusImagePath)]</icon>
+			<icon fallback="special://skin/media/homecategories/custom7-text-nofocus.png">$INFO[Skin.String(Custom7NoFocusImagePath)]</icon>
 			<thumb>$INFO[Skin.String(Custom7BackgroundImagePath)]</thumb>
 			<onclick>$INFO[Skin.String(Custom7BtnParam)]</onclick>
 		</item>
@@ -364,7 +364,7 @@
 	<include name="HomeCustomCategory8">
 		<item id="14">
 			<label>-</label>
-			<icon fallback="homecategories/custom8-text-nofocus.png">$INFO[Skin.String(Custom8NoFocusImagePath)]</icon>
+			<icon fallback="special://skin/media/homecategories/custom8-text-nofocus.png">$INFO[Skin.String(Custom8NoFocusImagePath)]</icon>
 			<thumb>$INFO[Skin.String(Custom8BackgroundImagePath)]</thumb>
 			<onclick>$INFO[Skin.String(Custom8BtnParam)]</onclick>
 		</item>
@@ -384,7 +384,7 @@
 	<include name="HomeCustomCategoryFocus1">
 		<control type="image">	
 			<include>HomeCategoryFocusImage</include>
-			<texture fallback="homecategories/custom1-text-focus.png">$INFO[Skin.String(Custom1FocusImagePath)]</texture>			
+			<texture fallback="special://skin/media/homecategories/custom1-text-focus.png">$INFO[Skin.String(Custom1FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(7)</visible>
 		</control>
 	</include>
@@ -392,7 +392,7 @@
 	<include name="HomeCustomCategoryFocus2">
 		<control type="image">	
 			<include>HomeCategoryFocusImage</include>
-			<texture fallback="homecategories/custom2-text-focus.png">$INFO[Skin.String(Custom2FocusImagePath)]</texture>			
+			<texture fallback="special://skin/media/homecategories/custom2-text-focus.png">$INFO[Skin.String(Custom2FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(8)</visible>
 		</control>
 	</include>
@@ -400,7 +400,7 @@
 	<include name="HomeCustomCategoryFocus3">
 		<control type="image">	
 			<include>HomeCategoryFocusImage</include>
-			<texture fallback="homecategories/custom3-text-focus.png">$INFO[Skin.String(Custom3FocusImagePath)]</texture>			
+			<texture fallback="special://skin/media/homecategories/custom3-text-focus.png">$INFO[Skin.String(Custom3FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(9)</visible>
 		</control>
 	</include>
@@ -408,7 +408,7 @@
 	<include name="HomeCustomCategoryFocus4">
 		<control type="image">	
 			<include>HomeCategoryFocusImage</include>
-			<texture fallback="homecategories/custom4-text-focus.png">$INFO[Skin.String(Custom4FocusImagePath)]</texture>			
+			<texture fallback="special://skin/media/homecategories/custom4-text-focus.png">$INFO[Skin.String(Custom4FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(10)</visible>
 		</control>
 	</include>
@@ -416,7 +416,7 @@
 	<include name="HomeCustomCategoryFocus5">
 		<control type="image">	
 			<include>HomeCategoryFocusImage</include>
-			<texture fallback="homecategories/custom5-text-focus.png">$INFO[Skin.String(Custom5FocusImagePath)]</texture>			
+			<texture fallback="special://skin/media/homecategories/custom5-text-focus.png">$INFO[Skin.String(Custom5FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(11)</visible>
 		</control>
 	</include>
@@ -424,7 +424,7 @@
 	<include name="HomeCustomCategoryFocus6">
 		<control type="image">	
 			<include>HomeCategoryFocusImage</include>
-			<texture fallback="homecategories/custom6-text-focus.png">$INFO[Skin.String(Custom6FocusImagePath)]</texture>			
+			<texture fallback="special://skin/media/homecategories/custom6-text-focus.png">$INFO[Skin.String(Custom6FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(12)</visible>
 		</control>
 	</include>
@@ -432,7 +432,7 @@
 	<include name="HomeCustomCategoryFocus7">
 		<control type="image">	
 			<include>HomeCategoryFocusImage</include>
-			<texture fallback="homecategories/custom7-text-focus.png">$INFO[Skin.String(Custom7FocusImagePath)]</texture>			
+			<texture fallback="special://skin/media/homecategories/custom7-text-focus.png">$INFO[Skin.String(Custom7FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(13)</visible>
 		</control>
 	</include>
@@ -440,7 +440,7 @@
 	<include name="HomeCustomCategoryFocus8">
 		<control type="image">	
 			<include>HomeCategoryFocusImage</include>
-			<texture fallback="homecategories/custom8-text-focus.png">$INFO[Skin.String(Custom8FocusImagePath)]</texture>			
+			<texture fallback="special://skin/media/homecategories/custom8-text-focus.png">$INFO[Skin.String(Custom8FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(14)</visible>
 		</control>
 	</include>
@@ -561,7 +561,7 @@
 				<item id="1">
 					<description>Music Category</description>
 					<label>music</label>
-					<icon>homecategories/$INFO[System.Language]/music-text-nofocus.png</icon>
+					<icon>special://skin/media/homecategories/$INFO[System.Language]/music-text-nofocus.png</icon>
 					<include condition="Skin.String(CustomMusicBGType,2) | Skin.String(CustomMusicBGType,3) | Skin.String(CustomMusicBGType,)">HomeMusicCustomBGPath</include>
 					<include condition="Skin.String(CustomMusicBGType,4)">HomeMusicFanartBGPath</include>
 					<onclick>ActivateWindow(Music)</onclick>
@@ -570,7 +570,7 @@
 				<item id="2">
 					<description>Videos Category</description>
 					<label>videos</label>
-					<icon>homecategories/$INFO[System.Language]/videos-text-nofocus.png</icon>
+					<icon>special://skin/media/homecategories/$INFO[System.Language]/videos-text-nofocus.png</icon>
 					<include condition="Skin.String(CustomVideosBGType,2) | Skin.String(CustomVideosBGType,3) | Skin.String(CustomVideosBGType,)">HomeVideosCustomBGPath</include>
 					<include condition="Skin.String(CustomVideosBGType,4)">HomeVideosFanartBGPath</include>
 					<onclick>ActivateWindow(VideoFiles)</onclick>	
@@ -579,7 +579,7 @@
 				<item id="3">
 					<description>Movies Category</description>
 					<label>movies</label>
-					<icon>homecategories/$INFO[System.Language]/movies-text-nofocus.png</icon>
+					<icon>special://skin/media/homecategories/$INFO[System.Language]/movies-text-nofocus.png</icon>
 					<include condition="Skin.String(CustomMoviesBGType,2) | Skin.String(CustomMoviesBGType,3) | Skin.String(CustomMoviesBGType,)">HomeMoviesCustomBGPath</include>
 					<include condition="Skin.String(CustomMoviesBGType,4)">HomeMoviesFanartBGPath</include>
 					<onclick>ActivateWindow(VideoLibrary,MovieTitles,Return)</onclick>  
@@ -588,7 +588,7 @@
 				<item id="4">
 					<description>TV Shows Category</description>
 					<label>tvshows</label>
-					<icon>homecategories/$INFO[System.Language]/tvshows-text-nofocus.png</icon>
+					<icon>special://skin/media/homecategories/$INFO[System.Language]/tvshows-text-nofocus.png</icon>
 					<include condition="Skin.String(CustomTVShowsBGType,2) | Skin.String(CustomTVShowsBGType,3) | Skin.String(CustomTVShowsBGType,)">HomeTVShowsCustomBGPath</include>
 					<include condition="Skin.String(CustomTVShowsBGType,4)">HomeTVShowsFanartBGPath</include>
 					<onclick>ActivateWindow(VideoLibrary,TVShowTitles,Return)</onclick>
@@ -597,7 +597,7 @@
 				<item id="5">
 					<description>Programs Category</description>
 					<label>programs</label>
-					<icon>homecategories/$INFO[System.Language]/programs-text-nofocus.png</icon>
+					<icon>special://skin/media/homecategories/$INFO[System.Language]/programs-text-nofocus.png</icon>
 					<include condition="Skin.String(CustomProgramsBGType,2) | Skin.String(CustomProgramsBGType,3) | Skin.String(CustomProgramsBGType,)">HomeProgramsCustomBGPath</include>
 					<onclick>ActivateWindow(Programs)</onclick>	
 					<visible>!Skin.HasSetting(HideProgramsCategory)</visible>
@@ -605,7 +605,7 @@
 				<item id="6">
 					<description>Pictures Category</description>
 					<label>pictures</label>
-					<icon>homecategories/$INFO[System.Language]/pictures-text-nofocus.png</icon>
+					<icon>special://skin/media/homecategories/$INFO[System.Language]/pictures-text-nofocus.png</icon>
 					<include condition="Skin.String(CustomPicturesBGType,2) | Skin.String(CustomPicturesBGType,3) | Skin.String(CustomPicturesBGType,)">HomePicturesCustomBGPath</include>
 					<onclick>ActivateWindow(Pictures)</onclick>
 					<visible>!Skin.HasSetting(HidePicturesCategory)</visible>
@@ -621,7 +621,7 @@
 				<item id="15">
 					<description>General Category</description>
 					<label>general</label>
-					<icon>homecategories/$INFO[System.Language]/general-text-nofocus.png</icon>
+					<icon>special://skin/media/homecategories/$INFO[System.Language]/general-text-nofocus.png</icon>
 					<include condition="Skin.String(CustomGeneralBGType,2) | Skin.String(CustomGeneralBGType,3) | Skin.String(CustomGeneralBGType,)">HomeGeneralCustomBGPath</include>
 					<onclick>ActivateWindow(Filemanager)</onclick>		
 					<visible>!Skin.HasSetting(HideGeneralCategory)</visible>
@@ -629,7 +629,7 @@
 				<item id="16">
 					<description>System Category</description>
 					<label>system</label>
-					<icon>homecategories/$INFO[System.Language]/system-text-nofocus.png</icon>
+					<icon>special://skin/media/homecategories/$INFO[System.Language]/system-text-nofocus.png</icon>
 					<include condition="Skin.String(CustomSystemBGType,2) | Skin.String(CustomSystemBGType,3) | Skin.String(CustomSystemBGType,)">HomeSystemCustomBGPath</include>
 					<onclick>ActivateWindow(AppearanceSettings)</onclick>    
 					<visible>!Skin.HasSetting(HideSystemCategory)</visible>
@@ -640,7 +640,7 @@
 		<control type="image">
 			<Description>Category Focus Image</Description>
 			<include>HomeCategoryFocusImage</include>		
-			<texture>homecategories/$INFO[System.Language]/$INFO[Control.GetLabel(850)]-text-focus.png</texture>
+			<texture>special://skin/media/homecategories/$INFO[System.Language]/$INFO[Control.GetLabel(850)]-text-focus.png</texture>
 		</control>
 
 		<include condition="Skin.HasSetting(EnableCustomCategory1)">HomeCustomCategoryFocus1</include>
