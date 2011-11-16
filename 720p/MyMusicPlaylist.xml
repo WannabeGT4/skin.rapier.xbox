@@ -20,7 +20,944 @@
 			<include>BigIconView</include> <!-- 51 -->
 			<include>ListView</include> <!-- 52 -->
 			<include>AlbumThumbsView</include> <!-- 63 -->
-			<include>MusicWideListView</include> <!-- 77 -->
+<!-- 77 MusicWideListView -->
+			<control type="group" id="500">	
+	        <defaultcontrol always="true">77</defaultcontrol>
+			<visible>Control.IsVisible(77)</visible>
+			<include>MediaViewOpenCloseAnim</include>
+			
+			<control type="image">
+				<posx>30</posx>
+				<posy>87</posy>
+				<width>1220</width>
+				<height>544</height>	
+				<texture border="7">panels/content-panel.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<include>PanelFadeAnim</include>
+			</control>
+			
+			<control type="list" id="77">	
+				<viewtype label="31114">Wide List</viewtype>
+				<posx>37</posx>
+				<posy>90</posy>
+				<width>1188</width>
+				<height>536</height>
+				<pagecontrol>910</pagecontrol>
+				<preloaditems>1</preloaditems>
+				<onup>77</onup>
+				<ondown>77</ondown>
+				<onleft>850</onleft>
+				<onright>150</onright>
+				<visible>Container.Content(Albums) | Container.Content(Songs) | Container.Content(Artists)</visible>
+				<itemlayout condition="Container.Content(Albums)" height="134">
+					<control type="image">
+						<width>1188</width>
+						<height>28</height>	
+						<texture border="0,0,0,2">views/wide-list-header.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<include>WideListHeaderFadeAnim</include>
+					</control>
+					<control type="image">
+						<description>Default Cover</description>
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>128</width>
+						<height>128</height>
+						<bordersize>10</bordersize>
+						<texture background="true">music/$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>IsEmpty(ListItem.Thumb)</visible>
+						<colordiffuse>66FFFFFF</colordiffuse>
+					</control>	
+					<control type="group">
+						<visible>!IsEmpty(ListItem.Album)</visible>
+						<control type="image">
+							<description>Cover Case</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<texture border="7">covers/cover-case-nofocus.png</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<description>Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>6</bordersize>
+							<texture background="true">$INFO[ListItem.Thumb]</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<description>Dim</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<texture background="true">dim.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<bordersize>5</bordersize>
+							<visible>!IsEmpty(ListItem.Thumb)</visible>
+							<include>CoverDimAnim</include>
+						</control>
+						<control type="image">
+							<description>Default Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>10</bordersize>
+							<texture background="true">music/$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>IsEmpty(ListItem.Thumb)</visible>
+							<colordiffuse>66FFFFFF</colordiffuse>
+						</control>									
+						<control type="label">
+							<description>Label</description>
+							<posx>139</posx>
+							<posy>-1</posy>
+							<width>381</width>
+							<height>30</height>
+							<font>WideListFont</font>
+							<textcolor>ListColor</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Album]</label>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<description>Rating</description>
+							<posx>139</posx>
+							<posy>38</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor3</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Rating]</label>
+							<visible>Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
+						</control>
+						<control type="image">
+							<description>Star Rating</description>
+							<posx>139</posx>
+							<posy>36</posy>
+							<width>100</width>
+							<height>16</height>		
+							<texture background="true">$INFO[ListItem.StarRating]</texture>
+							<aspectratio align="left">keep</aspectratio>
+							<visible>!Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
+							<colordiffuse>B2FFFFFF</colordiffuse>
+						</control>
+						<control type="label">
+							<description>Year</description>
+							<posx>139</posx>
+							<posy>78</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Year]</label>			
+						</control>
+						<control type="label">
+							<description>Artist</description>
+							<posx>139</posx>
+							<posy>103</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Artist]</label>			
+						</control>
+						<control type="label">
+							<description>Genre</description>
+							<posx>535</posx>
+							<posy>-1</posy>
+							<width>604</width>
+							<height>30</height>
+							<font>WideListFont2</font>
+							<textcolor>ListColor</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</label>
+							<aligny>center</aligny>
+						</control>
+						<control type="textbox">
+							<description>Description</description>
+							<posx>535</posx>
+							<posy>35</posy>
+							<width>644</width>
+							<height>93</height>
+							<font>MediaInfoDescFont</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label fallback="31204">$INFO[ListItem.Property(Album_Description)]</label>
+							<align>justify</align>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>!Skin.HasSetting(HideMusicWideListDescription)</visible>
+						</control>	
+					</control>
+				</itemlayout>
+				<itemlayout condition="Container.Content(Songs)" height="134">
+					<control type="image">
+						<width>1188</width>
+						<height>28</height>	
+						<texture border="0,0,0,2">views/wide-list-header.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<include>WideListHeaderFadeAnim</include>
+					</control>
+					<control type="image">
+						<description>Default Cover</description>
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>128</width>
+						<height>128</height>
+						<bordersize>10</bordersize>
+						<texture background="true">music/$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>IsEmpty(ListItem.Thumb)</visible>
+						<colordiffuse>66FFFFFF</colordiffuse>
+					</control>	
+					<control type="group">
+						<visible>!IsEmpty(ListItem.Title)</visible>
+						<control type="image">
+							<description>Cover Case</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<texture border="7">covers/cover-case-nofocus.png</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<description>Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>6</bordersize>
+							<texture background="true">$INFO[ListItem.Thumb]</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<description>Dim</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<texture background="true">dim.png</texture> 
+							<aspectratio>stretch</aspectratio>
+							<bordersize>5</bordersize>
+							<visible>!IsEmpty(ListItem.Thumb)</visible>
+							<include>CoverDimAnim</include>
+						</control>
+						<control type="image">
+							<description>Default Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>10</bordersize>
+							<texture background="true">music/$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>IsEmpty(ListItem.Thumb)</visible>
+							<colordiffuse>66FFFFFF</colordiffuse>
+						</control>									
+						<control type="label">
+							<description>Label</description>
+							<posx>139</posx>
+							<posy>-1</posy>
+							<width>381</width>
+							<height>30</height>
+							<font>WideListFont</font>
+							<textcolor>ListColor</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Title]</label>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<description>Rating</description>
+							<posx>139</posx>
+							<posy>38</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor3</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Rating]</label>
+							<visible>Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
+						</control>
+						<control type="image">
+							<description>Star Rating</description>
+							<posx>139</posx>
+							<posy>36</posy>
+							<width>100</width>
+							<height>16</height>		
+							<texture background="true">$INFO[ListItem.StarRating]</texture>
+							<aspectratio align="left">keep</aspectratio>
+							<visible>!Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
+							<colordiffuse>B2FFFFFF</colordiffuse>
+						</control>
+						<control type="label">
+							<description>Album</description>
+							<posx>139</posx>
+							<posy>78</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Album] $INFO[ListItem.Year,(,)]</label>			
+						</control>
+						<control type="label">
+							<description>Artist</description>
+							<posx>139</posx>
+							<posy>103</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Artist]</label>			
+						</control>
+						<control type="label">
+							<description>Track Number</description>
+							<posx>535</posx>
+							<posy>-1</posy>
+							<width>604</width>
+							<height>30</height>
+							<font>WideListFont2</font>
+							<textcolor>ListColor</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>[UPPERCASE]$LOCALIZE[554] $INFO[ListItem.TrackNumber][/UPPERCASE]</label>
+							<aligny>center</aligny>
+						</control>
+						<control type="textbox">
+							<description>Description</description>
+							<posx>535</posx>
+							<posy>35</posy>
+							<width>644</width>
+							<height>93</height>
+							<font>MediaInfoDescFont</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label fallback="31204">$INFO[ListItem.Property(Album_Description)]</label>
+							<align>justify</align>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>!Skin.HasSetting(HideMusicWideListDescription)</visible>
+						</control>	
+					</control>
+				</itemlayout>
+				<itemlayout condition="Container.Content(Artists)" height="134">
+					<control type="image">
+						<width>1188</width>
+						<height>28</height>	
+						<texture border="0,0,0,2">views/wide-list-header.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<include>WideListHeaderFadeAnim</include>
+					</control>
+					<control type="image">
+						<description>Default Cover</description>
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>128</width>
+						<height>128</height>
+						<bordersize>10</bordersize>
+						<texture background="true">music/$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>IsEmpty(ListItem.Thumb)</visible>
+						<colordiffuse>66FFFFFF</colordiffuse>
+					</control>
+					<control type="group">
+						<visible>!IsEmpty(ListItem.Artist)</visible>
+						<control type="image">
+							<description>Cover Case</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<texture border="7">covers/cover-case-nofocus.png</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<description>Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>6</bordersize>
+							<texture background="true">$INFO[ListItem.Thumb]</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<description>Dim</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<texture background="true">dim.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<bordersize>5</bordersize>
+							<visible>!IsEmpty(ListItem.Thumb)</visible>
+							<include>CoverDimAnim</include>
+						</control>
+						<control type="image">
+							<description>Default Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>10</bordersize>
+							<texture background="true">music/$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>IsEmpty(ListItem.Thumb)</visible>
+							<colordiffuse>66FFFFFF</colordiffuse>
+						</control>									
+						<control type="label">
+							<description>Label</description>
+							<posx>139</posx>
+							<posy>-1</posy>
+							<width>381</width>
+							<height>30</height>
+							<font>WideListFont</font>
+							<textcolor>ListColor</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Artist]</label>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<description>Years Active</description>
+							<posx>139</posx>
+							<posy>78</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Property(Artist_YearsActive)]</label>			
+						</control>
+						<control type="label">
+							<description>Born</description>
+							<posx>139</posx>
+							<posy>103</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Property(Artist_Born)]</label>			
+						</control>
+						<control type="label">
+							<description>Formed</description>
+							<posx>139</posx>
+							<posy>103</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Property(Artist_Formed)]</label>			
+						</control>
+						<control type="label">
+							<description>Genre</description>
+							<posx>535</posx>
+							<posy>-1</posy>
+							<width>604</width>
+							<height>30</height>
+							<font>WideListFont2</font>
+							<textcolor>ListColor</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>[UPPERCASE]$INFO[ListItem.Property(Artist_Genre)][/UPPERCASE]</label>
+							<aligny>center</aligny>
+						</control>
+						<control type="textbox">
+							<description>Description</description>
+							<posx>535</posx>
+							<posy>35</posy>
+							<width>644</width>
+							<height>93</height>
+							<font>MediaInfoDescFont</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label fallback="31204">$INFO[ListItem.Property(Artist_Description)]</label>
+							<align>justify</align>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>!Skin.HasSetting(HideMusicWideListDescription)</visible>
+						</control>
+					</control>
+				</itemlayout>		
+				<focusedlayout condition="Container.Content(Albums)" height="134">
+					<control type="image">
+						<width>1188</width>
+						<height>28</height>	
+						<texture border="0,0,0,2">views/wide-list-header.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<include>WideListHeaderFadeAnim</include>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>1188</width>
+						<height>109</height>
+						<texture border="0,2,0,2">views/wide-list-focus.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<visible>Control.HasFocus(77)</visible>
+						<include>ListViewSelectFadeAnim</include>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>1188</width>
+						<height>109</height>
+						<texture border="0,2,0,2">views/wide-list-alt-focus.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<visible>!Control.HasFocus(77)</visible>
+						<include>ListViewSelectFadeAnim2</include>
+					</control>
+					<control type="image">
+						<description>Default Cover</description>
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>128</width>
+						<height>128</height>
+						<bordersize>10</bordersize>
+						<texture background="true">music/$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>IsEmpty(ListItem.Thumb)</visible>
+						<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+					</control>	
+					<control type="group">
+						<visible>!IsEmpty(ListItem.Album)</visible>
+						<control type="image">
+							<description>Cover Case</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<texture border="7">covers/cover-case-nofocus.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+						</control>
+						<control type="image">
+							<description>Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>6</bordersize>
+							<texture background="true">$INFO[ListItem.Thumb]</texture>
+							<aspectratio>stretch</aspectratio>
+							<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+						</control>
+						<control type="image">
+							<description>Default Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>10</bordersize>
+							<texture background="true">music/$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>IsEmpty(ListItem.Thumb)</visible>
+							<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+						</control>									
+						<control type="label">
+							<description>Label</description>
+							<posx>139</posx>
+							<posy>-1</posy>
+							<width>381</width>
+							<height>30</height>
+							<font>WideListFont</font>
+							<textcolor>SelectedColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Album]</label>
+							<aligny>center</aligny>
+							<scroll>yes</scroll>
+						</control>
+						<control type="label">
+							<description>Rating</description>
+							<posx>139</posx>
+							<posy>38</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor3</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Rating]</label>
+							<visible>Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
+						</control>
+						<control type="image">
+							<description>Star Rating</description>
+							<posx>139</posx>
+							<posy>36</posy>
+							<width>100</width>
+							<height>16</height>		
+							<texture background="true">$INFO[ListItem.StarRating]</texture>
+							<aspectratio align="left">keep</aspectratio>
+							<visible>!Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
+							<colordiffuse>B2FFFFFF</colordiffuse>
+						</control>
+						<control type="label">
+							<description>Year</description>
+							<posx>139</posx>
+							<posy>78</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Year]</label>			
+						</control>
+						<control type="label">
+							<description>Artist</description>
+							<posx>139</posx>
+							<posy>103</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Artist]</label>			
+						</control>
+						<control type="label">
+							<description>Genre</description>
+							<posx>535</posx>
+							<posy>-1</posy>
+							<width>604</width>
+							<height>30</height>
+							<font>WideListFont2</font>
+							<textcolor>SelectedColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</label>
+							<aligny>center</aligny>
+						</control>
+						<control type="textbox">
+							<description>Description</description>
+							<posx>535</posx>
+							<posy>35</posy>
+							<width>644</width>
+							<height>93</height>
+							<font>MediaInfoDescFont</font>
+							<textcolor>MediaInfoColor</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label fallback="31204">$INFO[ListItem.Property(Album_Description)]</label>
+							<align>justify</align>
+							<wrapmultiline>true</wrapmultiline>
+							<autoscroll time="2000" delay="6000" repeat="10000">!Skin.HasSetting(DoNotAutoScrollMusicWideListDescription)</autoscroll>
+						</control>	
+					</control>
+				</focusedlayout>
+				<focusedlayout condition="Container.Content(Songs)" height="134">
+					<control type="image">
+						<width>1188</width>
+						<height>28</height>	
+						<texture border="0,0,0,2">views/wide-list-header.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<include>WideListHeaderFadeAnim</include>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>1188</width>
+						<height>109</height>
+						<texture border="0,2,0,2">views/wide-list-focus.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<visible>Control.HasFocus(77)</visible>
+						<include>ListViewSelectFadeAnim</include>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>1188</width>
+						<height>109</height>
+						<texture border="0,2,0,2">views/wide-list-alt-focus.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<visible>!Control.HasFocus(77)</visible>
+						<include>ListViewSelectFadeAnim2</include>
+					</control>
+					<control type="image">
+						<description>Default Cover</description>
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>128</width>
+						<height>128</height>
+						<bordersize>10</bordersize>
+						<texture background="true">music/$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>IsEmpty(ListItem.Thumb)</visible>
+						<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+					</control>	
+					<control type="group">
+						<visible>!IsEmpty(ListItem.Title)</visible>
+						<control type="image">
+							<description>Cover Case</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<texture border="7">covers/cover-case-nofocus.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+						</control>
+						<control type="image">
+							<description>Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>6</bordersize>
+							<texture background="true">$INFO[ListItem.Thumb]</texture>
+							<aspectratio>stretch</aspectratio>
+							<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+						</control>
+						<control type="image">
+							<description>Default Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>10</bordersize>
+							<texture background="true">music/$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>IsEmpty(ListItem.Thumb)</visible>
+							<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+						</control>									
+						<control type="label">
+							<description>Label</description>
+							<posx>139</posx>
+							<posy>-1</posy>
+							<width>381</width>
+							<height>30</height>
+							<font>WideListFont</font>
+							<textcolor>SelectedColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Title]</label>
+							<aligny>center</aligny>
+							<scroll>yes</scroll>
+						</control>
+						<control type="label">
+							<description>Rating</description>
+							<posx>139</posx>
+							<posy>38</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor3</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Rating]</label>
+							<visible>Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
+						</control>
+						<control type="image">
+							<description>Star Rating</description>
+							<posx>139</posx>
+							<posy>36</posy>
+							<width>100</width>
+							<height>16</height>		
+							<texture background="true">$INFO[ListItem.StarRating]</texture>
+							<aspectratio align="left">keep</aspectratio>
+							<visible>!Skin.HasSetting(DoNotUseStarRatingMusic)</visible>
+							<colordiffuse>B2FFFFFF</colordiffuse>
+						</control>
+						<control type="label">
+							<description>Album</description>
+							<posx>139</posx>
+							<posy>78</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Album] $INFO[ListItem.Year,(,)]</label>			
+						</control>
+						<control type="label">
+							<description>Artist</description>
+							<posx>139</posx>
+							<posy>103</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Artist]</label>			
+						</control>
+						<control type="label">
+							<description>Track Number</description>
+							<posx>535</posx>
+							<posy>-1</posy>
+							<width>604</width>
+							<height>30</height>
+							<font>WideListFont2</font>
+							<textcolor>SelectedColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>[UPPERCASE]$LOCALIZE[554] $INFO[ListItem.TrackNumber][/UPPERCASE]</label>
+							<aligny>center</aligny>
+						</control>
+						<control type="textbox">
+							<description>Description</description>
+							<posx>535</posx>
+							<posy>35</posy>
+							<width>644</width>
+							<height>93</height>
+							<font>MediaInfoDescFont</font>
+							<textcolor>MediaInfoColor</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label fallback="31204">$INFO[ListItem.Property(Album_Description)]</label>
+							<align>justify</align>
+							<wrapmultiline>true</wrapmultiline>
+						</control>	
+					</control>
+				</focusedlayout>
+				<focusedlayout condition="Container.Content(Artists)" height="134">
+					<control type="image">
+						<width>1188</width>
+						<height>28</height>	
+						<texture border="0,0,0,2">views/wide-list-header.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<include>WideListHeaderFadeAnim</include>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>1188</width>
+						<height>109</height>
+						<texture border="0,2,0,2">views/wide-list-focus.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<visible>Control.HasFocus(77)</visible>
+						<include>ListViewSelectFadeAnim</include>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>1188</width>
+						<height>109</height>
+						<texture border="0,2,0,2">views/wide-list-alt-focus.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<visible>!Control.HasFocus(77)</visible>
+						<include>ListViewSelectFadeAnim2</include>
+					</control>
+					<control type="image">
+						<description>Default Cover</description>
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>128</width>
+						<height>128</height>
+						<bordersize>10</bordersize>
+						<texture background="true">music/$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>IsEmpty(ListItem.Thumb)</visible>
+						<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+					</control>	
+					<control type="group">
+						<visible>!IsEmpty(ListItem.Artist)</visible>
+						<control type="image">
+							<description>Cover Case</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<texture border="7">covers/cover-case-nofocus.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+						</control>
+						<control type="image">
+							<description>Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>6</bordersize>
+							<texture background="true">$INFO[ListItem.Thumb]</texture>
+							<aspectratio>stretch</aspectratio>
+							<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+						</control>
+						<control type="image">
+							<description>Default Cover</description>
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>128</width>
+							<height>128</height>
+							<bordersize>10</bordersize>
+							<texture background="true">music/$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>IsEmpty(ListItem.Thumb)</visible>
+							<include condition="!Skin.HasSetting(DisableListFocusAnim)">WideListViewCoverFocusAnim</include>
+						</control>									
+						<control type="label">
+							<description>Label</description>
+							<posx>139</posx>
+							<posy>-1</posy>
+							<width>381</width>
+							<height>30</height>
+							<font>WideListFont</font>
+							<textcolor>SelectedColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Artist]</label>
+							<aligny>center</aligny>
+							<scroll>yes</scroll>
+						</control>
+						<control type="label">
+							<description>Years Active</description>
+							<posx>139</posx>
+							<posy>78</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Property(Artist_YearsActive)]</label>			
+						</control>
+						<control type="label">
+							<description>Born</description>
+							<posx>139</posx>
+							<posy>103</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Property(Artist_Born)]</label>			
+						</control>
+						<control type="label">
+							<description>Formed</description>
+							<posx>139</posx>
+							<posy>103</posy>
+							<width>381</width>
+							<font>WideListFont3</font>
+							<textcolor>ListColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>$INFO[ListItem.Property(Artist_Formed)]</label>			
+						</control>
+						<control type="label">
+							<description>Genre</description>
+							<posx>535</posx>
+							<posy>-1</posy>
+							<width>604</width>
+							<height>30</height>
+							<font>WideListFont2</font>
+							<textcolor>SelectedColor2</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label>[UPPERCASE]$INFO[ListItem.Property(Artist_Genre)][/UPPERCASE]</label>
+							<aligny>center</aligny>
+						</control>
+						<control type="textbox">
+							<description>Description</description>
+							<posx>535</posx>
+							<posy>35</posy>
+							<width>644</width>
+							<height>93</height>
+							<font>MediaInfoDescFont</font>
+							<textcolor>MediaInfoColor</textcolor>
+							<shadowcolor>ShadowColor</shadowcolor>
+							<label fallback="31204">$INFO[ListItem.Property(Artist_Description)]</label>
+							<align>justify</align>
+							<wrapmultiline>true</wrapmultiline>
+							<autoscroll time="2000" delay="6000" repeat="10000">!Skin.HasSetting(DoNotAutoScrollMusicWideListDescription)</autoscroll>
+						</control>	
+					</control>
+				</focusedlayout>		
+			</control>
+			
+			<include>WideListViewScrollbar</include>
+			
+			<control type="group">
+				<posy>SortLetterOffsetY</posy>
+				<include>SortLetterNotification</include>
+			</control>
+			
+			<control type="button" id="188">
+				<onfocus>Skin.SetString(CurrentViewMode,77)</onfocus>
+				<include>ViewOptionsHelperBtn</include>
+				<visible>Control.IsVisible(77)</visible>
+			</control>
+
+			<control type="group">
+				<description>Bottom Bar Area</description>
+				<posy>BottomPaneOffsetY</posy>	
+				<!--<include>InfoPaneImage</include>-->
+				<include>InfoPaneMediaDetails</include>
+				<include>BottomPaneOpenCloseAnim</include>
+			</control>
+
+			<include>ViewsDialogPopUpScreenDim</include>
+		</control>
 		</control>	
 		
 		<include condition="!Skin.HasSetting(EnableKioskMode)">MediaMenuBar</include>
