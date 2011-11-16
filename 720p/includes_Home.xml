@@ -11,17 +11,6 @@
 		</control>
 	</include>	
 	
-	<include name="HomeSubMenuBarImage">	
-		<control type="image">
-			<posy>0</posy>
-			<width>ScreenWidth</width>
-			<height>36</height>
-			<texture>gui/home-submenu-bar-background.png</texture>
-			<aspectratio>stretch</aspectratio>
-			<include>HomeSubMenuBarOpenCloseAnim</include>
-		</control>
-	</include>
-	
 	<include name="HomeMenuPaneImage">
 		<control type="image">
 			<width>ScreenWidth</width>
@@ -383,7 +372,7 @@
 	
 	<include name="HomeCustomCategoryFocus1">
 		<control type="image">	
-			<include>HomeCategoryFocusImage</include>
+			<include file="includes_Home.xml">HomeCategoryFocusImage</include>
 			<texture fallback="special://skin/media/homecategories/custom1-text-focus.png">$INFO[Skin.String(Custom1FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(7)</visible>
 		</control>
@@ -391,7 +380,7 @@
 	
 	<include name="HomeCustomCategoryFocus2">
 		<control type="image">	
-			<include>HomeCategoryFocusImage</include>
+			<include file="includes_Home.xml">HomeCategoryFocusImage</include>
 			<texture fallback="special://skin/media/homecategories/custom2-text-focus.png">$INFO[Skin.String(Custom2FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(8)</visible>
 		</control>
@@ -399,7 +388,7 @@
 	
 	<include name="HomeCustomCategoryFocus3">
 		<control type="image">	
-			<include>HomeCategoryFocusImage</include>
+			<include file="includes_Home.xml">HomeCategoryFocusImage</include>
 			<texture fallback="special://skin/media/homecategories/custom3-text-focus.png">$INFO[Skin.String(Custom3FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(9)</visible>
 		</control>
@@ -407,7 +396,7 @@
 	
 	<include name="HomeCustomCategoryFocus4">
 		<control type="image">	
-			<include>HomeCategoryFocusImage</include>
+			<include file="includes_Home.xml">HomeCategoryFocusImage</include>
 			<texture fallback="special://skin/media/homecategories/custom4-text-focus.png">$INFO[Skin.String(Custom4FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(10)</visible>
 		</control>
@@ -415,7 +404,7 @@
 	
 	<include name="HomeCustomCategoryFocus5">
 		<control type="image">	
-			<include>HomeCategoryFocusImage</include>
+			<include file="includes_Home.xml">HomeCategoryFocusImage</include>
 			<texture fallback="special://skin/media/homecategories/custom5-text-focus.png">$INFO[Skin.String(Custom5FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(11)</visible>
 		</control>
@@ -423,7 +412,7 @@
 	
 	<include name="HomeCustomCategoryFocus6">
 		<control type="image">	
-			<include>HomeCategoryFocusImage</include>
+			<include file="includes_Home.xml">HomeCategoryFocusImage</include>
 			<texture fallback="special://skin/media/homecategories/custom6-text-focus.png">$INFO[Skin.String(Custom6FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(12)</visible>
 		</control>
@@ -431,7 +420,7 @@
 	
 	<include name="HomeCustomCategoryFocus7">
 		<control type="image">	
-			<include>HomeCategoryFocusImage</include>
+			<include file="includes_Home.xml">HomeCategoryFocusImage</include>
 			<texture fallback="special://skin/media/homecategories/custom7-text-focus.png">$INFO[Skin.String(Custom7FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(13)</visible>
 		</control>
@@ -439,7 +428,7 @@
 	
 	<include name="HomeCustomCategoryFocus8">
 		<control type="image">	
-			<include>HomeCategoryFocusImage</include>
+			<include file="includes_Home.xml">HomeCategoryFocusImage</include>
 			<texture fallback="special://skin/media/homecategories/custom8-text-focus.png">$INFO[Skin.String(Custom8FocusImagePath)]</texture>			
 			<visible>Container(850).HasFocus(14)</visible>
 		</control>
@@ -447,7 +436,7 @@
 	
 	<include name="HomeCustomIcon1">
 		<control type="image">
-			<include>HomeMenuIconDim</include>
+			<include file="includes_Home.xml">HomeMenuIconDim</include>
 			<texture>$INFO[Skin.String(Custom1IconPath)]</texture>
 			<aspectratio>keep</aspectratio>
 			<visible>Container(850).HasFocus(7)</visible>
@@ -457,7 +446,7 @@
 	
 	<include name="HomeCustomIcon2">
 		<control type="image">
-			<include>HomeMenuIconDim</include>
+			<include file="includes_Home.xml">HomeMenuIconDim</include>
 			<texture>$INFO[Skin.String(Custom2IconPath)]</texture>
 			<aspectratio>keep</aspectratio>
 			<visible>Container(850).HasFocus(8)</visible>
@@ -467,7 +456,7 @@
 	
 	<include name="HomeCustomIcon3">
 		<control type="image">
-			<include>HomeMenuIconDim</include>
+			<include file="includes_Home.xml">HomeMenuIconDim</include>
 			<texture>$INFO[Skin.String(Custom3IconPath)]</texture>
 			<aspectratio>keep</aspectratio>
 			<visible>Container(850).HasFocus(9)</visible>
@@ -477,7 +466,7 @@
 	
 	<include name="HomeCustomIcon4">
 		<control type="image">
-			<include>HomeMenuIconDim</include>
+			<include file="includes_Home.xml">HomeMenuIconDim</include>
 			<texture>$INFO[Skin.String(Custom4IconPath)]</texture>
 			<aspectratio>keep</aspectratio>
 			<visible>Container(850).HasFocus(10)</visible>
@@ -487,7 +476,7 @@
 	
 	<include name="HomeCustomIcon5">
 		<control type="image">
-			<include>HomeMenuIconDim</include>
+			<include file="includes_Home.xml">HomeMenuIconDim</include>
 			<texture>$INFO[Skin.String(Custom5IconPath)]</texture>
 			<aspectratio>keep</aspectratio>
 			<visible>Container(850).HasFocus(11)</visible>
@@ -497,7 +486,7 @@
 	
 	<include name="HomeCustomIcon6">
 		<control type="image">
-			<include>HomeMenuIconDim</include>
+			<include file="includes_Home.xml">HomeMenuIconDim</include>
 			<texture>$INFO[Skin.String(Custom6IconPath)]</texture>
 			<aspectratio>keep</aspectratio>
 			<visible>Container(850).HasFocus(12)</visible>
@@ -507,7 +496,7 @@
 	
 	<include name="HomeCustomIcon7">
 		<control type="image">
-			<include>HomeMenuIconDim</include>
+			<include file="includes_Home.xml">HomeMenuIconDim</include>
 			<texture>$INFO[Skin.String(Custom7IconPath)]</texture>
 			<aspectratio>keep</aspectratio>
 			<visible>Container(850).HasFocus(13)</visible>
@@ -517,7 +506,7 @@
 	
 	<include name="HomeCustomIcon8">
 		<control type="image">
-			<include>HomeMenuIconDim</include>
+			<include file="includes_Home.xml">HomeMenuIconDim</include>
 			<texture>$INFO[Skin.String(Custom8IconPath)]</texture>
 			<aspectratio>keep</aspectratio>
 			<visible>Container(850).HasFocus(14)</visible>
@@ -562,8 +551,8 @@
 					<description>Music Category</description>
 					<label>music</label>
 					<icon>special://skin/media/homecategories/$INFO[System.Language]/music-text-nofocus.png</icon>
-					<include condition="Skin.String(CustomMusicBGType,2) | Skin.String(CustomMusicBGType,3) | Skin.String(CustomMusicBGType,)">HomeMusicCustomBGPath</include>
-					<include condition="Skin.String(CustomMusicBGType,4)">HomeMusicFanartBGPath</include>
+					<include condition="Skin.String(CustomMusicBGType,2) | Skin.String(CustomMusicBGType,3) | Skin.String(CustomMusicBGType,)" file="includes_Home.xml">HomeMusicCustomBGPath</include>
+					<include condition="Skin.String(CustomMusicBGType,4)" file="includes_Home.xml">HomeMusicFanartBGPath</include>
 					<onclick>ActivateWindow(Music)</onclick>
 					<visible>!Skin.HasSetting(HideMusicCategory)</visible>
 				</item>
@@ -571,8 +560,8 @@
 					<description>Videos Category</description>
 					<label>videos</label>
 					<icon>special://skin/media/homecategories/$INFO[System.Language]/videos-text-nofocus.png</icon>
-					<include condition="Skin.String(CustomVideosBGType,2) | Skin.String(CustomVideosBGType,3) | Skin.String(CustomVideosBGType,)">HomeVideosCustomBGPath</include>
-					<include condition="Skin.String(CustomVideosBGType,4)">HomeVideosFanartBGPath</include>
+					<include condition="Skin.String(CustomVideosBGType,2) | Skin.String(CustomVideosBGType,3) | Skin.String(CustomVideosBGType,)" file="includes_Home.xml">HomeVideosCustomBGPath</include>
+					<include condition="Skin.String(CustomVideosBGType,4)" file="includes_Home.xml">HomeVideosFanartBGPath</include>
 					<onclick>ActivateWindow(VideoFiles)</onclick>	
 					<visible>!Skin.HasSetting(HideVideosCategory)</visible>
 				</item>
@@ -580,8 +569,8 @@
 					<description>Movies Category</description>
 					<label>movies</label>
 					<icon>special://skin/media/homecategories/$INFO[System.Language]/movies-text-nofocus.png</icon>
-					<include condition="Skin.String(CustomMoviesBGType,2) | Skin.String(CustomMoviesBGType,3) | Skin.String(CustomMoviesBGType,)">HomeMoviesCustomBGPath</include>
-					<include condition="Skin.String(CustomMoviesBGType,4)">HomeMoviesFanartBGPath</include>
+					<include condition="Skin.String(CustomMoviesBGType,2) | Skin.String(CustomMoviesBGType,3) | Skin.String(CustomMoviesBGType,)" file="includes_Home.xml">HomeMoviesCustomBGPath</include>
+					<include condition="Skin.String(CustomMoviesBGType,4)" file="includes_Home.xml">HomeMoviesFanartBGPath</include>
 					<onclick>ActivateWindow(VideoLibrary,MovieTitles,Return)</onclick>  
 					<visible>!Skin.HasSetting(HideMoviesCategory) + Library.HasContent(Movies)</visible>
 				</item>
@@ -589,8 +578,8 @@
 					<description>TV Shows Category</description>
 					<label>tvshows</label>
 					<icon>special://skin/media/homecategories/$INFO[System.Language]/tvshows-text-nofocus.png</icon>
-					<include condition="Skin.String(CustomTVShowsBGType,2) | Skin.String(CustomTVShowsBGType,3) | Skin.String(CustomTVShowsBGType,)">HomeTVShowsCustomBGPath</include>
-					<include condition="Skin.String(CustomTVShowsBGType,4)">HomeTVShowsFanartBGPath</include>
+					<include condition="Skin.String(CustomTVShowsBGType,2) | Skin.String(CustomTVShowsBGType,3) | Skin.String(CustomTVShowsBGType,)" file="includes_Home.xml">HomeTVShowsCustomBGPath</include>
+					<include condition="Skin.String(CustomTVShowsBGType,4)" file="includes_Home.xml">HomeTVShowsFanartBGPath</include>
 					<onclick>ActivateWindow(VideoLibrary,TVShowTitles,Return)</onclick>
 					<visible>!Skin.HasSetting(HideTVShowsCategory) + Library.HasContent(TVShows)</visible>
 				</item>
@@ -598,7 +587,7 @@
 					<description>Programs Category</description>
 					<label>programs</label>
 					<icon>special://skin/media/homecategories/$INFO[System.Language]/programs-text-nofocus.png</icon>
-					<include condition="Skin.String(CustomProgramsBGType,2) | Skin.String(CustomProgramsBGType,3) | Skin.String(CustomProgramsBGType,)">HomeProgramsCustomBGPath</include>
+					<include condition="Skin.String(CustomProgramsBGType,2) | Skin.String(CustomProgramsBGType,3) | Skin.String(CustomProgramsBGType,)" file="includes_Home.xml">HomeProgramsCustomBGPath</include>
 					<onclick>ActivateWindow(Programs)</onclick>	
 					<visible>!Skin.HasSetting(HideProgramsCategory)</visible>
 				</item>
@@ -606,23 +595,23 @@
 					<description>Pictures Category</description>
 					<label>pictures</label>
 					<icon>special://skin/media/homecategories/$INFO[System.Language]/pictures-text-nofocus.png</icon>
-					<include condition="Skin.String(CustomPicturesBGType,2) | Skin.String(CustomPicturesBGType,3) | Skin.String(CustomPicturesBGType,)">HomePicturesCustomBGPath</include>
+					<include condition="Skin.String(CustomPicturesBGType,2) | Skin.String(CustomPicturesBGType,3) | Skin.String(CustomPicturesBGType,)" file="includes_Home.xml">HomePicturesCustomBGPath</include>
 					<onclick>ActivateWindow(Pictures)</onclick>
 					<visible>!Skin.HasSetting(HidePicturesCategory)</visible>
 				</item>
-				<include condition="Skin.HasSetting(EnableCustomCategory1)">HomeCustomCategory1</include>
-				<include condition="Skin.HasSetting(EnableCustomCategory2)">HomeCustomCategory2</include>
-				<include condition="Skin.HasSetting(EnableCustomCategory3)">HomeCustomCategory3</include>
-				<include condition="Skin.HasSetting(EnableCustomCategory4)">HomeCustomCategory4</include>
-				<include condition="Skin.HasSetting(EnableCustomCategory5)">HomeCustomCategory5</include>
-				<include condition="Skin.HasSetting(EnableCustomCategory6)">HomeCustomCategory6</include>
-				<include condition="Skin.HasSetting(EnableCustomCategory7)">HomeCustomCategory7</include>
-				<include condition="Skin.HasSetting(EnableCustomCategory8)">HomeCustomCategory8</include>
+				<include condition="Skin.HasSetting(EnableCustomCategory1)" file="includes_Home.xml">HomeCustomCategory1</include>
+				<include condition="Skin.HasSetting(EnableCustomCategory2)" file="includes_Home.xml">HomeCustomCategory2</include>
+				<include condition="Skin.HasSetting(EnableCustomCategory3)" file="includes_Home.xml">HomeCustomCategory3</include>
+				<include condition="Skin.HasSetting(EnableCustomCategory4)" file="includes_Home.xml">HomeCustomCategory4</include>
+				<include condition="Skin.HasSetting(EnableCustomCategory5)" file="includes_Home.xml">HomeCustomCategory5</include>
+				<include condition="Skin.HasSetting(EnableCustomCategory6)" file="includes_Home.xml">HomeCustomCategory6</include>
+				<include condition="Skin.HasSetting(EnableCustomCategory7)" file="includes_Home.xml">HomeCustomCategory7</include>
+				<include condition="Skin.HasSetting(EnableCustomCategory8)" file="includes_Home.xml">HomeCustomCategory8</include>
 				<item id="15">
 					<description>General Category</description>
 					<label>general</label>
 					<icon>special://skin/media/homecategories/$INFO[System.Language]/general-text-nofocus.png</icon>
-					<include condition="Skin.String(CustomGeneralBGType,2) | Skin.String(CustomGeneralBGType,3) | Skin.String(CustomGeneralBGType,)">HomeGeneralCustomBGPath</include>
+					<include condition="Skin.String(CustomGeneralBGType,2) | Skin.String(CustomGeneralBGType,3) | Skin.String(CustomGeneralBGType,)" file="includes_Home.xml">HomeGeneralCustomBGPath</include>
 					<onclick>ActivateWindow(Filemanager)</onclick>		
 					<visible>!Skin.HasSetting(HideGeneralCategory)</visible>
 				</item>	
@@ -630,7 +619,7 @@
 					<description>System Category</description>
 					<label>system</label>
 					<icon>special://skin/media/homecategories/$INFO[System.Language]/system-text-nofocus.png</icon>
-					<include condition="Skin.String(CustomSystemBGType,2) | Skin.String(CustomSystemBGType,3) | Skin.String(CustomSystemBGType,)">HomeSystemCustomBGPath</include>
+					<include condition="Skin.String(CustomSystemBGType,2) | Skin.String(CustomSystemBGType,3) | Skin.String(CustomSystemBGType,)" file="includes_Home.xml">HomeSystemCustomBGPath</include>
 					<onclick>ActivateWindow(AppearanceSettings)</onclick>    
 					<visible>!Skin.HasSetting(HideSystemCategory)</visible>
 				</item>					
@@ -639,18 +628,18 @@
 		
 		<control type="image">
 			<Description>Category Focus Image</Description>
-			<include>HomeCategoryFocusImage</include>		
+			<include file="includes_Home.xml">HomeCategoryFocusImage</include>		
 			<texture>special://skin/media/homecategories/$INFO[System.Language]/$INFO[Control.GetLabel(850)]-text-focus.png</texture>
 		</control>
 
-		<include condition="Skin.HasSetting(EnableCustomCategory1)">HomeCustomCategoryFocus1</include>
-		<include condition="Skin.HasSetting(EnableCustomCategory2)">HomeCustomCategoryFocus2</include>
-		<include condition="Skin.HasSetting(EnableCustomCategory3)">HomeCustomCategoryFocus3</include>
-		<include condition="Skin.HasSetting(EnableCustomCategory4)">HomeCustomCategoryFocus4</include>
-		<include condition="Skin.HasSetting(EnableCustomCategory5)">HomeCustomCategoryFocus5</include>
-		<include condition="Skin.HasSetting(EnableCustomCategory6)">HomeCustomCategoryFocus6</include>
-		<include condition="Skin.HasSetting(EnableCustomCategory7)">HomeCustomCategoryFocus7</include>
-		<include condition="Skin.HasSetting(EnableCustomCategory8)">HomeCustomCategoryFocus8</include>
+		<include condition="Skin.HasSetting(EnableCustomCategory1)" file="includes_Home.xml">HomeCustomCategoryFocus1</include>
+		<include condition="Skin.HasSetting(EnableCustomCategory2)" file="includes_Home.xml">HomeCustomCategoryFocus2</include>
+		<include condition="Skin.HasSetting(EnableCustomCategory3)" file="includes_Home.xml">HomeCustomCategoryFocus3</include>
+		<include condition="Skin.HasSetting(EnableCustomCategory4)" file="includes_Home.xml">HomeCustomCategoryFocus4</include>
+		<include condition="Skin.HasSetting(EnableCustomCategory5)" file="includes_Home.xml">HomeCustomCategoryFocus5</include>
+		<include condition="Skin.HasSetting(EnableCustomCategory6)" file="includes_Home.xml">HomeCustomCategoryFocus6</include>
+		<include condition="Skin.HasSetting(EnableCustomCategory7)" file="includes_Home.xml">HomeCustomCategoryFocus7</include>
+		<include condition="Skin.HasSetting(EnableCustomCategory8)" file="includes_Home.xml">HomeCustomCategoryFocus8</include>
 	</include>
 	
 	<include name="HomeCategoryIcons">
@@ -662,7 +651,7 @@
 
 			<control type="image">
 				<description>Music Icon</description>
-				<include>HomeMenuIconDim</include>
+				<include file="includes_Home.xml">HomeMenuIconDim</include>
 				<texture fallback="home-music-icon.png">$INFO[Skin.String(MusicCategoryIconPath)]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Container(850).HasFocus(1)</visible>
@@ -671,7 +660,7 @@
 			
 			<control type="image">
 				<description>Videos Icon</description>
-				<include>HomeMenuIconDim</include>
+				<include file="includes_Home.xml">HomeMenuIconDim</include>
 				<texture fallback="home-videos-icon.png">$INFO[Skin.String(VideosCategoryIconPath)]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Container(850).HasFocus(2)</visible>
@@ -680,7 +669,7 @@
 			
 			<control type="image">
 				<description>Movies Icon</description>
-				<include>HomeMenuIconDim</include>
+				<include file="includes_Home.xml">HomeMenuIconDim</include>
 				<texture fallback="home-movies-icon.png">$INFO[Skin.String(MoviesCategoryIconPath)]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Container(850).HasFocus(3)</visible>
@@ -689,7 +678,7 @@
 			
 			<control type="image">
 				<description>TV Shows Icon</description>
-				<include>HomeMenuIconDim</include>
+				<include file="includes_Home.xml">HomeMenuIconDim</include>
 				<texture fallback="home-tvshows-icon.png">$INFO[Skin.String(TVShowsCategoryIconPath)]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Container(850).HasFocus(4)</visible>
@@ -698,7 +687,7 @@
 			
 			<control type="image">
 				<description>Programs Icon</description>
-				<include>HomeMenuIconDim</include>
+				<include file="includes_Home.xml">HomeMenuIconDim</include>
 				<texture fallback="home-programs-icon.png">$INFO[Skin.String(ProgramsCategoryIconPath)]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Container(850).HasFocus(5)</visible>
@@ -707,7 +696,7 @@
 			
 			<control type="image">
 				<description>Pictures Icon</description>
-				<include>HomeMenuIconDim</include>
+				<include file="includes_Home.xml">HomeMenuIconDim</include>
 				<texture fallback="home-pictures-icon.png">$INFO[Skin.String(PicturesCategoryIconPath)]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Container(850).HasFocus(6)</visible>
@@ -716,7 +705,7 @@
 			
 			<control type="image">
 				<description>General Icon</description>
-				<include>HomeMenuIconDim</include>
+				<include file="includes_Home.xml">HomeMenuIconDim</include>
 				<texture fallback="home-general-icon.png">$INFO[Skin.String(GeneralCategoryIconPath)]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Container(850).HasFocus(15)</visible>
@@ -725,21 +714,21 @@
 			
 			<control type="image">
 				<description>System Icon</description>
-				<include>HomeMenuIconDim</include>
+				<include file="includes_Home.xml">HomeMenuIconDim</include>
 				<texture fallback="home-system-icon.png">$INFO[Skin.String(SystemCategoryIconPath)]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Container(850).HasFocus(16)</visible>
 				<include>HomeMenuIconAnim</include>
 			</control>
 
-			<include condition="Skin.HasSetting(EnableCustomCategory1)">HomeCustomIcon1</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory2)">HomeCustomIcon2</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory3)">HomeCustomIcon3</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory4)">HomeCustomIcon4</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory5)">HomeCustomIcon5</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory6)">HomeCustomIcon6</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory7)">HomeCustomIcon7</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory8)">HomeCustomIcon8</include>
+			<include condition="Skin.HasSetting(EnableCustomCategory1)" file="includes_Home.xml">HomeCustomIcon1</include>
+			<include condition="Skin.HasSetting(EnableCustomCategory2)" file="includes_Home.xml">HomeCustomIcon2</include>
+			<include condition="Skin.HasSetting(EnableCustomCategory3)" file="includes_Home.xml">HomeCustomIcon3</include>
+			<include condition="Skin.HasSetting(EnableCustomCategory4)" file="includes_Home.xml">HomeCustomIcon4</include>
+			<include condition="Skin.HasSetting(EnableCustomCategory5)" file="includes_Home.xml">HomeCustomIcon5</include>
+			<include condition="Skin.HasSetting(EnableCustomCategory6)" file="includes_Home.xml">HomeCustomIcon6</include>
+			<include condition="Skin.HasSetting(EnableCustomCategory7)" file="includes_Home.xml">HomeCustomIcon7</include>
+			<include condition="Skin.HasSetting(EnableCustomCategory8)" file="includes_Home.xml">HomeCustomIcon8</include>
 		</control>
 	</include>
 	
@@ -758,7 +747,7 @@
 				<visible>Container(850).HasFocus(1)</visible>
 				<include>HomeSubMenuItemOpenCloseAnim</include>
 				<include>HomeSubMenuItemsCenterAlignAnim</include>
-				<include>HomeSubMenuItemLayout</include>
+				<include file="includes_Home.xml">HomeSubMenuItemLayout</include>
 				<content>
 					<item id="1">
 						<description>Files</description>
@@ -858,7 +847,7 @@
 				<visible>Container(850).HasFocus(2)</visible>
 				<include>HomeSubMenuItemOpenCloseAnim</include>
 				<include>HomeSubMenuItemsCenterAlignAnim</include>
-				<include>HomeSubMenuItemLayout</include>
+				<include file="includes_Home.xml">HomeSubMenuItemLayout</include>
 				<content>
 					<item id="1">
 						<description>Library</description>
@@ -958,7 +947,7 @@
 				<visible>Container(850).HasFocus(3)</visible>
 				<include>HomeSubMenuItemOpenCloseAnim</include>
 				<include>HomeSubMenuItemsCenterAlignAnim</include>
-				<include>HomeSubMenuItemLayout</include>
+				<include file="includes_Home.xml">HomeSubMenuItemLayout</include>
 				<content>
 					<item id="1">
 						<description>Genres</description>
@@ -1058,7 +1047,7 @@
 				<visible>Container(850).HasFocus(4)</visible>
 				<include>HomeSubMenuItemOpenCloseAnim</include>
 				<include>HomeSubMenuItemsCenterAlignAnim</include>
-				<include>HomeSubMenuItemLayout</include>
+				<include file="includes_Home.xml">HomeSubMenuItemLayout</include>
 				<content>
 					<item id="1">
 						<description>Genres</description>
@@ -1146,7 +1135,7 @@
 				<visible>Container(850).HasFocus(5)</visible>
 				<include>HomeSubMenuItemOpenCloseAnim</include>
 				<include>HomeSubMenuItemsCenterAlignAnim</include>
-				<include>HomeSubMenuItemLayout</include>
+				<include file="includes_Home.xml">HomeSubMenuItemLayout</include>
 				<content>
 					<item id="1">
 						<description>Program Plugins</description>
@@ -1210,7 +1199,7 @@
 				<visible>Container(850).HasFocus(6)</visible>
 				<include>HomeSubMenuItemOpenCloseAnim</include>
 				<include>HomeSubMenuItemsCenterAlignAnim</include>
-				<include>HomeSubMenuItemLayout</include>
+				<include file="includes_Home.xml">HomeSubMenuItemLayout</include>
 				<content>
 					<item id="1">
 						<description>Picture Plugins</description>
@@ -1280,7 +1269,7 @@
 				<visible>Container(850).HasFocus(15)</visible>
 				<include>HomeSubMenuItemOpenCloseAnim</include>
 				<include>HomeSubMenuItemsCenterAlignAnim</include>
-				<include>HomeSubMenuItemLayout</include>
+				<include file="includes_Home.xml">HomeSubMenuItemLayout</include>
 				<content>
 					<item id="1">
 						<description>Favourites</description>
@@ -1356,7 +1345,7 @@
 				<visible>Container(850).HasFocus(16)</visible>
 				<include>HomeSubMenuItemOpenCloseAnim</include>
 				<include>HomeSubMenuItemsCenterAlignAnim</include>
-				<include>HomeSubMenuItemLayout</include>
+				<include file="includes_Home.xml">HomeSubMenuItemLayout</include>
 				<content>
 					<item id="1">
 						<description>Power</description>
@@ -2487,4 +2476,24 @@
 			</control>
 		</control>
 	</include>
+	
+	<include name="HomeTopBarImage">	
+		<control type="image">
+			<width>ScreenWidth</width>
+			<height>47</height>
+			<texture border="0,0,0,6">gui/top-bar-background.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<colordiffuse>D3FFFFFF</colordiffuse>
+		</control>	
+	</include>
+
+	<include name="HomeTopBarOverlay">
+		<control type="image">
+			<width>ScreenWidth</width>
+			<height>43</height>
+			<texture>gui/bottom-bar-overlay.png</texture>
+			<colordiffuse>ADFFFFFF</colordiffuse>
+		</control>
+	</include>	
+	
 </includes>

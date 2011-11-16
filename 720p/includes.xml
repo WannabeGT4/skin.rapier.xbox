@@ -1,14 +1,6 @@
 <includes>
 	<include file="Defaults.xml"/>
 	<include file="Views.xml"/>
-	<include file="ViewsCommon.xml"/>
-	<include file="ViewsMusic.xml"/>
-	<include file="ViewsMovies.xml"/>
-	<include file="ViewsTVShows.xml"/>
-	<include file="ViewsEpisodes.xml"/>
-	<include file="ViewsAddons.xml"/>
-	<include file="ViewsPrograms.xml"/>
-	<include file="includes_Home.xml"/>
 	<include file="includes_InfoPane.xml"/>
 	<include file="includes_MenuBar.xml"/>
 	<include file="includes_StatusBar.xml"/>
@@ -18,7 +10,6 @@
 	<include file="includes_Backgrounds.xml"/>
 	<include file="includes_MediaFlags.xml"/>
 	<include file="includes_Scrollbars.xml"/>
-	
 	<constant name="ScreenWidth">1280</constant>
 	<constant name="ScreenHeight">720</constant>
 	<constant name="DialogHeadingOffsetX">40</constant>
@@ -72,25 +63,6 @@
 			<colordiffuse>D3FFFFFF</colordiffuse>
 		</control>	
 		
-		<control type="image">
-			<width>ScreenWidth</width>
-			<height>43</height>
-			<texture>gui/bottom-bar-overlay.png</texture>
-			<colordiffuse>ADFFFFFF</colordiffuse>
-		</control>
-	</include>
-	
-	<include name="HomeTopBarImage">	
-		<control type="image">
-			<width>ScreenWidth</width>
-			<height>47</height>
-			<texture border="0,0,0,6">gui/top-bar-background.png</texture>
-			<aspectratio>stretch</aspectratio>
-			<colordiffuse>D3FFFFFF</colordiffuse>
-		</control>	
-	</include>
-	
-	<include name="HomeTopBarOverlay">
 		<control type="image">
 			<width>ScreenWidth</width>
 			<height>43</height>

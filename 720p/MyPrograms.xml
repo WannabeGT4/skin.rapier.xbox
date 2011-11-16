@@ -15,21 +15,21 @@
 		</control>
 
 		<control type="group">     
-			<include>IconView</include> <!-- 50 -->
-			<include>BigIconView</include> <!-- 51 -->
-			<include>ListView</include> <!-- 52 -->
-			<include>AddonsWideListView</include> <!-- 90 -->
-			<include>AddonsListInfoView</include> <!-- 91 -->
-			<include>AddonsWrapListInfoView</include> <!-- 93 -->
-			<include>ProgramsListInfoView</include> <!-- 590 -->
-			<include>ProgramsListInfoView2</include> <!-- 591 -->
-			<include>ProgramsListInfoView3</include> <!-- 592 -->
-			<include>ProgramsThumbsInfoView</include> <!-- 593 -->
-			<include>ProgramsThumbsInfoView2</include> <!-- 594 -->
-			<include>ProgramsThumbsInfoView3</include> <!-- 595 -->
-			<include>ProgramsWrapListInfoView</include> <!-- 596 -->
-			<include>ProgramsWrapListInfoView2</include> <!-- 597 -->
-			<include>ProgramsWrapListInfoView3</include> <!-- 598 -->
+			<include file="ViewsCommon.xml">IconView</include> <!-- 50 -->
+			<include file="ViewsCommon.xml">BigIconView</include> <!-- 51 -->
+			<include file="ViewsCommon.xml">ListView</include> <!-- 52 -->
+			<include file="ViewsAddons.xml">AddonsWideListView</include> <!-- 90 -->
+			<include file="ViewsAddons.xml">AddonsListInfoView</include> <!-- 91 -->
+			<include file="ViewsAddons.xml">AddonsWrapListInfoView</include> <!-- 93 -->
+			<include file="ViewsPrograms.xml">ProgramsListInfoView</include> <!-- 590 -->
+			<include file="ViewsPrograms.xml">ProgramsListInfoView2</include> <!-- 591 -->
+			<include file="ViewsPrograms.xml">ProgramsListInfoView3</include> <!-- 592 -->
+			<include file="ViewsPrograms.xml">ProgramsThumbsInfoView</include> <!-- 593 -->
+			<include file="ViewsPrograms.xml">ProgramsThumbsInfoView2</include> <!-- 594 -->
+			<include file="ViewsPrograms.xml">ProgramsThumbsInfoView3</include> <!-- 595 -->
+			<include file="ViewsPrograms.xml">ProgramsWrapListInfoView</include> <!-- 596 -->
+			<include file="ViewsPrograms.xml">ProgramsWrapListInfoView2</include> <!-- 597 -->
+			<include file="ViewsPrograms.xml">ProgramsWrapListInfoView3</include> <!-- 598 -->
 		</control>
 		
 		<include condition="!Skin.HasSetting(EnableKioskMode)">MediaMenuBar</include>

@@ -390,10 +390,10 @@
 				<ondown>52</ondown>
 				<onleft>850</onleft>
 				<onright>150</onright>				
-				<include condition="Skin.String(CommonListStyle,) | Skin.String(CommonListStyle,1) | Skin.String(CommonListStyle,3)">CommonListItemLayout</include>
-				<include condition="Skin.String(CommonListStyle,2)">CommonListTallStyleItemLayout</include>
-				<include condition="Skin.String(CommonListStyle,) | Skin.String(CommonListStyle,1)">CommonListFocusedLayout</include>
-				<include condition="Skin.String(CommonListStyle,2) | Skin.String(CommonListStyle,3)">CommonListTallStyleFocusedLayout</include>
+				<include condition="Skin.String(CommonListStyle,) | Skin.String(CommonListStyle,1) | Skin.String(CommonListStyle,3)" file="ViewsCommon.xml">CommonListItemLayout</include>
+				<include condition="Skin.String(CommonListStyle,2)" file="ViewsCommon.xml">CommonListTallStyleItemLayout</include>
+				<include condition="Skin.String(CommonListStyle,) | Skin.String(CommonListStyle,1)" file="ViewsCommon.xml">CommonListFocusedLayout</include>
+				<include condition="Skin.String(CommonListStyle,2) | Skin.String(CommonListStyle,3)" file="ViewsCommon.xml">CommonListTallStyleFocusedLayout</include>
 			</control>
 
 			<include>ListViewScrollbar</include>
@@ -636,7 +636,7 @@
 	
 	<include name="CommonListTallStyleItemLayout">
 		<itemlayout condition="Container.Content(Movies) + Window.IsActive(VideoLibrary)" height="74">
-			<include>ListTallStyleNoFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleNoFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -732,7 +732,7 @@
 			</control>	
 		</itemlayout>
 		<itemlayout condition="Container.Content(TVShows) + Window.IsActive(VideoLibrary)" height="74">
-			<include>ListTallStyleNoFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleNoFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -827,7 +827,7 @@
 			</control>	
 		</itemlayout>
 		<itemlayout condition="Container.Content(Episodes) + Window.IsActive(VideoLibrary)" height="74">
-			<include>ListTallStyleNoFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleNoFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -922,7 +922,7 @@
 			</control>	
 		</itemlayout>
 		<itemlayout condition="Container.Content(Seasons) + Window.IsActive(VideoLibrary)" height="74">
-			<include>ListTallStyleNoFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleNoFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -993,7 +993,7 @@
 			</control>	
 		</itemlayout>
 		<itemlayout condition="Container.Content(Albums) + Window.IsActive(MusicLibrary)" height="74">	
-			<include>ListTallStyleNoFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleNoFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1077,7 +1077,7 @@
 			</control>
 		</itemlayout>
 		<itemlayout condition="Container.Content(Songs) + Window.IsActive(MusicLibrary)" height="74">
-			<include>ListTallStyleNoFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleNoFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1161,7 +1161,7 @@
 			</control>
 		</itemlayout>
 		<itemlayout condition="Container.Content(Artists) + Window.IsActive(MusicLibrary)" height="74">	
-			<include>ListTallStyleNoFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleNoFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1234,7 +1234,7 @@
 			</control>
 		</itemlayout>
 		<itemlayout condition="Substring(Container.FolderPath,addons:,Left)" height="74">
-			<include>ListTallStyleNoFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleNoFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1306,7 +1306,7 @@
 			</control>
 		</itemlayout>
 		<itemlayout height="74">
-			<include>ListTallStyleNoFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleNoFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1369,7 +1369,7 @@
 	
 	<include name="CommonListTallStyleFocusedLayout">	
 		<focusedlayout condition="Container.Content(Movies) + Window.IsActive(VideoLibrary)" height="74">	
-			<include>ListTallStyleFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1458,7 +1458,7 @@
 			</control>
 		</focusedlayout>
 		<focusedlayout condition="Container.Content(TVShows) + Window.IsActive(VideoLibrary)" height="74">	
-			<include>ListTallStyleFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1546,7 +1546,7 @@
 			</control>
 		</focusedlayout>
 		<focusedlayout condition="Container.Content(Episodes) + Window.IsActive(VideoLibrary)" height="74">	
-			<include>ListTallStyleFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1634,7 +1634,7 @@
 			</control>
 		</focusedlayout>
 		<focusedlayout condition="Container.Content(Seasons) + Window.IsActive(VideoLibrary)" height="74">	
-			<include>ListTallStyleFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1698,7 +1698,7 @@
 			</control>
 		</focusedlayout>
 		<focusedlayout condition="Container.Content(Albums) + Window.IsActive(MusicLibrary)" height="74">	
-			<include>ListTallStyleFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1775,7 +1775,7 @@
 			</control>
 		</focusedlayout>
 		<focusedlayout condition="Container.Content(Songs) + Window.IsActive(MusicLibrary)" height="74">
-			<include>ListTallStyleFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1852,7 +1852,7 @@
 			</control>
 		</focusedlayout>
 		<focusedlayout condition="Container.Content(Artists) + Window.IsActive(MusicLibrary)" height="74">	
-			<include>ListTallStyleFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1918,7 +1918,7 @@
 			</control>
 		</focusedlayout>
 		<focusedlayout condition="Substring(Container.FolderPath,addons:,Left)" height="74">
-			<include>ListTallStyleFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -1983,7 +1983,7 @@
 			</control>
 		</focusedlayout>
 		<focusedlayout height="74">	
-			<include>ListTallStyleFocus</include>
+			<include file="ViewsCommon.xml">ListTallStyleFocus</include>
 			<control type="image">
 				<description>Cover</description>
 				<posx>0</posx>
@@ -2086,8 +2086,8 @@
 			<include>MediaViewOpenCloseAnim</include>
 			<include>ThumbnailViewScrollbar</include>
 
-			<include condition="Skin.String(CommonDVDThumbsStyle,1) | Skin.String(CommonDVDThumbsStyle,)">CommonDVDThumbsStyle1</include>
-			<include condition="Skin.String(CommonDVDThumbsStyle,2)">CommonDVDThumbsStyle2</include>
+			<include condition="Skin.String(CommonDVDThumbsStyle,1) | Skin.String(CommonDVDThumbsStyle,)" file="ViewsCommon.xml">CommonDVDThumbsStyle1</include>
+			<include condition="Skin.String(CommonDVDThumbsStyle,2)" file="ViewsCommon.xml">CommonDVDThumbsStyle2</include>
 					
 			<control type="group">
 				<posy>SortLetterOffsetY</posy>
@@ -2382,8 +2382,8 @@
 			<include>MediaViewOpenCloseAnim</include>
 			<include>ThumbnailViewScrollbar</include>		
 			
-			<include condition="Skin.String(CommonAlbumThumbsStyle,1) | Skin.String(CommonAlbumThumbsStyle,)">CommonAlbumThumbsStyle1</include>
-			<include condition="Skin.String(CommonAlbumThumbsStyle,2)">CommonAlbumThumbsStyle2</include>
+			<include condition="Skin.String(CommonAlbumThumbsStyle,1) | Skin.String(CommonAlbumThumbsStyle,)" file="ViewsCommon.xml">CommonAlbumThumbsStyle1</include>
+			<include condition="Skin.String(CommonAlbumThumbsStyle,2)" file="ViewsCommon.xml">CommonAlbumThumbsStyle2</include>
 	
 			<control type="group">
 				<posy>SortLetterOffsetY</posy>

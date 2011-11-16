@@ -916,10 +916,10 @@
 				<onleft>850</onleft>
 				<onright>150</onright>
 				<visible>Container.Content(Episodes)</visible>
-				<include condition="Skin.String(EpisodesListInfo2Style,1) | Skin.String(EpisodesListInfo2Style,3)">EpisodesListInfo2ItemLayout</include>
-				<include condition="Skin.String(EpisodesListInfo2Style,) | Skin.String(EpisodesListInfo2Style,2)">EpisodesListInfo2TallStyleItemLayout</include>
-				<include condition="Skin.String(EpisodesListInfo2Style,1)">EpisodesListInfo2FocusedLayout</include>
-				<include condition="Skin.String(EpisodesListInfo2Style,) | Skin.String(EpisodesListInfo2Style,2) | Skin.String(EpisodesListInfo2Style,3)">EpisodesListInfo2TallStyleFocusedLayout</include>
+				<include condition="Skin.String(EpisodesListInfo2Style,1) | Skin.String(EpisodesListInfo2Style,3)" file="ViewsEpisodes.xml">EpisodesListInfo2ItemLayout</include>
+				<include condition="Skin.String(EpisodesListInfo2Style,) | Skin.String(EpisodesListInfo2Style,2)" file="ViewsEpisodes.xml">EpisodesListInfo2TallStyleItemLayout</include>
+				<include condition="Skin.String(EpisodesListInfo2Style,1)" file="ViewsEpisodes.xml">EpisodesListInfo2FocusedLayout</include>
+				<include condition="Skin.String(EpisodesListInfo2Style,) | Skin.String(EpisodesListInfo2Style,2) | Skin.String(EpisodesListInfo2Style,3)" file="ViewsEpisodes.xml">EpisodesListInfo2TallStyleFocusedLayout</include>
 			</control>
 			
 			<include>ListInfo2ViewScrollbar</include>

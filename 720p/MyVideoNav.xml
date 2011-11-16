@@ -22,30 +22,30 @@
 		<control type="group">
 			<visible>!Window.IsActive(MovieInformation)</visible>
 			<include>MediaInfoOpenCloseAnim</include>
-			<include>IconView</include> <!-- 50 -->
-			<include>BigIconView</include> <!-- 51 -->
-			<include>ListView</include> <!-- 52 -->
-			<include>DVDThumbsView</include> <!-- 54 -->
-			<include>MoviesWrapListInfoView</include> <!-- 53 -->
-			<include>MoviesWideListView</include> <!-- 75 -->
-			<include>MoviesListInfoView</include> <!-- 58 -->
-			<include>MoviesListInfoView2</include> <!-- 66 -->
-			<include>MoviesListInfoView3</include> <!-- 95 -->
-			<include>MoviesThumbsInfoView</include> <!-- 97 -->
-			<include condition="!Skin.HasSetting(UseTVShowsPosterCover)">TVShowsWideIconView</include> <!-- 56 -->
-			<include>TVShowsWideListView</include> <!-- 76 -->
-			<include>TVShowsListInfoView</include> <!-- 61 -->
-			<include>TVShowsListInfoView2</include> <!-- 65 -->
-			<include condition="Skin.HasSetting(UseTVShowsPosterCover)">TVShowsThumbsInfoView</include> <!-- 100 -->
-			<include>EpisodesWideListView</include> <!-- 74 -->
-			<include>EpisodesListInfoView</include> <!-- 73 -->
-			<include>EpisodesListInfoView2</include> <!-- 68 -->
-			<include>EpisodesListInfoView3</include> <!-- 94 -->
-			<include>MoviesWallView</include> <!-- 69 -->
-			<include>AlbumThumbsView</include> <!-- 63 -->
-			<include>AddonsWideListView</include> <!-- 90 -->
-			<include>AddonsListInfoView</include> <!-- 91 -->
-			<include>AddonsWrapListInfoView</include> <!-- 93 -->
+			<include file="ViewsCommon.xml">IconView</include> <!-- 50 -->
+			<include file="ViewsCommon.xml">BigIconView</include> <!-- 51 -->
+			<include file="ViewsCommon.xml">ListView</include> <!-- 52 -->
+			<include file="ViewsCommon.xml">DVDThumbsView</include> <!-- 54 -->
+			<include file="ViewsMovies.xml">MoviesWrapListInfoView</include> <!-- 53 -->
+			<include file="ViewsMovies.xml">MoviesWideListView</include> <!-- 75 -->
+			<include file="ViewsMovies.xml">MoviesListInfoView</include> <!-- 58 -->
+			<include file="ViewsMovies.xml">MoviesListInfoView2</include> <!-- 66 -->
+			<include file="ViewsMovies.xml">MoviesListInfoView3</include> <!-- 95 -->
+			<include file="ViewsMovies.xml">MoviesThumbsInfoView</include> <!-- 97 -->
+			<include condition="!Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsWideIconView</include> <!-- 56 -->
+			<include file="ViewsTVShows.xml">TVShowsWideListView</include> <!-- 76 -->
+			<include file="ViewsTVShows.xml">TVShowsListInfoView</include> <!-- 61 -->
+			<include file="ViewsTVShows.xml">TVShowsListInfoView2</include> <!-- 65 -->
+			<include condition="Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsThumbsInfoView</include> <!-- 100 -->
+			<include file="ViewsEpisodes.xml">EpisodesWideListView</include> <!-- 74 -->
+			<include file="ViewsEpisodes.xml">EpisodesListInfoView</include> <!-- 73 -->
+			<include file="ViewsEpisodes.xml">EpisodesListInfoView2</include> <!-- 68 -->
+			<include file="ViewsEpisodes.xml">EpisodesListInfoView3</include> <!-- 94 -->
+			<include file="ViewsMovies.xml">MoviesWallView</include> <!-- 69 -->
+			<include file="ViewsCommon.xml">AlbumThumbsView</include> <!-- 63 -->
+			<include file="ViewsAddons.xml">AddonsWideListView</include> <!-- 90 -->
+			<include file="ViewsAddons.xml">AddonsListInfoView</include> <!-- 91 -->
+			<include file="ViewsAddons.xml">AddonsWrapListInfoView</include> <!-- 93 -->
 		</control>
 		
 		<include condition="!Skin.HasSetting(EnableKioskMode)">MediaMenuBar</include>

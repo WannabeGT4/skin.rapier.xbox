@@ -16,9 +16,9 @@
 		<control type="group">
 			<visible>!Window.IsActive(MovieInformation)</visible>
 			<include>MediaInfoOpenCloseAnim</include>
-			<include>IconView</include> <!-- 50 -->
-			<include>BigIconView</include> <!-- 51 -->
-			<include>ListView</include> <!-- 52 -->
+			<include file="ViewsCommon.xml">IconView</include> <!-- 50 -->
+			<include file="ViewsCommon.xml">BigIconView</include> <!-- 51 -->
+			<include file="ViewsCommon.xml">ListView</include> <!-- 52 -->
 		</control>
 		
 		<include condition="!Skin.HasSetting(EnableKioskMode)">MediaMenuBar</include>

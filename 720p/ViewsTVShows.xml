@@ -243,8 +243,8 @@
 				<onleft>850</onleft>
 				<onright>150</onright>
 				<visible>Container.Content(TVShows)</visible>
-				<include condition="!Skin.HasSetting(UseTVShowsPosterCover)">TVShowsWideListBannerModeLayout</include>
-				<include condition="Skin.HasSetting(UseTVShowsPosterCover)">TVShowsWideListPosterModeLayout</include>
+				<include condition="!Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsWideListBannerModeLayout</include>
+				<include condition="Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsWideListPosterModeLayout</include>
 			</control>
 				
 			<include>WideListViewScrollbar</include>
@@ -1143,8 +1143,8 @@
 				<include>PanelFadeAnim</include>
 			</control>
 			
-			<include condition="!Skin.HasSetting(UseTVShowsPosterCover)">TVShowsListInfoBannerMode</include>
-			<include condition="Skin.HasSetting(UseTVShowsPosterCover)">TVShowsListInfoPosterMode</include>
+			<include condition="!Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsListInfoBannerMode</include>
+			<include condition="Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsListInfoPosterMode</include>
 			
 			<control type="list" id="61">	
 				<viewtype label="31111">List Info</viewtype>
@@ -1873,12 +1873,12 @@
 				<onleft>850</onleft>
 				<onright>150</onright>
 				<visible>Container.Content(TVShows)</visible>
-				<include condition="Skin.String(TVShowsListInfo2Style,1) | Skin.String(TVShowsListInfo2Style,3)">TVShowsListInfo2ItemLayout</include>
-				<include condition="[Skin.String(TVShowsListInfo2Style,) | Skin.String(TVShowsListInfo2Style,2)] + Skin.HasSetting(UseTVShowsPosterCover)">TVShowsListInfo2TallStyleItemLayout</include>
-				<include condition="[Skin.String(TVShowsListInfo2Style,) | Skin.String(TVShowsListInfo2Style,2)] + !Skin.HasSetting(UseTVShowsPosterCover)">TVShowsListInfo2BannerStyleItemLayout</include>
-				<include condition="Skin.String(TVShowsListInfo2Style,1)">TVShowsListInfo2FocusedLayout</include>
-				<include condition="[Skin.String(TVShowsListInfo2Style,) | Skin.String(TVShowsListInfo2Style,2) | Skin.String(TVShowsListInfo2Style,3)] + Skin.HasSetting(UseTVShowsPosterCover)">TVShowsListInfo2TallStyleFocusedLayout</include>
-				<include condition="[Skin.String(TVShowsListInfo2Style,) | Skin.String(TVShowsListInfo2Style,2) | Skin.String(TVShowsListInfo2Style,3)] + !Skin.HasSetting(UseTVShowsPosterCover)">TVShowsListInfo2BannerStyleFocusedLayout</include>
+				<include condition="Skin.String(TVShowsListInfo2Style,1) | Skin.String(TVShowsListInfo2Style,3)" file="ViewsTVShows.xml">TVShowsListInfo2ItemLayout</include>
+				<include condition="[Skin.String(TVShowsListInfo2Style,) | Skin.String(TVShowsListInfo2Style,2)] + Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsListInfo2TallStyleItemLayout</include>
+				<include condition="[Skin.String(TVShowsListInfo2Style,) | Skin.String(TVShowsListInfo2Style,2)] + !Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsListInfo2BannerStyleItemLayout</include>
+				<include condition="Skin.String(TVShowsListInfo2Style,1)" file="ViewsTVShows.xml">TVShowsListInfo2FocusedLayout</include>
+				<include condition="[Skin.String(TVShowsListInfo2Style,) | Skin.String(TVShowsListInfo2Style,2) | Skin.String(TVShowsListInfo2Style,3)] + Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsListInfo2TallStyleFocusedLayout</include>
+				<include condition="[Skin.String(TVShowsListInfo2Style,) | Skin.String(TVShowsListInfo2Style,2) | Skin.String(TVShowsListInfo2Style,3)] + !Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsListInfo2BannerStyleFocusedLayout</include>
 			</control>
 			
 			<include>ListInfo2ViewScrollbar</include>
@@ -2718,8 +2718,8 @@
 				</control>
 			</control>
 			
-			<include condition="!Skin.HasSetting(EnableThumbsInfoTVShowsLogo)">TVShowsThumbsInfoDefaultStyle</include>
-			<include condition="Skin.HasSetting(EnableThumbsInfoTVShowsLogo)">TVShowsThumbsInfoLogoStyle</include>
+			<include condition="!Skin.HasSetting(EnableThumbsInfoTVShowsLogo)" file="ViewsTVShows.xml">TVShowsThumbsInfoDefaultStyle</include>
+			<include condition="Skin.HasSetting(EnableThumbsInfoTVShowsLogo)" file="ViewsTVShows.xml">TVShowsThumbsInfoLogoStyle</include>
 
 			<include>ThumbsInfoViewScrollbar</include>
 			

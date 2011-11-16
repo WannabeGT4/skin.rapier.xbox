@@ -16,11 +16,11 @@
 		<control type="group">   
 			<visible>!Window.IsActive(MusicInformation) + !Window.IsActive(MovieInformation)</visible>
 			<include>MediaInfoOpenCloseAnim</include>
-			<include>IconView</include> <!-- 50 -->
-			<include>BigIconView</include> <!-- 51 -->
-			<include>ListView</include> <!-- 52 -->
-			<include>AlbumThumbsView</include> <!-- 63 -->
-			<include>MusicWideListView</include> <!-- 77 -->
+			<include file="ViewsCommon.xml">IconView</include> <!-- 50 -->
+			<include file="ViewsCommon.xml">BigIconView</include> <!-- 51 -->
+			<include file="ViewsCommon.xml">ListView</include> <!-- 52 -->
+			<include file="ViewsCommon.xml">AlbumThumbsView</include> <!-- 63 -->
+			<include file="ViewsMusic.xml">MusicWideListView</include> <!-- 77 -->
 		</control>	
 		
 		<include condition="!Skin.HasSetting(EnableKioskMode)">MediaMenuBar</include>

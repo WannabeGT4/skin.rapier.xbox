@@ -156,10 +156,10 @@
 				<onleft>850</onleft>
 				<onright>150</onright>		
 				<visible>Substring(Container.FolderPath,plugin://plugin.program)</visible>
-				<include condition="Skin.String(ProgramsListInfoStyle,1) | Skin.String(ProgramsListInfoStyle,3)">ProgramsListInfoItemLayout</include>
-				<include condition="Skin.String(ProgramsListInfoStyle,) | Skin.String(ProgramsListInfoStyle,2)">ProgramsListInfoTallStyleItemLayout</include>
-				<include condition="Skin.String(ProgramsListInfoStyle,1)">ProgramsListInfoFocusedLayout</include>
-				<include condition="Skin.String(ProgramsListInfoStyle,) | Skin.String(ProgramsListInfoStyle,2) | Skin.String(ProgramsListInfoStyle,3)">ProgramsListInfoTallStyleFocusedLayout</include>
+				<include condition="Skin.String(ProgramsListInfoStyle,1) | Skin.String(ProgramsListInfoStyle,3)" file="ViewsPrograms.xml">ProgramsListInfoItemLayout</include>
+				<include condition="Skin.String(ProgramsListInfoStyle,) | Skin.String(ProgramsListInfoStyle,2)" file="ViewsPrograms.xml">ProgramsListInfoTallStyleItemLayout</include>
+				<include condition="Skin.String(ProgramsListInfoStyle,1)" file="ViewsPrograms.xml">ProgramsListInfoFocusedLayout</include>
+				<include condition="Skin.String(ProgramsListInfoStyle,) | Skin.String(ProgramsListInfoStyle,2) | Skin.String(ProgramsListInfoStyle,3)" file="ViewsPrograms.xml">ProgramsListInfoTallStyleFocusedLayout</include>
 			</control>
 
 			<include>ListInfo2ViewScrollbar</include>
@@ -583,10 +583,10 @@
 				<onleft>850</onleft>
 				<onright>150</onright>		
 				<visible>Substring(Container.FolderPath,plugin://plugin.program)</visible>
-				<include condition="Skin.String(ProgramsListInfo2Style,1) | Skin.String(ProgramsListInfo2Style,3)">ProgramsListInfo2ItemLayout</include>
-				<include condition="Skin.String(ProgramsListInfo2Style,) | Skin.String(ProgramsListInfo2Style,2)">ProgramsListInfo2TallStyleItemLayout</include>
-				<include condition="Skin.String(ProgramsListInfo2Style,1)">ProgramsListInfo2FocusedLayout</include>
-				<include condition="Skin.String(ProgramsListInfo2Style,) | Skin.String(ProgramsListInfo2Style,2) | Skin.String(ProgramsListInfo2Style,3)">ProgramsListInfo2TallStyleFocusedLayout</include>
+				<include condition="Skin.String(ProgramsListInfo2Style,1) | Skin.String(ProgramsListInfo2Style,3)" file="ViewsPrograms.xml">ProgramsListInfo2ItemLayout</include>
+				<include condition="Skin.String(ProgramsListInfo2Style,) | Skin.String(ProgramsListInfo2Style,2)" file="ViewsPrograms.xml">ProgramsListInfo2TallStyleItemLayout</include>
+				<include condition="Skin.String(ProgramsListInfo2Style,1)" file="ViewsPrograms.xml">ProgramsListInfo2FocusedLayout</include>
+				<include condition="Skin.String(ProgramsListInfo2Style,) | Skin.String(ProgramsListInfo2Style,2) | Skin.String(ProgramsListInfo2Style,3)" file="ViewsPrograms.xml">ProgramsListInfo2TallStyleFocusedLayout</include>
 			</control>
 
 			<include>ListInfo2ViewScrollbar</include>
@@ -1010,10 +1010,10 @@
 				<onleft>850</onleft>
 				<onright>150</onright>		
 				<visible>Substring(Container.FolderPath,plugin://plugin.program)</visible>
-				<include condition="Skin.String(ProgramsListInfo3Style,1) | Skin.String(ProgramsListInfo3Style,3)">ProgramsListInfo3ItemLayout</include>
-				<include condition="Skin.String(ProgramsListInfo3Style,) | Skin.String(ProgramsListInfo3Style,2)">ProgramsListInfo3TallStyleItemLayout</include>
-				<include condition="Skin.String(ProgramsListInfo3Style,1)">ProgramsListInfo3FocusedLayout</include>
-				<include condition="Skin.String(ProgramsListInfo3Style,) | Skin.String(ProgramsListInfo3Style,2) | Skin.String(ProgramsListInfo3Style,3)">ProgramsListInfo3TallStyleFocusedLayout</include>
+				<include condition="Skin.String(ProgramsListInfo3Style,1) | Skin.String(ProgramsListInfo3Style,3)" file="ViewsPrograms.xml">ProgramsListInfo3ItemLayout</include>
+				<include condition="Skin.String(ProgramsListInfo3Style,) | Skin.String(ProgramsListInfo3Style,2)" file="ViewsPrograms.xml">ProgramsListInfo3TallStyleItemLayout</include>
+				<include condition="Skin.String(ProgramsListInfo3Style,1)" file="ViewsPrograms.xml">ProgramsListInfo3FocusedLayout</include>
+				<include condition="Skin.String(ProgramsListInfo3Style,) | Skin.String(ProgramsListInfo3Style,2) | Skin.String(ProgramsListInfo3Style,3)" file="ViewsPrograms.xml">ProgramsListInfo3TallStyleFocusedLayout</include>
 			</control>
 
 			<include>ListInfo2ViewScrollbar</include>
@@ -2262,8 +2262,8 @@
 
 			<control type="group" id="254">
 				<animation effect="slide" end="0,120" time="500" condition="Skin.HasSetting(EnableProgramsWrapListInfoCompactMode)">Conditional</animation>
-				<include condition="Skin.String(ProgramsWrapListInfoStyle,1) | Skin.String(ProgramsWrapListInfoStyle,)">ProgramsWrapListInfoStyle1</include>
-				<include condition="Skin.String(ProgramsWrapListInfoStyle,2)">ProgramsWrapListInfoStyle2</include>	
+				<include condition="Skin.String(ProgramsWrapListInfoStyle,1) | Skin.String(ProgramsWrapListInfoStyle,)" file="ViewsPrograms.xml">ProgramsWrapListInfoStyle1</include>
+				<include condition="Skin.String(ProgramsWrapListInfoStyle,2)" file="ViewsPrograms.xml">ProgramsWrapListInfoStyle2</include>	
 			</control>
 
 			<control type="group">
@@ -2910,8 +2910,8 @@
 
 			<control type="group" id="254">
 				<animation effect="slide" end="0,120" time="500" condition="Skin.HasSetting(EnableProgramsWrapListInfo2CompactMode)">Conditional</animation>
-				<include condition="Skin.String(ProgramsWrapListInfo2Style,1) | Skin.String(ProgramsWrapListInfo2Style,)">ProgramsWrapListInfo2Style1</include>
-				<include condition="Skin.String(ProgramsWrapListInfo2Style,2)">ProgramsWrapListInfo2Style2</include>	
+				<include condition="Skin.String(ProgramsWrapListInfo2Style,1) | Skin.String(ProgramsWrapListInfo2Style,)" file="ViewsPrograms.xml">ProgramsWrapListInfo2Style1</include>
+				<include condition="Skin.String(ProgramsWrapListInfo2Style,2)" file="ViewsPrograms.xml">ProgramsWrapListInfo2Style2</include>	
 			</control>
 
 			<control type="group">
@@ -3558,7 +3558,7 @@
 
 			<control type="group" id="254">
 				<animation effect="slide" end="0,120" time="500" condition="Skin.HasSetting(EnableProgramsWrapListInfo3CompactMode)">Conditional</animation>
-				<include>ProgramsWrapListInfo3Style1</include>	
+				<include file="ViewsPrograms.xml">ProgramsWrapListInfo3Style1</include>	
 			</control>
 
 			<control type="group">

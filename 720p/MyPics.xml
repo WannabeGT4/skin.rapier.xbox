@@ -14,12 +14,12 @@
 		</control>
 
 		<control type="group">	
-			<include>IconView</include> <!-- 50 -->
-			<include>BigIconView</include> <!-- 51 -->
-			<include>ListView</include> <!-- 52 -->
-			<include>AddonsWideListView</include> <!-- 90 -->
-			<include>AddonsListInfoView</include> <!-- 91 -->
-			<include>AddonsWrapListInfoView</include> <!-- 93 -->
+			<include file="ViewsCommon.xml">IconView</include> <!-- 50 -->
+			<include file="ViewsCommon.xml">BigIconView</include> <!-- 51 -->
+			<include file="ViewsCommon.xml">ListView</include> <!-- 52 -->
+			<include file="ViewsAddons.xml">AddonsWideListView</include> <!-- 90 -->
+			<include file="ViewsAddons.xml">AddonsListInfoView</include> <!-- 91 -->
+			<include file="ViewsAddons.xml">AddonsWrapListInfoView</include> <!-- 93 -->
 		</control>
 		
 		<include condition="!Skin.HasSetting(EnableKioskMode)">MediaMenuBar</include>

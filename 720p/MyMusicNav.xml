@@ -18,20 +18,20 @@
 		<control type="group">
 			<visible>!Window.IsActive(MusicInformation) + !Window.IsActive(MovieInformation)</visible>
 			<include>MediaInfoOpenCloseAnim</include>
-			<include>IconView</include> <!-- 50 -->
-			<include>BigIconView</include> <!-- 51 -->
-			<include>ListView</include> <!-- 52 -->
-			<include>AlbumThumbsView</include> <!-- 63 -->
-			<include>MusicWideListView</include> <!-- 77 -->
-			<include>MusicListInfoView</include> <!-- 62 -->
-			<include>MusicListInfoView2</include> <!-- 67 -->
-			<include>MusicListInfoView3</include> <!-- 96 -->
-			<include>MusicThumbsInfoView</include> <!-- 98 -->
-			<include>MusicWrapListInfoView</include> <!-- 64 -->
-			<include>MusicWallView</include> <!-- 70 -->
-			<include>AddonsWideListView</include> <!-- 90 -->
-			<include>AddonsListInfoView</include> <!-- 91 -->
-			<include>AddonsWrapListInfoView</include> <!-- 93 -->
+			<include file="ViewsCommon.xml">IconView</include> <!-- 50 -->
+			<include file="ViewsCommon.xml">BigIconView</include> <!-- 51 -->
+			<include file="ViewsCommon.xml">ListView</include> <!-- 52 -->
+			<include file="ViewsCommon.xml">AlbumThumbsView</include> <!-- 63 -->
+			<include file="ViewsMusic.xml">MusicWideListView</include> <!-- 77 -->
+			<include file="ViewsMusic.xml">MusicListInfoView</include> <!-- 62 -->
+			<include file="ViewsMusic.xml">MusicListInfoView2</include> <!-- 67 -->
+			<include file="ViewsMusic.xml">MusicListInfoView3</include> <!-- 96 -->
+			<include file="ViewsMusic.xml">MusicThumbsInfoView</include> <!-- 98 -->
+			<include file="ViewsMusic.xml">MusicWrapListInfoView</include> <!-- 64 -->
+			<include file="ViewsMusic.xml">MusicWallView</include> <!-- 70 -->
+			<include file="ViewsAddons.xml">AddonsWideListView</include> <!-- 90 -->
+			<include file="ViewsAddons.xml">AddonsListInfoView</include> <!-- 91 -->
+			<include file="ViewsAddons.xml">AddonsWrapListInfoView</include> <!-- 93 -->
 		</control>	
 		
 		<include condition="!Skin.HasSetting(EnableKioskMode)">MediaMenuBar</include>

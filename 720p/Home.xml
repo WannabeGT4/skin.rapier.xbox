@@ -3,7 +3,7 @@
 	<allowoverlay>yes</allowoverlay>
 	
 	<controls>
-		<include>HomeTriggers</include>
+		<include file="includes_Home.xml">HomeTriggers</include>
 		
 		<control type="group">	
 			<include>BackgroundHome</include>
@@ -12,32 +12,32 @@
 			<include>BackgroundOpenCloseAnim</include>	
 		</control>
 
-		<include condition="!Skin.HasSetting(HideRecentlyAddedHomePanel)">RecentlyAddedPanel</include>
-		<include condition="!Skin.HasSetting(HideNowPlayingHomePanel)">NowPlayingPanel</include>
-		<include condition="!Skin.HasSetting(HideWeatherHomePanel) + !Skin.HasSetting(DisableWeather)">WeatherPanel</include>
-		<include condition="!Skin.HasSetting(HideSystemInfoHomePanel)">SystemInfoPanel</include>
-		<include condition="!Skin.HasSetting(HideHomeCategoryIcons)">HomeCategoryIcons</include>
+		<include condition="!Skin.HasSetting(HideRecentlyAddedHomePanel)" file="includes_Home.xml">RecentlyAddedPanel</include>
+		<include condition="!Skin.HasSetting(HideNowPlayingHomePanel)" file="includes_Home.xml">NowPlayingPanel</include>
+		<include condition="!Skin.HasSetting(HideWeatherHomePanel) + !Skin.HasSetting(DisableWeather)" file="includes_Home.xml">WeatherPanel</include>
+		<include condition="!Skin.HasSetting(HideSystemInfoHomePanel)" file="includes_Home.xml">SystemInfoPanel</include>
+		<include condition="!Skin.HasSetting(HideHomeCategoryIcons)" file="includes_Home.xml">HomeCategoryIcons</include>
 		<include>DialogPopUpScreenDim</include>	
 					
 		<control type="group" id="510">	
 			<description>Menu Area</description>	
 			<posy>606</posy>
-			<include>HomeMenuPaneImage</include>
+			<include file="includes_Home.xml">HomeMenuPaneImage</include>
 			<include>HomeMenuPaneOpenCloseAnim</include>
-			<include>HomeMenu</include>
-			<include>HomeMenuPaneOverlay</include>
-			<include condition="!Skin.HasSetting(HideHomeSubMenus)">HomeSubMenus</include>
-			<include>HomeSystemSubMenus</include>
-			<include condition="Skin.HasSetting(ShowHomeNavButtons)">HomeNavButtons</include>
+			<include file="includes_Home.xml">HomeMenu</include>
+			<include file="includes_Home.xml">HomeMenuPaneOverlay</include>
+			<include condition="!Skin.HasSetting(HideHomeSubMenus)" file="includes_Home.xml">HomeSubMenus</include>
+			<include file="includes_Home.xml">HomeSystemSubMenus</include>
+			<include condition="Skin.HasSetting(ShowHomeNavButtons)" file="includes_Home.xml">HomeNavButtons</include>
 		</control>
 		
 		<control type="group">
 			<description>Top Bar Area</description>
-			<include>HomeTopBarImage</include>
+			<include file="includes_Home.xml">HomeTopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>
-			<include condition="System.GetBool(LookAndFeel.EnableRSSFeeds)">RSSFeed</include>
-			<include>HomeTopBarOverlay</include>
-			<include>XbmcLogo</include>
+			<include condition="System.GetBool(LookAndFeel.EnableRSSFeeds)" file="includes_Home.xml">RSSFeed</include>
+			<include file="includes_Home.xml">HomeTopBarOverlay</include>
+			<include file="includes_Home.xml">XbmcLogo</include>
 			<include>Notifications</include>
 		</control>
 	</controls>		

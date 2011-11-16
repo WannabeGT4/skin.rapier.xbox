@@ -937,10 +937,10 @@
 				<onleft>850</onleft>
 				<onright>150</onright>		
 				<visible>Container.Content(Movies)</visible>
-				<include condition="Skin.String(MoviesListInfo2Style,1) | Skin.String(MoviesListInfo2Style,3)">MoviesListInfo2ItemLayout</include>
-				<include condition="Skin.String(MoviesListInfo2Style,) | Skin.String(MoviesListInfo2Style,2)">MoviesListInfo2TallStyleItemLayout</include>
-				<include condition="Skin.String(MoviesListInfo2Style,1)">MoviesListInfo2FocusedLayout</include>
-				<include condition="Skin.String(MoviesListInfo2Style,) | Skin.String(MoviesListInfo2Style,2) | Skin.String(MoviesListInfo2Style,3)">MoviesListInfo2TallStyleFocusedLayout</include>
+				<include condition="Skin.String(MoviesListInfo2Style,1) | Skin.String(MoviesListInfo2Style,3)" file="ViewsMovies.xml">MoviesListInfo2ItemLayout</include>
+				<include condition="Skin.String(MoviesListInfo2Style,) | Skin.String(MoviesListInfo2Style,2)" file="ViewsMovies.xml">MoviesListInfo2TallStyleItemLayout</include>
+				<include condition="Skin.String(MoviesListInfo2Style,1)" file="ViewsMovies.xml">MoviesListInfo2FocusedLayout</include>
+				<include condition="Skin.String(MoviesListInfo2Style,) | Skin.String(MoviesListInfo2Style,2) | Skin.String(MoviesListInfo2Style,3)" file="ViewsMovies.xml">MoviesListInfo2TallStyleFocusedLayout</include>
 			</control>
 			
 			<include>ListInfo2ViewScrollbar</include>
@@ -2103,8 +2103,8 @@
 			
 			<control type="group" id="254">
 				<animation effect="slide" end="0,120" time="500" condition="Skin.HasSetting(EnableMoviesWrapListInfoCompactMode)">Conditional</animation>
-				<include condition="Skin.String(MoviesWrapListInfoStyle,1) | Skin.String(MoviesWrapListInfoStyle,)">MoviesWrapListInfoStyle1</include>
-				<include condition="Skin.String(MoviesWrapListInfoStyle,2)">MoviesWrapListInfoStyle2</include>	
+				<include condition="Skin.String(MoviesWrapListInfoStyle,1) | Skin.String(MoviesWrapListInfoStyle,)" file="ViewsMovies.xml">MoviesWrapListInfoStyle1</include>
+				<include condition="Skin.String(MoviesWrapListInfoStyle,2)" file="ViewsMovies.xml">MoviesWrapListInfoStyle2</include>	
 			</control>
 			
 			<control type="group">

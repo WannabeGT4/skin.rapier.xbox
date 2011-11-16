@@ -1982,10 +1982,10 @@
 				<onleft>850</onleft>
 				<onright>150</onright>
 				<visible>Container.Content(Albums) | Container.Content(Songs) | Container.Content(Artists)</visible>
-				<include condition="Skin.String(MusicListInfo2Style,1) | Skin.String(MusicListInfo2Style,3)">MusicListInfo2ItemLayout</include>
-				<include condition="Skin.String(MusicListInfo2Style,) | Skin.String(MusicListInfo2Style,2)">MusicListInfo2TallStyleItemLayout</include>
-				<include condition="Skin.String(MusicListInfo2Style,1)">MusicListInfo2FocusedLayout</include>
-				<include condition="Skin.String(MusicListInfo2Style,) | Skin.String(MusicListInfo2Style,2) | Skin.String(MusicListInfo2Style,3)">MusicListInfo2TallStyleFocusedLayout</include>
+				<include condition="Skin.String(MusicListInfo2Style,1) | Skin.String(MusicListInfo2Style,3)" file="ViewsMusic.xml">MusicListInfo2ItemLayout</include>
+				<include condition="Skin.String(MusicListInfo2Style,) | Skin.String(MusicListInfo2Style,2)" file="ViewsMusic.xml">MusicListInfo2TallStyleItemLayout</include>
+				<include condition="Skin.String(MusicListInfo2Style,1)" file="ViewsMusic.xml">MusicListInfo2FocusedLayout</include>
+				<include condition="Skin.String(MusicListInfo2Style,) | Skin.String(MusicListInfo2Style,2) | Skin.String(MusicListInfo2Style,3)" file="ViewsMusic.xml">MusicListInfo2TallStyleFocusedLayout</include>
 			</control>
 			
 			<include>ListInfo2ViewScrollbar</include>
@@ -3276,8 +3276,8 @@
 			
 			<control type="group" id="254">
 				<animation effect="slide" end="0,120" time="500" condition="Skin.HasSetting(EnableMusicWrapListInfoCompactMode)">Conditional</animation>
-				<include condition="Skin.String(MusicWrapInfoStyle,1) | Skin.String(MusicWrapInfoStyle,)">MusicWrapInfoStyle1</include>
-				<include condition="Skin.String(MusicWrapInfoStyle,2)">MusicWrapInfoStyle2</include>	
+				<include condition="Skin.String(MusicWrapInfoStyle,1) | Skin.String(MusicWrapInfoStyle,)" file="ViewsMusic.xml">MusicWrapInfoStyle1</include>
+				<include condition="Skin.String(MusicWrapInfoStyle,2)" file="ViewsMusic.xml">MusicWrapInfoStyle2</include>	
 			</control>
 			
 			<control type="group">
