@@ -2,7 +2,8 @@
 	<defaultcontrol always="true">500</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>Home</previouswindow>
-	<views>50,51,52,54,53,75,58,66,95,97,56,76,61,65,100,74,73,68,94,69,63,90,91,93</views>
+	<!--- Shared views and then defualt views must be last in the list of <views> so that the conditionally included views have a chance to be evaluated first --->
+	<views>53,75,58,66,95,97,56,76,61,65,100,74,73,68,94,69,63,90,91,93,54,50,51,52</views>
 	
 	<controls>
 		<control type="group">
@@ -25,29 +26,29 @@
 			<include file="ViewsCommon.xml">IconView</include> <!-- 50 -->
 			<include file="ViewsCommon.xml">BigIconView</include> <!-- 51 -->
 			<include file="ViewsCommon.xml">ListView</include> <!-- 52 -->
-			<include file="ViewsCommon.xml">DVDThumbsView</include> <!-- 54 -->
-			<include file="ViewsMovies.xml">MoviesWrapListInfoView</include> <!-- 53 -->
-			<include file="ViewsMovies.xml">MoviesWideListView</include> <!-- 75 -->
-			<include file="ViewsMovies.xml">MoviesListInfoView</include> <!-- 58 -->
-			<include file="ViewsMovies.xml">MoviesListInfoView2</include> <!-- 66 -->
-			<include file="ViewsMovies.xml">MoviesListInfoView3</include> <!-- 95 -->
-			<include file="ViewsMovies.xml">MoviesThumbsInfoView</include> <!-- 97 -->
-			<include condition="!Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsWideIconView</include> <!-- 56 -->
-			<include file="ViewsTVShows.xml">TVShowsWideListView</include> <!-- 76 -->
-			<include file="ViewsTVShows.xml">TVShowsListInfoView</include> <!-- 61 -->
-			<include file="ViewsTVShows.xml">TVShowsListInfoView2</include> <!-- 65 -->
-			<include condition="Skin.HasSetting(UseTVShowsPosterCover)" file="ViewsTVShows.xml">TVShowsThumbsInfoView</include> <!-- 100 -->
-			<include file="ViewsEpisodes.xml">EpisodesWideListView</include> <!-- 74 -->
-			<include file="ViewsEpisodes.xml">EpisodesListInfoView</include> <!-- 73 -->
-			<include file="ViewsEpisodes.xml">EpisodesListInfoView2</include> <!-- 68 -->
-			<include file="ViewsEpisodes.xml">EpisodesListInfoView3</include> <!-- 94 -->
-			<include file="ViewsMovies.xml">MoviesWallView</include> <!-- 69 -->
-			<include file="ViewsCommon.xml">AlbumThumbsView</include> <!-- 63 -->
-			<include file="ViewsAddons.xml">AddonsWideListView</include> <!-- 90 -->
-			<include file="ViewsAddons.xml">AddonsListInfoView</include> <!-- 91 -->
-			<include file="ViewsAddons.xml">AddonsWrapListInfoView</include> <!-- 93 -->
+			<include condition="StringCompare(Skin.String(TVShowsViewMode),54) | StringCompare(Skin.String(ViewMode),54)" file="ViewsCommon.xml">DVDThumbsView</include> <!-- 54 -->
+			<include condition="StringCompare(Skin.String(MoviesViewMode),53)" file="ViewsMovies.xml">MoviesWrapListInfoView</include> <!-- 53 -->
+			<include condition="StringCompare(Skin.String(MoviesViewMode),69)" file="ViewsMovies.xml">MoviesWallView</include> <!-- 69 -->
+			<include condition="StringCompare(Skin.String(MoviesViewMode),75)" file="ViewsMovies.xml">MoviesWideListView</include> <!-- 75 -->
+			<include condition="StringCompare(Skin.String(MoviesViewMode),58)" file="ViewsMovies.xml">MoviesListInfoView</include> <!-- 58 -->
+			<include condition="StringCompare(Skin.String(MoviesViewMode),66)" file="ViewsMovies.xml">MoviesListInfoView2</include> <!-- 66 -->
+			<include condition="StringCompare(Skin.String(MoviesViewMode),95)" file="ViewsMovies.xml">MoviesListInfoView3</include> <!-- 95 -->
+			<include condition="StringCompare(Skin.String(MoviesViewMode),97)" file="ViewsMovies.xml">MoviesThumbsInfoView</include> <!-- 97 -->
+			<include condition="!Skin.HasSetting(UseTVShowsPosterCover) + StringCompare(Skin.String(TVShowsViewMode),56)" file="ViewsTVShows.xml">TVShowsWideIconView</include> <!-- 56 -->
+			<include condition="StringCompare(Skin.String(TVShowsViewMode),76)" file="ViewsTVShows.xml">TVShowsWideListView</include> <!-- 76 -->
+			<include condition="StringCompare(Skin.String(TVShowsViewMode),61)" file="ViewsTVShows.xml">TVShowsListInfoView</include> <!-- 61 -->
+			<include condition="StringCompare(Skin.String(TVShowsViewMode),65)" file="ViewsTVShows.xml">TVShowsListInfoView2</include> <!-- 65 -->
+			<include condition="Skin.HasSetting(UseTVShowsPosterCover) + StringCompare(Skin.String(TVShowsViewMode),100)" file="ViewsTVShows.xml">TVShowsThumbsInfoView</include> <!-- 100 -->
+			<include condition="StringCompare(Skin.String(TVShowsViewMode),74)" file="ViewsEpisodes.xml">EpisodesWideListView</include> <!-- 74 -->
+			<include condition="StringCompare(Skin.String(TVShowsViewMode),73)" file="ViewsEpisodes.xml">EpisodesListInfoView</include> <!-- 73 -->
+			<include condition="StringCompare(Skin.String(TVShowsViewMode),68)" file="ViewsEpisodes.xml">EpisodesListInfoView2</include> <!-- 68 -->
+			<include condition="StringCompare(Skin.String(TVShowsViewMode),94)" file="ViewsEpisodes.xml">EpisodesListInfoView3</include> <!-- 94 -->
+			<include condition="false" file="ViewsCommon.xml">AlbumThumbsView</include> <!-- 63 -->
+			<include condition="false" file="ViewsAddons.xml">AddonsWideListView</include> <!-- 90 -->
+			<include condition="false" file="ViewsAddons.xml">AddonsListInfoView</include> <!-- 91 -->
+			<include condition="false" file="ViewsAddons.xml">AddonsWrapListInfoView</include> <!-- 93 -->
 		</control>
-		
+
 		<include condition="!Skin.HasSetting(EnableKioskMode)">MediaMenuBar</include>
 		
 		<control type="group">

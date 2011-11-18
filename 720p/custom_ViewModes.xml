@@ -42,16 +42,27 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31108]</label>
 				<onclick>Container.SetViewMode(56)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(TVShowsViewMode,56)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(TVShows) + !Skin.HasSetting(UseTVShowsPosterCover)</visible>
 			</control>
 			<control type="button" id="4">
-				<description>Thumbnail (Movies) (TVShows) (Seasons)</description>
+				<description>Thumbnail (Movies)</description>
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31107]</label>
 				<onclick>Container.SetViewMode(54)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
-				<visible>Container.Content(Movies) | Container.Content(Seasons) | [Container.Content(TVShows) + Skin.HasSetting(UseTVShowsPosterCover)]</visible>
+				<onclick>Skin.SetString(MoviesViewMode,54)</onclick>
+				<onclick>ReloadSkin()</onclick>
+				<visible>Container.Content(Movies)</visible>
+			</control>
+			<control type="button" id="104">
+				<description>Thumbnail (TVShows) (Seasons)</description>
+				<include>DropDownMenuViewModeBtn</include>
+				<label>$LOCALIZE[31107]</label>
+				<onclick>Container.SetViewMode(54)</onclick>
+				<onclick>Skin.SetString(TVShowsViewMode,54)</onclick>
+				<onclick>ReloadSkin()</onclick>
+				<visible>Container.Content(Seasons) | [Container.Content(TVShows) + Skin.HasSetting(UseTVShowsPosterCover)]</visible>
 			</control>
 			<control type="button" id="5">
 				<description>Thumbnail (Music) (Addons)</description>
@@ -73,7 +84,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31114]</label>
 				<onclick>Container.SetViewMode(75)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(MoviesViewMode,75)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(Movies)</visible>
 			</control>
 			<control type="button" id="8">
@@ -81,7 +93,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31114]</label>
 				<onclick>Container.SetViewMode(76)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(TVShowsViewMode,76)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(TVShows)</visible>
 			</control>
 			<control type="button" id="9">
@@ -89,7 +102,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31114]</label>
 				<onclick>Container.SetViewMode(74)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(TVShowsViewMode,74)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(Episodes)</visible>
 			</control>
 			<control type="button" id="10">
@@ -114,7 +128,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31111]</label>
 				<onclick>Container.SetViewMode(58)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(MoviesViewMode,58)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(Movies)</visible>
 			</control>
 			<control type="button" id="13">
@@ -122,7 +137,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31111]</label>
 				<onclick>Container.SetViewMode(61)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(TVShowsViewMode,61)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(TVShows)</visible>
 			</control>
 			<control type="button" id="14">
@@ -130,7 +146,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31111]</label>
 				<onclick>Container.SetViewMode(73)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(TVShowsViewMode,73)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(Episodes)</visible>
 			</control>
 			<control type="button" id="15">
@@ -162,7 +179,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31112]</label>
 				<onclick>Container.SetViewMode(66)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(MoviesViewMode,66)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(Movies)</visible>
 			</control>
 			<control type="button" id="4002">
@@ -178,7 +196,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31112]</label>
 				<onclick>Container.SetViewMode(65)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(TVShowsViewMode,65)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(TVShows)</visible>
 			</control>
 			<control type="button" id="19">
@@ -186,7 +205,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31112]</label>
 				<onclick>Container.SetViewMode(68)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(TVShowsViewMode,68)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(Episodes)</visible>
 			</control>
 			<control type="button" id="20">
@@ -202,7 +222,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31115]</label>
 				<onclick>Container.SetViewMode(95)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(MoviesViewMode,95)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(Movies)</visible>
 			</control>
 			<control type="button" id="22">
@@ -210,7 +231,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31115]</label>
 				<onclick>Container.SetViewMode(94)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(TVShowsViewMode,94)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(Episodes)</visible>
 			</control>
 			<control type="button" id="29">
@@ -234,7 +256,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31116]</label>
 				<onclick>Container.SetViewMode(97)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(MoviesViewMode,97)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(Movies)</visible>
 			</control>
 			<control type="button" id="4004">
@@ -266,7 +289,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31116]</label>
 				<onclick>Container.SetViewMode(100)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(TVShowsViewMode,100)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(TVShows) + Skin.HasSetting(UseTVShowsPosterCover)</visible>
 			</control>
 			<control type="button" id="32">
@@ -282,7 +306,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31106]</label>
 				<onclick>Container.SetViewMode(53)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(MoviesViewMode,53)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Window.IsActive(VideoLibrary) + Container.Content(Movies)</visible>
 			</control>
 			<control type="button" id="24">
@@ -330,7 +355,8 @@
 				<include>DropDownMenuViewModeBtn</include>
 				<label>$LOCALIZE[31113]</label>
 				<onclick>Container.SetViewMode(69)</onclick>
-				<onclick>Dialog.Close(3002)</onclick>
+				<onclick>Skin.SetString(MoviesViewMode,69)</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Container.Content(Movies)</visible>
 			</control>
 			<control type="button" id="27">
