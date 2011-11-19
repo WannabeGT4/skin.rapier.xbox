@@ -26,7 +26,7 @@
 			<include file="ViewsCommon.xml">IconView</include> <!-- 50 -->
 			<include file="ViewsCommon.xml">BigIconView</include> <!-- 51 -->
 			<include file="ViewsCommon.xml">ListView</include> <!-- 52 -->
-			<include condition="StringCompare(Skin.String(TVShowsViewMode),54) | StringCompare(Skin.String(ViewMode),54)" file="ViewsCommon.xml">DVDThumbsView</include> <!-- 54 -->
+			<include condition="StringCompare(Skin.String(TVShowsViewMode),54) | StringCompare(Skin.String(MoviesViewMode),54)" file="ViewsCommon.xml">DVDThumbsView</include> <!-- 54 -->
 			<include condition="StringCompare(Skin.String(MoviesViewMode),53)" file="ViewsMovies.xml">MoviesWrapListInfoView</include> <!-- 53 -->
 			<include condition="StringCompare(Skin.String(MoviesViewMode),69)" file="ViewsMovies.xml">MoviesWallView</include> <!-- 69 -->
 			<include condition="StringCompare(Skin.String(MoviesViewMode),75)" file="ViewsMovies.xml">MoviesWideListView</include> <!-- 75 -->
