@@ -1,10 +1,8 @@
 <window id="0">
-	<defaultcontrol always="true">6887</defaultcontrol>
+	<defaultcontrol always="true">850</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	
-	<controls>
-		<include file="includes_Home.xml">HomeTriggers</include>
-		
+	<controls>		
 		<control type="group">	
 			<include>BackgroundHome</include>
 			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)">BackgroundVideoPlaying</include>

@@ -196,7 +196,7 @@
 		<control type="button" id="6900">
 			<include>RedirectBtn</include>
 			<onfocus>Skin.Reset(ShowMediaExtraOptions)</onfocus>
-			<onfocus>Control.SetFocus(850)</onfocus>
+			<onfocus>Control.SetFocus(9)</onfocus>
 		</control>
 	</include>
 	

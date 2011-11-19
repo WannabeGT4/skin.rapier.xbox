@@ -3,6 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 		
 	<controls>
+	<include file="includes_Home.xml">HomeTriggers</include>
 		<control type="button" id="9">
 			<include>RedirectBtn</include>
 			<onfocus>XBMC.AlarmClock(UpdateRecentAdded,XBMC.RunScript(script.recentlyadded,limit=8&amp;albums=True&amp;totals=True),1,true)</onfocus>
