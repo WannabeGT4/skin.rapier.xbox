@@ -28,7 +28,7 @@
 			<description>Top Bar Area</description>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>
-			<include>BreadCrumbPictures</include>
+			<include file="includes_BreadCrumbs.xml">BreadCrumbPictures</include>
 			<include>Notifications</include>
 		</control>
     </controls>   

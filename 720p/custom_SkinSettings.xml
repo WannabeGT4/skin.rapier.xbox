@@ -9028,7 +9028,7 @@
 			<description>Top Bar Area</description>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>
-			<include>BreadCrumbSettings</include>
+			<include file="includes_BreadCrumbs.xml">BreadCrumbSettings</include>
 			<include>Notifications</include>	
 		</control>
 	</controls> 

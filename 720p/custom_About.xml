@@ -206,7 +206,7 @@
 			<description>Top Bar Area</description>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>
-			<include>BreadCrumbCredits</include>
+			<include file="includes_BreadCrumbs.xml">BreadCrumbCredits</include>
 			<include>Notifications</include>
 		</control>
 		

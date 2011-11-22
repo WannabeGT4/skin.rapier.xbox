@@ -55,7 +55,7 @@
 			<description>Top Bar Area</description>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>
-			<include>BreadCrumbVideoLibrary</include>
+			<include file="includes_BreadCrumbs.xml">BreadCrumbVideoLibrary</include>
 			<include>Notifications</include>
 		</control>
 	</controls>		

@@ -484,7 +484,7 @@
 			<description>Top Bar Area</description>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>
-			<include>BreadCrumbWeather</include>
+			<include file="includes_BreadCrumbs.xml">BreadCrumbWeather</include>
 			<include>Notifications</include>	
 		</control>
 		

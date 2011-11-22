@@ -30,7 +30,7 @@
 			<description>Top Bar Area</description>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>
-			<include>BreadCrumbAddons</include>
+			<include file="includes_BreadCrumbs.xml">BreadCrumbAddons</include>
 			<include>Notifications</include>
 			<visible>!Window.IsActive(AddonInformation)</visible>
 		</control>

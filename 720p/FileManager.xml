@@ -383,7 +383,7 @@
 			<description>Top Bar Area</description>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>
-			<include>BreadCrumbFileManager</include>
+			<include file="includes_BreadCrumbs.xml">BreadCrumbFileManager</include>
 			<include>Notifications</include>	
 		</control>
 		

@@ -494,52 +494,52 @@
 					<control type="label">
 						<description>Season</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[20373]:</label>
 					</control>
 					<control type="label">
 						<description>Season Value</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Season]</label>
 					</control>
-					<include>ListInfoViewDot</include>
+					<include file="Views.xml">ListInfoViewDot</include>
 					<control type="label">
 						<description>Episode</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[20359]:</label>
 					</control>
 					<control type="label">
 						<description>Episode Value</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Episode]</label>
 					</control>
-					<include>ListInfoViewDot</include>
+					<include file="Views.xml">ListInfoViewDot</include>
 					<control type="label">
 						<description>First Aired</description>
 						<width min="0" max="150">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[20416]:</label>
 					</control>
 					<control type="label">
 						<description>First Aired Value</description>
 						<width min="0" max="150">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Premiered]</label>
 					</control>
-					<include>ListInfoViewDot</include>
+					<include file="Views.xml">ListInfoViewDot</include>
 					<control type="label">
 						<description>Runtime</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[2050]:</label>
 					</control>
 					<control type="label">
 						<description>Runtime Value</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Duration]</label>
 					</control>
 				</control>
@@ -779,8 +779,8 @@
 						<colordiffuse>7FFFFFFF</colordiffuse>
 					</control>
 					
-					<include condition="!Skin.HasSetting(EnableEpisodesListInfo2ExtraThumbs)">ListInfo2PanelFanart</include>
-					<include condition="Skin.HasSetting(EnableEpisodesListInfo2ExtraThumbs)">ListInfo2PanelExtraThumbs</include>
+					<include condition="!Skin.HasSetting(EnableEpisodesListInfo2ExtraThumbs)" file="Views.xml">ListInfo2PanelFanart</include>
+					<include condition="Skin.HasSetting(EnableEpisodesListInfo2ExtraThumbs)" file="Views.xml">ListInfo2PanelExtraThumbs</include>
 				</control>
 				
 				<control type="group">
@@ -1468,8 +1468,8 @@
 						<colordiffuse>7FFFFFFF</colordiffuse>
 					</control>
 					
-					<include condition="!Skin.HasSetting(EnableEpisodesListInfo3ExtraThumbs)">ListInfo3PanelCover2</include>
-					<include condition="Skin.HasSetting(EnableEpisodesListInfo3ExtraThumbs)">ListInfo3PanelExtraThumbs2</include>
+					<include condition="!Skin.HasSetting(EnableEpisodesListInfo3ExtraThumbs)" file="Views.xml">ListInfo3PanelCover2</include>
+					<include condition="Skin.HasSetting(EnableEpisodesListInfo3ExtraThumbs)" file="Views.xml">ListInfo3PanelExtraThumbs2</include>
 				</control>
 
 				<control type="group">

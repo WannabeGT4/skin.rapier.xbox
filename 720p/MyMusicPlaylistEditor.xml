@@ -373,7 +373,7 @@
 			<description>Top Bar Area</description>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>
-			<include>BreadCrumbMusicPlaylistEditor</include>
+			<include file="includes_BreadCrumbs.xml">BreadCrumbMusicPlaylistEditor</include>
 			<include>Notifications</include>
 		</control>
 		

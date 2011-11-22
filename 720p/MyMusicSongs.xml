@@ -32,7 +32,7 @@
 			<description>Top Bar Area</description>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>
-			<include>BreadCrumbMusicFiles</include>
+			<include file="includes_BreadCrumbs.xml">BreadCrumbMusicFiles</include>
 			<include>Notifications</include>
 		</control>
 	</controls>	

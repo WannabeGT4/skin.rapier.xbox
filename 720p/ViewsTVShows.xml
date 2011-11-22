@@ -1463,52 +1463,52 @@
 				<control type="label">
 					<description>Studio</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatLabel</include>
+					<include file="Views.xml">ListInfoViewCatLabel</include>
 					<label>$LOCALIZE[572]:</label>
 				</control>
 				<control type="label">
 					<description>Studio Value</description>
 					<width min="0" max="200">auto</width>
-					<include>ListInfoViewCatValueLabel</include>
+					<include file="Views.xml">ListInfoViewCatValueLabel</include>
 					<label fallback="31001">$INFO[ListItem.Studio]</label>
 				</control>
-				<include>ListInfoViewDot</include>
+				<include file="Views.xml">ListInfoViewDot</include>
 				<control type="label">
 					<description>Episodes</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatLabel</include>
+					<include file="Views.xml">ListInfoViewCatLabel</include>
 					<label>$LOCALIZE[20360]:</label>
 				</control>
 				<control type="label">
 					<description>Episodes Value</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatValueLabel</include>
+					<include file="Views.xml">ListInfoViewCatValueLabel</include>
 					<label fallback="31001">$INFO[ListItem.Episode]</label>
 				</control>
-				<include>ListInfoViewDot</include>
+				<include file="Views.xml">ListInfoViewDot</include>
 				<control type="label">
 					<description>Year</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatLabel</include>
+					<include file="Views.xml">ListInfoViewCatLabel</include>
 					<label>$LOCALIZE[345]:</label>
 				</control>
 				<control type="label">
 					<description>Year Value</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatValueLabel</include>
+					<include file="Views.xml">ListInfoViewCatValueLabel</include>
 					<label fallback="31001">$INFO[ListItem.Year]</label>
 				</control>
-				<include>ListInfoViewDot</include>
+				<include file="Views.xml">ListInfoViewDot</include>
 				<control type="label">
 					<description>Rating</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatLabel</include>
+					<include file="Views.xml">ListInfoViewCatLabel</include>
 					<label>$LOCALIZE[563]:</label>
 				</control>
 				<control type="label">
 					<description>Rating Value</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatValueLabel</include>
+					<include file="Views.xml">ListInfoViewCatValueLabel</include>
 					<label fallback="31001">$INFO[ListItem.Rating]</label>
 				</control>
 			</control>
@@ -1613,52 +1613,52 @@
 				<control type="label">
 					<description>Studio</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatLabel</include>
+					<include file="Views.xml">ListInfoViewCatLabel</include>
 					<label>$LOCALIZE[572]:</label>
 				</control>
 				<control type="label">
 					<description>Studio Value</description>
 					<width min="0" max="200">auto</width>
-					<include>ListInfoViewCatValueLabel</include>
+					<include file="Views.xml">ListInfoViewCatValueLabel</include>
 					<label fallback="31001">$INFO[ListItem.Studio]</label>
 				</control>
-				<include>ListInfoViewDot</include>
+				<include file="Views.xml">ListInfoViewDot</include>
 				<control type="label">
 					<description>Episodes</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatLabel</include>
+					<include file="Views.xml">ListInfoViewCatLabel</include>
 					<label>$LOCALIZE[20360]:</label>
 				</control>
 				<control type="label">
 					<description>Episodes Value</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatValueLabel</include>
+					<include file="Views.xml">ListInfoViewCatValueLabel</include>
 					<label fallback="31001">$INFO[ListItem.Episode]</label>
 				</control>
-				<include>ListInfoViewDot</include>
+				<include file="Views.xml">ListInfoViewDot</include>
 				<control type="label">
 					<description>Year</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatLabel</include>
+					<include file="Views.xml">ListInfoViewCatLabel</include>
 					<label>$LOCALIZE[345]:</label>
 				</control>
 				<control type="label">
 					<description>Year Value</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatValueLabel</include>
+					<include file="Views.xml">ListInfoViewCatValueLabel</include>
 					<label fallback="31001">$INFO[ListItem.Year]</label>
 				</control>
-				<include>ListInfoViewDot</include>
+				<include file="Views.xml">ListInfoViewDot</include>
 				<control type="label">
 					<description>Rating</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatLabel</include>
+					<include file="Views.xml">ListInfoViewCatLabel</include>
 					<label>$LOCALIZE[563]:</label>
 				</control>
 				<control type="label">
 					<description>Rating Value</description>
 					<width min="0" max="110">auto</width>
-					<include>ListInfoViewCatValueLabel</include>
+					<include file="Views.xml">ListInfoViewCatValueLabel</include>
 					<label fallback="31001">$INFO[ListItem.Rating]</label>
 				</control>
 			</control>
@@ -2835,72 +2835,72 @@
 				<control type="group">
 					<description>Top Left Corner Cover</description>
 					<include>DVDThumbsStyleTopLeftCornerFocusAnim</include>
-					<include>DVDThumbsStyleCoverImage</include>
-					<include>DVDThumbsStyleOverlayImage</include>
+					<include file="Views.xml">DVDThumbsStyleCoverImage</include>
+					<include file="Views.xml">DVDThumbsStyleOverlayImage</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="172" condition="!IsEmpty(ListItem.Thumb) + !Container.Column(0) + !Container.Column(5) + Container.Row(0)">
 				<control type="group">
 					<description>Top Edge Cover</description>
 					<include>DVDThumbsStyleTopEdgeFocusAnim</include>
-					<include>DVDThumbsStyleCoverImage</include>
-					<include>DVDThumbsStyleOverlayImage</include>
+					<include file="Views.xml">DVDThumbsStyleCoverImage</include>
+					<include file="Views.xml">DVDThumbsStyleOverlayImage</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="172" condition="!IsEmpty(ListItem.Thumb) + Container.Column(5) + Container.Row(0)">
 				<control type="group">
 					<description>Top Right Corner Cover</description>
-					<include>DVDThumbsStyleCoverImage</include>
+					<include file="Views.xml">DVDThumbsStyleCoverImage</include>
 					<include>DVDThumbsStyleTopRightCornerFocusAnim</include>
-					<include>DVDThumbsStyleOverlayImage</include>
+					<include file="Views.xml">DVDThumbsStyleOverlayImage</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="172" condition="!IsEmpty(ListItem.Thumb) + Container.Column(0) + Container.Row(1)">
 				<control type="group">
 					<description>Left Edge Cover</description>
-					<include>DVDThumbsStyleCoverImage</include>
+					<include file="Views.xml">DVDThumbsStyleCoverImage</include>
 					<include>DVDThumbsStyleLeftEdgeFocusAnim</include>
-					<include>DVDThumbsStyleOverlayImage</include>
+					<include file="Views.xml">DVDThumbsStyleOverlayImage</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="172" condition="!IsEmpty(ListItem.Thumb) + !Container.Row(0) + !Container.Row(2) + !Container.Column(0) + !Container.Column(5)">
 				<control type="group">
 					<description>Mid Row Cover</description>
-					<include>DVDThumbsStyleCoverImage</include>
+					<include file="Views.xml">DVDThumbsStyleCoverImage</include>
 					<include>DVDThumbsStyleMidRowFocusAnim</include>
-					<include>DVDThumbsStyleOverlayImage</include>
+					<include file="Views.xml">DVDThumbsStyleOverlayImage</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="172" condition="!IsEmpty(ListItem.Thumb) + Container.Column(5) + Container.Row(1)">
 				<control type="group">
 					<description>Right Edge Cover</description>
-					<include>DVDThumbsStyleCoverImage</include>
+					<include file="Views.xml">DVDThumbsStyleCoverImage</include>
 					<include>DVDThumbsStyleRightEdgeFocusAnim</include>
-					<include>DVDThumbsStyleOverlayImage</include>
+					<include file="Views.xml">DVDThumbsStyleOverlayImage</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="172" condition="!IsEmpty(ListItem.Thumb) + Container.Column(0) + Container.Row(2)">
 				<control type="group">
 					<description>Bottom Left Corner Cover</description>
-					<include>DVDThumbsStyleCoverImage</include>
+					<include file="Views.xml">DVDThumbsStyleCoverImage</include>
 					<include>DVDThumbsStyleBottomLeftCornerFocusAnim</include>
-					<include>DVDThumbsStyleOverlayImage</include>
+					<include file="Views.xml">DVDThumbsStyleOverlayImage</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="172" condition="!IsEmpty(ListItem.Thumb) + !Container.Column(0) + !Container.Column(5) + Container.Row(2)">
 				<control type="group">
 					<description>Bottom Edge Cover</description>
-					<include>DVDThumbsStyleCoverImage</include>
+					<include file="Views.xml">DVDThumbsStyleCoverImage</include>
 					<include>DVDThumbsStyleBottomEdgeFocusAnim</include>
-					<include>DVDThumbsStyleOverlayImage</include>
+					<include file="Views.xml">DVDThumbsStyleOverlayImage</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="172" condition="!IsEmpty(ListItem.Thumb) + Container.Column(5) + Container.Row(2)">
 				<control type="group">
 					<description>Bottom Right Corner Cover</description>
-					<include>DVDThumbsStyleCoverImage</include>
+					<include file="Views.xml">DVDThumbsStyleCoverImage</include>
 					<include>DVDThumbsStyleBottomRightCornerFocusAnim</include>
-					<include>DVDThumbsStyleOverlayImage</include>
+					<include file="Views.xml">DVDThumbsStyleOverlayImage</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="172" condition="IsEmpty(ListItem.Thumb)">
@@ -3006,63 +3006,63 @@
 			<focusedlayout width="129" height="129" condition="Container.Column(0) + Container.Row(0)">
 				<control type="group">
 					<description>Top Left Corner Cover</description>
-					<include>LogoThumbsStyleCoverImage</include>
+					<include file="Views.xml">LogoThumbsStyleCoverImage</include>
 					<include>AlbumThumbsStyleTopLeftCornerFocusAnim</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="129" condition="!Container.Column(0) + !Container.Column(5) + Container.Row(0)">
 				<control type="group">
 					<description>Top Edge Cover</description>
-					<include>LogoThumbsStyleCoverImage</include>
+					<include file="Views.xml">LogoThumbsStyleCoverImage</include>
 					<include>AlbumThumbsStyleTopEdgeFocusAnim</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="129" condition="Container.Column(5) + Container.Row(0)">
 				<control type="group">
 					<description>Top Right Corner Cover</description>
-					<include>LogoThumbsStyleCoverImage</include>
+					<include file="Views.xml">LogoThumbsStyleCoverImage</include>
 					<include>AlbumThumbsStyleTopRightCornerFocusAnim</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="129" condition="Container.Column(0) + [Container.Row(1) | Container.Row(2)]">
 				<control type="group">
 					<description>Left Edge Cover</description>
-					<include>LogoThumbsStyleCoverImage</include>
+					<include file="Views.xml">LogoThumbsStyleCoverImage</include>
 					<include>AlbumThumbsStyleLeftEdgeFocusAnim</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="129" condition="!Container.Row(0) + !Container.Row(3) + !Container.Column(0) + !Container.Column(5)">
 				<control type="group">
 					<description>Mid Row Cover</description>
-					<include>LogoThumbsStyleCoverImage</include>
+					<include file="Views.xml">LogoThumbsStyleCoverImage</include>
 					<include>AlbumThumbsStyleMidRowFocusAnim</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="129" condition="Container.Column(5) + [Container.Row(1) | Container.Row(2)]">
 				<control type="group">
 					<description>Right Edge Cover</description>
-					<include>LogoThumbsStyleCoverImage</include>
+					<include file="Views.xml">LogoThumbsStyleCoverImage</include>
 					<include>AlbumThumbsStyleRightEdgeFocusAnim</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="129" condition="Container.Column(0) + Container.Row(3)">
 				<control type="group">
 					<description>Bottom Left Corner Cover</description>
-					<include>LogoThumbsStyleCoverImage</include>
+					<include file="Views.xml">LogoThumbsStyleCoverImage</include>
 					<include>AlbumThumbsStyleBottomLeftCornerFocusAnim</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="129" condition="!Container.Column(0) + !Container.Column(5) + Container.Row(3)">
 				<control type="group">
 					<description>Bottom Edge Cover</description>
-					<include>LogoThumbsStyleCoverImage</include>
+					<include file="Views.xml">LogoThumbsStyleCoverImage</include>
 					<include>AlbumThumbsStyleBottomEdgeFocusAnim</include>
 				</control>
 			</focusedlayout>
 			<focusedlayout width="129" height="129" condition="Container.Column(5) + Container.Row(3)">
 				<control type="group">
 					<description>Bottom Right Corner Cover</description>
-					<include>LogoThumbsStyleCoverImage</include>
+					<include file="Views.xml">LogoThumbsStyleCoverImage</include>
 					<include>AlbumThumbsStyleBottomRightCornerFocusAnim</include>
 				</control>
 			</focusedlayout>

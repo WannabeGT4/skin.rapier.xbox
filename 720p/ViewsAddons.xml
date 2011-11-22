@@ -480,39 +480,39 @@
 					<control type="label">
 						<description>Author</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[21863]:</label>
 					</control>
 					<control type="label">
 						<description>Author Value</description>
 						<width min="0" max="250">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Property(Addon.Creator)]</label>
 					</control>
-					<include>ListInfoViewDot</include>
+					<include file="Views.xml">ListInfoViewDot</include>
 					<control type="label">
 						<description>Version</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[24051]</label>
 					</control>
 					<control type="label">
 						<description>Version Value</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Property(Addon.Version)]</label>
 					</control>
-					<include>ListInfoViewDot</include>
+					<include file="Views.xml">ListInfoViewDot</include>
 					<control type="label">
 						<description>Status</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[126]:</label>
 					</control>
 					<control type="label">
 						<description>Status Value</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Property(Addon.Status)]</label>
 					</control>
 				</control>
@@ -800,39 +800,39 @@
 			<control type="label">
 				<description>Author</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[21863]:</label>
 			</control>
 			<control type="label">
 				<description>Author Value</description>
 				<width min="0" max="310">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Property(Addon.Creator)]</label>
 			</control>
-			<include>WrapInfoViewDot</include>
+			<include file="Views.xml">WrapInfoViewDot</include>
 			<control type="label">
 				<description>Version</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[24051]</label>
 			</control>
 			<control type="label">
 				<description>Version Value</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Property(Addon.Version)]</label>
 			</control>
-			<include>WrapInfoViewDot</include>
+			<include file="Views.xml">WrapInfoViewDot</include>
 			<control type="label">
 				<description>Status</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[126]:</label>
 			</control>
 			<control type="label">
 				<description>Status Value</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Property(Addon.Status)]</label>
 			</control>
 		</control>
@@ -1141,39 +1141,39 @@
 			<control type="label">
 				<description>Author</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[21863]:</label>
 			</control>
 			<control type="label">
 				<description>Author Value</description>
 				<width min="0" max="310">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Property(Addon.Creator)]</label>
 			</control>
-			<include>WrapInfoViewDot</include>
+			<include file="Views.xml">WrapInfoViewDot</include>
 			<control type="label">
 				<description>Version</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[24051]</label>
 			</control>
 			<control type="label">
 				<description>Version Value</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Property(Addon.Version)]</label>
 			</control>
-			<include>WrapInfoViewDot</include>
+			<include file="Views.xml">WrapInfoViewDot</include>
 			<control type="label">
 				<description>Status</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[126]:</label>
 			</control>
 			<control type="label">
 				<description>Status Value</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Property(Addon.Status)]</label>
 			</control>
 		</control>

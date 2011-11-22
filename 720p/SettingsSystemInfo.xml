@@ -113,7 +113,7 @@
 			<description>Top Bar Area</description>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>
-			<include>BreadCrumbSystemInfo</include>
+			<include file="includes_BreadCrumbs.xml">BreadCrumbSystemInfo</include>
 			<include>Notifications</include>
 		</control>
 		

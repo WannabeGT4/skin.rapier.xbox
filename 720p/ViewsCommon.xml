@@ -373,9 +373,9 @@
 
 			<control type="group">
 				<visible>!Skin.HasSetting(HideListCover)</visible>
-				<include>ListPanelCover</include>
-				<include condition="Skin.HasSetting(EnableListTVShowsLogo) + !Skin.HasSetting(UseTVShowsPosterCover)">ListPanelTVShowLogo</include>
-				<include condition="Skin.HasSetting(EnableListExtraThumbs)">ListPanelExtraThumbs</include>
+				<include file="Views.xml">ListPanelCover</include>
+				<include condition="Skin.HasSetting(EnableListTVShowsLogo) + !Skin.HasSetting(UseTVShowsPosterCover)" file="Views.xml">ListPanelTVShowLogo</include>
+				<include condition="Skin.HasSetting(EnableListExtraThumbs)" file="Views.xml">ListPanelExtraThumbs</include>
 			</control>
 			
 			<control type="list" id="52">	

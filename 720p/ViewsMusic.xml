@@ -1072,39 +1072,39 @@
 					<control type="label">
 						<description>Artist</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[557]:</label>
 					</control>
 					<control type="label">
 						<description>Artist Value</description>
 						<width min="0" max="250">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Artist]</label>
 					</control>
-					<include>ListInfoViewDot</include>
+					<include file="Views.xml">ListInfoViewDot</include>
 					<control type="label">
 						<description>Record Label</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[21899]:</label>
 					</control>
 					<control type="label">
 						<description>Record Label Value</description>
 						<width min="0" max="200">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Property(Album_Label)]</label>
 					</control>
-					<include>ListInfoViewDot</include>
+					<include file="Views.xml">ListInfoViewDot</include>
 					<control type="label">
 						<description>Year</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[345]:</label>
 					</control>
 					<control type="label">
 						<description>Year Value</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Year]</label>
 					</control>
 				</control>
@@ -1120,39 +1120,39 @@
 					<control type="label">
 						<description>Artist</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[557]:</label>
 					</control>
 					<control type="label">
 						<description>Artist Value</description>
 						<width min="0" max="250">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Artist]</label>
 					</control>
-					<include>ListInfoViewDot</include>
+					<include file="Views.xml">ListInfoViewDot</include>
 					<control type="label">
 						<description>Album</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[558]:</label>
 					</control>
 					<control type="label">
 						<description>Album Value</description>
 						<width min="0" max="200">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Album]</label>
 					</control>
-					<include>ListInfoViewDot</include>
+					<include file="Views.xml">ListInfoViewDot</include>
 					<control type="label">
 						<description>Year</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[345]:</label>
 					</control>
 					<control type="label">
 						<description>Year Value</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Year]</label>
 					</control>
 				</control>
@@ -1255,49 +1255,49 @@
 					<control type="label">
 						<description>Born</description>
 						<width min="0" max="150">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[21893]:</label>
 						<visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
 					</control>
 					<control type="label">
 						<description>Formed</description>
 						<width min="0" max="150">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[21894]:</label>
 						<visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
 					</control>
 					<control type="label">
 						<description>Born Value</description>
 						<width min="0" max="300">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Property(Artist_Born)]</label>
 						<visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
 					</control>
 					<control type="label">
 						<description>Formed Value</description>
 						<width min="0" max="300">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Property(Artist_Formed)]</label>
 						<visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
 					</control>
 					<control type="label">
 						<description>No Value</description>
 						<width min="0" max="200">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[21893]/$LOCALIZE[21894]: [COLOR=MediaInfoItemColor2]$LOCALIZE[31001][/COLOR]</label>
 						<visible>IsEmpty(ListItem.Property(Artist_Born)) + IsEmpty(ListItem.Property(Artist_Formed))</visible>
 					</control>
-					<include>ListInfoViewDot</include>
+					<include file="Views.xml">ListInfoViewDot</include>
 					<control type="label">
 						<description>Years Active</description>
 						<width min="0" max="110">auto</width>
-						<include>ListInfoViewCatLabel</include>
+						<include file="Views.xml">ListInfoViewCatLabel</include>
 						<label>$LOCALIZE[21898]:</label>
 					</control>
 					<control type="label">
 						<description>Years Active Value</description>
 						<width min="0" max="200">auto</width>
-						<include>ListInfoViewCatValueLabel</include>
+						<include file="Views.xml">ListInfoViewCatValueLabel</include>
 						<label fallback="31001">$INFO[ListItem.Property(Artist_YearsActive)]</label>
 					</control>
 				</control>
@@ -2771,7 +2771,7 @@
 					<include>ControlsOpenCloseAnim</include>
 				</control>
 				
-				<include>ListInfo3PanelCover</include>
+				<include file="Views.xml">ListInfo3PanelCover</include>
 			</control>
 			
 			<control type="list" id="96">	
@@ -3147,63 +3147,63 @@
 				<focusedlayout width="129" height="129" condition="!IsEmpty(ListItem.Thumb) + Container.Column(0) + Container.Row(0)">
 					<control type="image">
 						<description>Top Left Corner Cover</description>
-						<include>AlbumThumbsStyleCoverImage</include>
+						<include file="Views.xml">AlbumThumbsStyleCoverImage</include>
 						<include>AlbumThumbsStyleTopLeftCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="129" height="129" condition="!IsEmpty(ListItem.Thumb) + !Container.Column(0) + !Container.Column(5) + Container.Row(0)">
 					<control type="image">
 						<description>Top Edge Cover</description>
-						<include>AlbumThumbsStyleCoverImage</include>
+						<include file="Views.xml">AlbumThumbsStyleCoverImage</include>
 						<include>AlbumThumbsStyleTopEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="129" height="129" condition="!IsEmpty(ListItem.Thumb) + Container.Column(5) + Container.Row(0)">
 					<control type="image">
 						<description>Top Right Corner Cover</description>
-						<include>AlbumThumbsStyleCoverImage</include>
+						<include file="Views.xml">AlbumThumbsStyleCoverImage</include>
 						<include>AlbumThumbsStyleTopRightCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="129" height="129" condition="!IsEmpty(ListItem.Thumb) + Container.Column(0) + [Container.Row(1) | Container.Row(2)]">
 					<control type="image">
 						<description>Left Edge Cover</description>
-						<include>AlbumThumbsStyleCoverImage</include>
+						<include file="Views.xml">AlbumThumbsStyleCoverImage</include>
 						<include>AlbumThumbsStyleLeftEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="129" height="129" condition="!IsEmpty(ListItem.Thumb) + !Container.Row(0) + !Container.Row(3) + !Container.Column(0) + !Container.Column(5)">
 					<control type="image">
 						<description>Mid Row Cover</description>
-						<include>AlbumThumbsStyleCoverImage</include>
+						<include file="Views.xml">AlbumThumbsStyleCoverImage</include>
 						<include>AlbumThumbsStyleMidRowFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="129" height="129" condition="!IsEmpty(ListItem.Thumb) + Container.Column(5) + [Container.Row(1) | Container.Row(2)]">
 					<control type="image">
 						<description>Right Edge Cover</description>
-						<include>AlbumThumbsStyleCoverImage</include>
+						<include file="Views.xml">AlbumThumbsStyleCoverImage</include>
 						<include>AlbumThumbsStyleRightEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="129" height="129" condition="!IsEmpty(ListItem.Thumb) + Container.Column(0) + Container.Row(3)">
 					<control type="image">
 						<description>Bottom Left Corner Cover</description>
-						<include>AlbumThumbsStyleCoverImage</include>
+						<include file="Views.xml">AlbumThumbsStyleCoverImage</include>
 						<include>AlbumThumbsStyleBottomLeftCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="129" height="129" condition="!IsEmpty(ListItem.Thumb) + !Container.Column(0) + !Container.Column(5) + Container.Row(3)">
 					<control type="image">
 						<description>Bottom Edge Cover</description>
-						<include>AlbumThumbsStyleCoverImage</include>
+						<include file="Views.xml">AlbumThumbsStyleCoverImage</include>
 						<include>AlbumThumbsStyleBottomEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="129" height="129" condition="!IsEmpty(ListItem.Thumb) + Container.Column(5) + Container.Row(3)">
 					<control type="image">
 						<description>Bottom Right Corner Cover</description>
-						<include>AlbumThumbsStyleCoverImage</include>
+						<include file="Views.xml">AlbumThumbsStyleCoverImage</include>
 						<include>AlbumThumbsStyleBottomRightCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
@@ -3376,39 +3376,39 @@
 			<control type="label">
 				<description>Artist</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[557]:</label>
 			</control>
 			<control type="label">
 				<description>Artist Value</description>
 				<width min="0" max="220">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Artist]</label>
 			</control>
-			<include>WrapInfoViewDot</include>
+			<include file="Views.xml">WrapInfoViewDot</include>
 			<control type="label">
 				<description>Record Label</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[21899]:</label>
 			</control>
 			<control type="label">
 				<description>Record Label Value</description>
 				<width min="0" max="220">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Property(Album_Label)]</label>
 			</control>
-			<include>WrapInfoViewDot</include>
+			<include file="Views.xml">WrapInfoViewDot</include>
 			<control type="label">
 				<description>Year</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[345]:</label>
 			</control>
 			<control type="label">
 				<description>Year Value</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Year]</label>
 			</control>
 		</control>
@@ -3718,39 +3718,39 @@
 			<control type="label">
 				<description>Artist</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[557]:</label>
 			</control>
 			<control type="label">
 				<description>Artist Value</description>
 				<width min="0" max="220">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Artist]</label>
 			</control>
-			<include>WrapInfoViewDot</include>
+			<include file="Views.xml">WrapInfoViewDot</include>
 			<control type="label">
 				<description>Record Label</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[21899]:</label>
 			</control>
 			<control type="label">
 				<description>Record Label Value</description>
 				<width min="0" max="220">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Property(Album_Label)]</label>
 			</control>
-			<include>WrapInfoViewDot</include>
+			<include file="Views.xml">WrapInfoViewDot</include>
 			<control type="label">
 				<description>Year</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatLabel</include>
+				<include file="Views.xml">WrapInfoViewCatLabel</include>
 				<label>$LOCALIZE[345]:</label>
 			</control>
 			<control type="label">
 				<description>Year Value</description>
 				<width min="0" max="110">auto</width>
-				<include>WrapInfoViewCatValueLabel</include>
+				<include file="Views.xml">WrapInfoViewCatValueLabel</include>
 				<label fallback="31001">$INFO[ListItem.Year]</label>
 			</control>
 		</control>
@@ -4048,63 +4048,63 @@
 				<focusedlayout width="214" height="225" condition="!IsEmpty(ListItem.Thumb) + Container.Column(0) + Container.Row(0)">
 					<control type="image">
 						<description>Top Left Corner Cover</description>
-						<include>AlbumWallCoverImage</include>
+						<include file="Views.xml">AlbumWallCoverImage</include>
 						<include>MusicWallViewTopLeftCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="214" height="225" condition="!IsEmpty(ListItem.Thumb) + !Container.Column(0) + !Container.Column(5) + Container.Row(0)">
 					<control type="image">
 						<description>Top Edge Cover</description>
-						<include>AlbumWallCoverImage</include>
+						<include file="Views.xml">AlbumWallCoverImage</include>
 						<include>MusicWallViewTopEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="214" height="225" condition="!IsEmpty(ListItem.Thumb) + Container.Column(5) + Container.Row(0)">
 					<control type="image">
 						<description>Top Right Corner Cover</description>
-						<include>AlbumWallCoverImage</include>
+						<include file="Views.xml">AlbumWallCoverImage</include>
 						<include>MusicWallViewTopRightCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="214" height="225" condition="!IsEmpty(ListItem.Thumb) + Container.Column(0) + Container.Row(1)">
 					<control type="image">
 						<description>Left Edge Cover</description>
-						<include>AlbumWallCoverImage</include>
+						<include file="Views.xml">AlbumWallCoverImage</include>
 						<include>MusicWallViewLeftEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="214" height="225" condition="!IsEmpty(ListItem.Thumb) + !Container.Row(0) + !Container.Row(2) + !Container.Column(0) + !Container.Column(5)">
 					<control type="image">
 						<description>Mid Row Cover</description>
-						<include>AlbumWallCoverImage</include>
+						<include file="Views.xml">AlbumWallCoverImage</include>
 						<include>MusicWallViewMidRowFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="214" height="225" condition="!IsEmpty(ListItem.Thumb) + Container.Column(5) + Container.Row(1)">
 					<control type="image">
 						<description>Right Edge Cover</description>
-						<include>AlbumWallCoverImage</include>
+						<include file="Views.xml">AlbumWallCoverImage</include>
 						<include>MusicWallViewRightEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="214" height="225" condition="!IsEmpty(ListItem.Thumb) + Container.Column(0) + Container.Row(2)">
 					<control type="image">
 						<description>Bottom Left Corner Cover</description>
-						<include>AlbumWallCoverImage</include>
+						<include file="Views.xml">AlbumWallCoverImage</include>
 						<include>MusicWallViewBottomLeftCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="214" height="225" condition="!IsEmpty(ListItem.Thumb) + ! Container.Column(0) + !Container.Column(5) + Container.Row(2)">
 					<control type="image">
 						<description>Bottom Edge Cover</description>
-						<include>AlbumWallCoverImage</include>
+						<include file="Views.xml">AlbumWallCoverImage</include>
 						<include>MusicWallViewBottomEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="214" height="225" condition="!IsEmpty(ListItem.Thumb) + Container.Column(5) + Container.Row(2)">
 					<control type="image">
 						<description>Bottom Right Corner Cover</description>
-						<include>AlbumWallCoverImage</include>
+						<include file="Views.xml">AlbumWallCoverImage</include>
 						<include>MusicWallViewBottomRightCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
