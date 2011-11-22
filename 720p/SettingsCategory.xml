@@ -65,9 +65,9 @@
 		
 		<control type="group" id="505">
 			<posy>MenuBarOffsetY</posy>
-			<include>MenuBarImage</include>
+			<include file="includes_MenuBar.xml">MenuBarImage</include>
 			<include>MenuBarOpenCloseAnim</include>	
-			<include>SettingsMenuBar</include>
+			<include file="includes_MenuBar.xml">SettingsMenuBar</include>
 		</control>
 		
 		<control type="group">

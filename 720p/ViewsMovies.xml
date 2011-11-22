@@ -363,15 +363,15 @@
 			
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,75)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(75)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>
 
@@ -720,15 +720,15 @@
 			
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,58)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(58)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>
 			
@@ -952,15 +952,15 @@
 			
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,66)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(66)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>	
 
@@ -1669,15 +1669,15 @@
 			
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,95)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(95)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>	
 
@@ -2058,22 +2058,22 @@
 			
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,97)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(97)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 				
 				<control type="group">
 					<visible>!Skin.HasSetting(HideMoviesThumbsInfoLabel)</visible>
 					
 					<control type="label">
-						<include>InfoPaneItemTitle</include>
+						<include file="includes_InfoPane.xml">InfoPaneItemTitle</include>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					
@@ -2114,15 +2114,15 @@
 			
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,53)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(53)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>
 
@@ -3059,7 +3059,7 @@
 			
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,69)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(69)</visible>
 			</control>
 
@@ -3068,12 +3068,12 @@
 				<posy>BottomPaneOffsetY</posy>
 				<visible>Control.HasFocus(69) + System.IdleTime(2) + !Skin.HasSetting(HideMoviesWallInfoPanel)</visible>
 				<animation effect="slide" start="0,65" time="300">Visible</animation>
-				<include>InfoPaneImage</include>
-				<include>InfoPaneMediaDetails</include>
+				<include file="includes_InfoPane.xml">InfoPaneImage</include>
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 				
 				<control type="label">
-					<include>InfoPaneItemTitle</include>
+					<include file="includes_InfoPane.xml">InfoPaneItemTitle</include>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				
@@ -3081,13 +3081,13 @@
 					<visible>!Skin.HasSetting(ShowMoviesWallRating)</visible>
 						
 					<control type="label">
-						<include>InfoPaneItemTitle2</include>
+						<include file="includes_InfoPane.xml">InfoPaneItemTitle2</include>
 						<label>$INFO[ListItem.Genre]</label>
 						<visible>Window.IsActive(VideoLibrary)</visible>
 					</control>
 					
 					<control type="label">
-						<include>InfoPaneItemTitle2</include>
+						<include file="includes_InfoPane.xml">InfoPaneItemTitle2</include>
 						<label>$INFO[ListItem.Label2]</label>
 						<visible>Window.IsActive(VideoFiles)</visible>
 					</control>
@@ -3097,7 +3097,7 @@
 					<visible>Skin.HasSetting(ShowMoviesWallRating)</visible>
 					
 					<control type="label">
-						<include>InfoPaneItemTitle2</include>
+						<include file="includes_InfoPane.xml">InfoPaneItemTitle2</include>
 						<label>$INFO[ListItem.Rating]</label>
 						<visible>Skin.HasSetting(DoNotUseStarRatingMovies)</visible>
 					</control>

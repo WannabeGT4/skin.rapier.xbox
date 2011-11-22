@@ -22,7 +22,7 @@
 		<height>MenuBarHeight</height>
 		<aspectratio>keep</aspectratio>
 		<pulseonselect>false</pulseonselect>
-		<include>MenuBarBtnFocusAnim</include>
+		<include file="includes_MenuBar.xml">MenuBarBtnFocusAnim</include>
 	</include>
 	
 	<include name="MenuBarBtn">
@@ -160,26 +160,6 @@
 		<pulseonselect>false</pulseonselect>		
 	</include>
 	
-	<include name="DropDownMenuRadioBtn2">	
-		<width>212</width>
-		<height>40</height>
-		<font>MenuItemFont</font>
-		<textcolor>MenuItemColor</textcolor>
-		<focusedcolor>MenuItemFocusColor</focusedcolor>
-		<textoffsetx>18</textoffsetx>
-		<align>left</align>
-		<radiowidth>18</radiowidth>
-		<radioheight>18</radioheight>
-		<radioposx>176</radioposx>
-		<radioposy>-</radioposy>
-		<textwidth>143</textwidth>
-		<textureradiofocus>controls/radio-button-focus3.png</textureradiofocus>
-		<textureradionofocus>controls/radio-button-nofocus3.png</textureradionofocus>
-		<texturefocus border="12,4,12,5">gui/menu-bar-item-focus.png</texturefocus>
-		<texturenofocus border="9,0,9,3">gui/menu-bar-item-nofocus.png</texturenofocus>
-		<pulseonselect>false</pulseonselect>		
-	</include>
-	
 	<include name="DropDownMenuHeader">	
 		<width>212</width>
 		<height>30</height>
@@ -223,9 +203,9 @@
 		<control type="group" id="505">
 			<description>Menu Bar Area</description>
 			<posy>MenuBarOffsetY</posy>
-			<include>MenuBarImage</include>
+			<include file="includes_MenuBar.xml">MenuBarImage</include>
 			<include>MenuBarOpenCloseAnim</include>
-			<include>DefaultMenuBar</include>
+			<include file="includes_MenuBar.xml">DefaultMenuBar</include>
 			<visible allowhiddenfocus="true">ControlGroup(505).HasFocus</visible>
 		</control>
 	</include>
@@ -246,21 +226,21 @@
 				<onright>212</onright>
 				<control type="button" id="345">
 					<description>Shutdown</description>
-					<include>MenuBarIconBtn</include>
+					<include file="includes_MenuBar.xml">MenuBarIconBtn</include>
 					<texturefocus>gui/menu-bar-power-focus.png</texturefocus>
 					<texturenofocus>gui/menu-bar-power-nofocus.png</texturenofocus>
 					<onclick>ActivateWindow(ShutdownMenu)</onclick>
 				</control>
 				<control type="button" id="346">
 					<description>Favourites</description>
-					<include>MenuBarIconBtn</include>
+					<include file="includes_MenuBar.xml">MenuBarIconBtn</include>
 					<texturefocus>gui/menu-bar-favourites-focus.png</texturefocus>
 					<texturenofocus>gui/menu-bar-favourites-nofocus.png</texturenofocus>
 					<onclick>ActivateWindow(Favourites)</onclick>
 				</control>
 				<control type="togglebutton" id="347">
 					<description>Extra Options</description>
-					<include>MenuBarIconBtn</include>
+					<include file="includes_MenuBar.xml">MenuBarIconBtn</include>
 					<texturefocus>gui/menu-bar-options-focus.png</texturefocus>
 					<texturenofocus>gui/menu-bar-options-nofocus.png</texturenofocus>
 					<alttexturefocus>gui/menu-bar-options-focus2.png</alttexturefocus>
@@ -272,13 +252,13 @@
 			</control>
 
 			<control type="group">      				
-				<include>MenuBarOptions</include>
+				<include file="includes_MenuBar.xml">MenuBarOptions</include>
 				<include>MenuBarOptionsSwitchAnim</include>
 				<visible>!Skin.HasSetting(ShowMediaExtraOptions) | Window.IsVisible(Programs)</visible>
 			</control>
 			
 			<control type="group">   			
-				<include>MenuBarExtraOptions</include>
+				<include file="includes_MenuBar.xml">MenuBarExtraOptions</include>
 				<include>MenuBarOptionsSwitchAnim</include>
 				<visible>Skin.HasSetting(ShowMediaExtraOptions)</visible>
 			</control>		
@@ -298,43 +278,43 @@
 			<onright>345</onright>
 			<orientation>horizontal</orientation>
 			<usecontrolcoords>true</usecontrolcoords>
-			<include>MenuBarBtnOpenCloseAnim</include>
+			<include file="includes_MenuBar.xml">MenuBarBtnOpenCloseAnim</include>
 			<visible>ControlGroup(505).HasFocus</visible>
 			<control type="image" id="350">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="400">
 				<description>View As</description>
-				<include>MenuBarArrowBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarArrowBtn</include>
 				<label>[UPPERCASE]$INFO[Control.GetLabel(2)][/UPPERCASE]</label>
 				<onclick>ActivateWindow(3002)</onclick>
 				<onclick>Control.SetFocus(500)</onclick>
 			</control>	
 			<control type="image" id="351">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="437">
 				<description>View Options</description>
-				<include>MenuBarArrowBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarArrowBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[14018][/UPPERCASE]</label>
 				<onclick>Control.SetFocus(188)</onclick>
 			</control>	
 			<control type="image" id="438">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="401">
 				<description>Sort By</description>
-				<include>MenuBarArrowBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarArrowBtn</include>
 				<label>[UPPERCASE]$INFO[Control.GetLabel(3)][/UPPERCASE]</label>
 				<onclick>ActivateWindow(3003)</onclick>
 				<onclick>Control.SetFocus(500)</onclick>
 			</control>
 			<control type="image" id="352">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="togglebutton" id="404">			
 				<description>Order By</description>
-				<include>MenuBarBigBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBigBtn</include>
 				<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
 				<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
 				<alttexturefocus border="4">gui/menu-bar-button-focus.png</alttexturefocus>
@@ -342,11 +322,11 @@
 				<onclick>Container.SortDirection</onclick>
 			</control>
 			<control type="image" id="355">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="402">
 				<description>Video Library</description>
-				<include>MenuBarArrowBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarArrowBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[14022][/UPPERCASE]</label>
 				<onclick>ActivateWindow(3004)</onclick>
 				<onclick>Control.SetFocus(500)</onclick>
@@ -354,12 +334,12 @@
 				<visible>Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="image" id="353">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="button" id="436">
 				<description>Music Library</description>
-				<include>MenuBarArrowBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarArrowBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[14022][/UPPERCASE]</label>
 				<onclick>ActivateWindow(3004)</onclick>
 				<onclick>Control.SetFocus(500)</onclick>
@@ -367,12 +347,12 @@
 				<visible>Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="image" id="369">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="button" id="405">			
 				<description>Video Settings</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[10004][/UPPERCASE]</label>
 				<onclick>ActivateWindow(VideosSettings)</onclick>
@@ -380,7 +360,7 @@
 			</control>
 			<control type="button" id="406">			
 				<description>Music Settings</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[10004][/UPPERCASE]</label>
 				<onclick>ActivateWindow(MusicSettings)</onclick>
@@ -388,7 +368,7 @@
 			</control>
 			<control type="button" id="407">			
 				<description>Picture Settings</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[10004][/UPPERCASE]</label>
 				<onclick>ActivateWindow(PicturesSettings)</onclick>
@@ -418,14 +398,14 @@
 			<onright>345</onright>
 			<orientation>horizontal</orientation>
 			<usecontrolcoords>true</usecontrolcoords>
-			<include>MenuBarBtnOpenCloseAnim</include>
+			<include file="includes_MenuBar.xml">MenuBarBtnOpenCloseAnim</include>
 			<visible>ControlGroup(505).HasFocus</visible>
 			<control type="image" id="99">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="radiobutton" id="475">
 				<description>Library</description>
-				<include>MenuBarRadioBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[14022][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(MusicLibrary)</onclick>
 				<selected>Window.IsVisible(MusicLibrary)</selected>
@@ -433,7 +413,7 @@
 			</control>
 			<control type="radiobutton" id="476">
 				<description>Library</description>
-				<include>MenuBarRadioBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[14022][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(MusicFiles)</onclick>
 				<selected>Window.IsVisible(MusicLibrary)</selected>
@@ -441,7 +421,7 @@
 			</control>
 			<control type="radiobutton" id="477">
 				<description>Library</description>
-				<include>MenuBarRadioBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[14022][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(VideoLibrary)</onclick>
 				<selected>Window.IsVisible(VideoLibrary)</selected>
@@ -450,154 +430,154 @@
 			</control>
 			<control type="radiobutton" id="478">
 				<description>Library</description>
-				<include>MenuBarRadioBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[14022][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(VideoFiles)</onclick>
 				<selected>Window.IsVisible(VideoLibrary)</selected>
 				<visible>Window.IsVisible(VideoLibrary)</visible>
 			</control>
 			<control type="image" id="247">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="radiobutton" id="17">
 				<description>Flatten</description>
-				<include>MenuBarRadioBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20411][/UPPERCASE]</label>
 				<visible>Window.IsVisible(VideoLibrary)</visible>
 			</control>
 			<control type="image" id="102">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoLibrary)</visible>
 			</control>
 			<control type="radiobutton" id="7">
 				<description>Stacking</description>
-				<include>MenuBarRadioBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[346][/UPPERCASE]</label>
 				<visible>Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="image" id="103">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoFiles)</visible>
 			</control>
 			<control type="radiobutton" id="14">
 				<description>Hide Watched</description>
-				<include>MenuBarRadioBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20367][/UPPERCASE]</label>
 				<visible>Window.IsVisible(VideoLibrary)</visible>
 			</control>
 			<control type="image" id="104">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoLibrary)</visible>
 			</control>
 			<control type="radiobutton" id="16">
 				<description>Party Mode</description>
-				<include>MenuBarRadioBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[589][/UPPERCASE]</label>
 				<visible>Window.IsVisible(VideoLibrary) | Window.IsVisible(MusicLibrary)</visible>
 			</control>
 			<control type="image" id="105">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoLibrary) | Window.IsVisible(MusicLibrary)</visible>
 			</control>
 			<control type="button" id="8">			
 				<description>Search</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<label>$LOCALIZE[137]</label>
 				<enable>Window.IsVisible(VideoLibrary) | Window.IsActive(MusicLibrary)</enable>
 				<visible>Window.IsVisible(VideoLibrary) | Window.IsActive(MusicLibrary) | Window.IsVisible(VideoFiles) | Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="image" id="370">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoLibrary) | Window.IsActive(MusicLibrary) | Window.IsVisible(VideoFiles) | Window.IsVisible(MusicFiles)</visible>
 			</control>
 			<control type="button" id="19">
 				<description>Filter</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[587][/UPPERCASE]</label>
 				<visible>Window.IsVisible(VideoLibrary) | Window.IsVisible(MusicLibrary)</visible>
 			</control>
 			<control type="image" id="101">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoLibrary) | Window.IsVisible(MusicLibrary)</visible>
 			</control>
 			<control type="radiobutton" id="405">			
 				<description>Shuffle</description>
-				<include>MenuBarRadioBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[191][/UPPERCASE]</label>
 				<onclick>PlayerControl(Random)</onclick>
 				<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="image" id="109">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="button" id="26">			
 				<description>Repeat</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[486][/UPPERCASE]</label>
 				<onclick>PlayerControl(Repeat)</onclick>
 				<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="image" id="110">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="button" id="21">			
 				<description>Save</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[190][/UPPERCASE]</label>
 				<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="image" id="111">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="button" id="22">			
 				<description>Clear</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[192][/UPPERCASE]</label>
 				<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="image" id="112">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 			</control>
 			<control type="button" id="6">
 				<description>SlideShow</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[108][/UPPERCASE]</label>
 				<enable>!IsEmpty(Container.FolderPath)</enable>
 				<visible>Window.IsVisible(Pictures)</visible>
 				<onleft>185</onleft>
 			</control>
 			<control type="image" id="107">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(Pictures)</visible>
 			</control>
 			<control type="button" id="7">
 				<description>Recursive SlideShow</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[361][/UPPERCASE]</label>
 				<enable>!IsEmpty(Container.FolderPath)</enable>
 				<visible>Window.IsVisible(Pictures)</visible>
 			</control>
 			<control type="image" id="108">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(Pictures)</visible>
 			</control>
 			<control type="radiobutton" id="9">
 				<description>Randomize</description>
-				<include>MenuBarRadioBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[13319][/UPPERCASE]</label>
 				<enable>!IsEmpty(Container.FolderPath)</enable>
 				<visible>Window.IsVisible(Pictures)</visible>
 			</control>
 			<control type="image" id="106">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Window.IsVisible(Pictures)</visible>
 			</control>
 		</control>		
@@ -616,73 +596,73 @@
 			<onright>850</onright>
 			<orientation>horizontal</orientation>
 			<usecontrolcoords>true</usecontrolcoords>
-			<include>MenuBarBtnOpenCloseAnim</include>
+			<include file="includes_MenuBar.xml">MenuBarBtnOpenCloseAnim</include>
 			<control type="button" id="101">
 				<description>Appearance</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[480][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(AppearanceSettings)</onclick>	
 			</control>	
 			<control type="image" id="116">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="104">
 				<description>Music</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[2][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(MusicSettings)</onclick>	
 			</control>
 			<control type="image" id="119">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="105">
 				<description>Videos</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[3][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(VideosSettings)</onclick>	
 			</control>
 			<control type="image" id="120">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="103">
 				<description>Pictures</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[1][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(PicturesSettings)</onclick>	
 			</control>
 			<control type="image" id="118">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="106">
 				<description>Weather</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[8][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(WeatherSettings)</onclick>	
 			</control>
 			<control type="image" id="121">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="107">
 				<description>Network</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[13279][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(NetworkSettings)</onclick>	
 			</control>
 			<control type="image" id="122">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="108">
 				<description>System</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[13000][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(SystemSettings)</onclick>	
 			</control>
 			<control type="image" id="123">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="109">
 				<description>Skin</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[166][/UPPERCASE]</label>
 				<onclick>ReplaceWindow(3001)</onclick>	
 			</control>
@@ -702,30 +682,30 @@
 			<onright>850</onright>
 			<orientation>horizontal</orientation>
 			<usecontrolcoords>true</usecontrolcoords>
-			<include>MenuBarBtnOpenCloseAnim</include>
+			<include file="includes_MenuBar.xml">MenuBarBtnOpenCloseAnim</include>
 			<control type="spincontrolex" id="3">
 				<description>Select Location</description>
-				<include>MenuBarSpinBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSpinBtn</include>
 			</control>	
 			<control type="image" id="116">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="2">
 				<description>Refresh</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[103][/UPPERCASE]</label>
 			</control>
 			<control type="image" id="117">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="4">
 				<description>Settings</description>
-				<include>MenuBarBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[5][/UPPERCASE]</label>
 				<onclick>ActivateWindow(WeatherSettings)</onclick>
 			</control>
 			<control type="image" id="118">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 		</control>	
 	</include>
@@ -743,14 +723,14 @@
 			<ondown>2</ondown>
 			<onleft>850</onleft>
 			<onright>850</onright>
-			<include>MenuBarBtnOpenCloseAnim</include>
+			<include file="includes_MenuBar.xml">MenuBarBtnOpenCloseAnim</include>
 			<control type="radiobutton" id="4">
 				<description>Enable Login Screen</description>
-				<include>MenuBarRadioBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20096][/UPPERCASE]</label>
 			</control>	
 			<control type="image" id="116">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 		</control>
 	</include>
@@ -768,13 +748,13 @@
 			<ondown>901</ondown>
 			<onleft>987</onleft>
 			<onright>987</onright>
-			<include>MenuBarBtnOpenCloseAnim</include>
+			<include file="includes_MenuBar.xml">MenuBarBtnOpenCloseAnim</include>
 			<control type="image" id="115">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="13">
 				<description>Home Theatre</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[31220][/UPPERCASE]</label>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>Dialog.Close(MovieInformation)</onclick>
@@ -782,71 +762,71 @@
 				<visible>System.HasAddon(script.cinema.experience) + Container.Content(Movies)</visible>
 			</control>
 			<control type="image" id="122">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>System.HasAddon(script.cinema.experience) + Container.Content(Movies)</visible>
 			</control>
 			<control type="button" id="8">
 				<description>Play</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[208][/UPPERCASE]</label>
 			</control>
 			<control type="image" id="117">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="5">
 				<description>Cast/Plot</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[206][/UPPERCASE]</label>
 			</control>	
 			<control type="image" id="116">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="6">
 				<description>Refresh</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[184][/UPPERCASE]</label>
 				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="118">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="10">
 				<description>Get Thumb</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[13405][/UPPERCASE]</label>	
 				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="119">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="12">
 				<description>Get Fanart</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20413][/UPPERCASE]</label>
 				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="120">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="14">
 				<description>Get Logo</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[31302][/UPPERCASE]</label>
 				<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,logo=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
 				<visible>Container.Content(TVShows)</visible>
 				<enable>!Skin.HasSetting(EnableKioskMode) + System.HasAddon(script.logo-downloader)</enable>
 			</control>
 			<control type="image" id="123">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<visible>Container.Content(TVShows)</visible>
 			</control>
 			<control type="button" id="11">
 				<description>Play Trailer</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20410][/UPPERCASE]</label>
 			</control>
 			<control type="image" id="121">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 		</control>		
 	</include>
@@ -864,44 +844,44 @@
 			<ondown>901</ondown>
 			<onleft>987</onleft>
 			<onright>987</onright>
-			<include>MenuBarBtnOpenCloseAnim</include>
+			<include file="includes_MenuBar.xml">MenuBarBtnOpenCloseAnim</include>
 			<control type="image" id="115">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="5">
 				<description>Tracks</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[206][/UPPERCASE]</label>
 			</control>	
 			<control type="image" id="116">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="6">
 				<description>Refresh</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[184][/UPPERCASE]</label>
 				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="118">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="10">
 				<description>Get Thumb</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[13405][/UPPERCASE]</label>	
 				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="119">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="12">
 				<description>Get Fanart</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20413][/UPPERCASE]</label>
 				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="120">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 		</control>		
 	</include>
@@ -919,54 +899,54 @@
 			<ondown>901</ondown>
 			<onleft>987</onleft>
 			<onright>987</onright>
-			<include>MenuBarBtnOpenCloseAnim</include>
+			<include file="includes_MenuBar.xml">MenuBarBtnOpenCloseAnim</include>
 			<control type="image" id="115">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="6">
 				<description>Enable Add-on</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[24022][/UPPERCASE]</label>
 				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>	
 			<control type="image" id="116">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="button" id="7">
 				<description>Disable Add-on</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[24021][/UPPERCASE]</label>
 				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="118">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="9">
 				<description>Add-on Settings</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[24020][/UPPERCASE]</label>	
 				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="119">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="8">
 				<description>Update Add-on</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[24069][/UPPERCASE]</label>
 				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="120">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 			<control type="button" id="10">
 				<description>Changelog</description>
-				<include>MenuBarSettingsBtn</include>
+				<include file="includes_MenuBar.xml">MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[24036][/UPPERCASE]</label>
 			</control>
 			<control type="image" id="121">
-				<include>MenuBarSeparator</include>
+				<include file="includes_MenuBar.xml">MenuBarSeparator</include>
 			</control>
 		</control>		
 	</include>

@@ -21,11 +21,11 @@
 			<onright>Dialog.Close(3017)</onright>
 			<include>MenuOpenCloseAnim</include>
 			<control type="image" id="780">
-				<include>DropDownMenuTopBorder</include>
+				<include file="includes_MenuBar.xml">DropDownMenuTopBorder</include>
 			</control>
 			<control type="radiobutton" id="1000">
 				<description>Icon Hide Label (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideMusicIconLabel)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicIconLabel)</onclick>
@@ -33,7 +33,7 @@
 			</control>
 			<control type="radiobutton" id="2000">
 				<description>Icon Hide Label (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideMoviesIconLabel)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesIconLabel)</onclick>
@@ -41,7 +41,7 @@
 			</control>
 			<control type="radiobutton" id="2032">
 				<description>Icon Hide Label (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>!Skin.HasSetting(ShowTVShowsIconLabel)</selected>
 				<onclick>Skin.ToggleSetting(ShowTVShowsIconLabel)</onclick>
@@ -49,7 +49,7 @@
 			</control>
 			<control type="radiobutton" id="3000">
 				<description>Icon Hide Label (Pictures)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HidePicturesIconLabel)</selected>
 				<onclick>Skin.ToggleSetting(HidePicturesIconLabel)</onclick>
@@ -57,7 +57,7 @@
 			</control>
 			<control type="radiobutton" id="3048">
 				<description>Icon TV Show Logo (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31016]</label>
 				<selected>Skin.HasSetting(EnableIconTVShowsLogo)</selected>
 				<onclick>Skin.ToggleSetting(EnableIconTVShowsLogo)</onclick>
@@ -67,7 +67,7 @@
 			</control>
 			<control type="radiobutton" id="1001">
 				<description>Big Icon Hide Label (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideMusicBigIconLabel)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicBigIconLabel)</onclick>	
@@ -75,7 +75,7 @@
 			</control>
 			<control type="radiobutton" id="2001">
 				<description>Big Icon Hide Label (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideMoviesBigIconLabel)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesBigIconLabel)</onclick>	
@@ -83,7 +83,7 @@
 			</control>
 			<control type="radiobutton" id="2033">
 				<description>Big Icon Hide Label (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>!Skin.HasSetting(ShowTVShowsBigIconLabel)</selected>
 				<onclick>Skin.ToggleSetting(ShowTVShowsBigIconLabel)</onclick>	
@@ -91,7 +91,7 @@
 			</control>
 			<control type="radiobutton" id="3049">
 				<description>Big Icon TV Show Logo (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31016]</label>
 				<selected>Skin.HasSetting(EnableBigIconTVShowsLogo)</selected>
 				<onclick>Skin.ToggleSetting(EnableBigIconTVShowsLogo)</onclick>
@@ -101,7 +101,7 @@
 			</control>
 			<control type="radiobutton" id="3035">
 				<description>Wide Icon Hide Overlay (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideTVShowsWideIconOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsWideIconOverlay)</onclick>	
@@ -109,7 +109,7 @@
 			</control>
 			<control type="radiobutton" id="3044">
 				<description>Wide Icon TV Show Logo (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31016]</label>
 				<selected>Skin.HasSetting(EnableWideIconTVShowsLogo)</selected>
 				<onclick>Skin.ToggleSetting(EnableWideIconTVShowsLogo)</onclick>
@@ -120,7 +120,7 @@
 			</control>
 			<control type="radiobutton" id="2080">
 				<description>Wide Icon Hide Fanart (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideTVShowsWideIconFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsWideIconFanart)</onclick>	
@@ -128,7 +128,7 @@
 			</control>
 			<control type="radiobutton" id="3034">
 				<description>Thumbnail Hide Label (Movies) (Seasons) (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideDVDThumbsLabel)</selected>
 				<onclick>Skin.ToggleSetting(HideDVDThumbsLabel)</onclick>	
@@ -136,7 +136,7 @@
 			</control>
 			<control type="radiobutton" id="1003">
 				<description>Thumbnail Hide Label (Music) (Addons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideAlbumThumbsLabel)</selected>
 				<onclick>Skin.ToggleSetting(HideAlbumThumbsLabel)</onclick>	
@@ -144,7 +144,7 @@
 			</control>
 			<control type="radiobutton" id="3082">
 				<description>Thumbnail Show Rating (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31047]</label>
 				<selected>Skin.HasSetting(ShowDVDThumbsRating)</selected>
 				<onclick>Skin.ToggleSetting(ShowDVDThumbsRating)</onclick>	
@@ -152,7 +152,7 @@
 			</control>
 			<control type="radiobutton" id="2003">
 				<description>Thumbnail Hide Overlay (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideMoviesThumbnailOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesThumbnailOverlay)</onclick>	
@@ -160,7 +160,7 @@
 			</control>
 			<control type="radiobutton" id="1041">
 				<description>Thumbnail Show Fanart (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>!Skin.HasSetting(ShowMusicThumbnailFanart)</selected>
 				<onclick>Skin.ToggleSetting(ShowMusicThumbnailFanart)</onclick>
@@ -168,7 +168,7 @@
 			</control>
 			<control type="radiobutton" id="2081">
 				<description>Thumbnail Show Fanart (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>!Skin.HasSetting(ShowMoviesThumbnailFanart)</selected>
 				<onclick>Skin.ToggleSetting(ShowMoviesThumbnailFanart)</onclick>	
@@ -176,7 +176,7 @@
 			</control>
 			<control type="radiobutton" id="3054">
 				<description>Thumbnail Show Fanart (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>!Skin.HasSetting(ShowTVShowsThumbnailFanart)</selected>
 				<onclick>Skin.ToggleSetting(ShowTVShowsThumbnailFanart)</onclick>	
@@ -184,7 +184,7 @@
 			</control>
 			<control type="radiobutton" id="3002">
 				<description>Thumbnail Show Fanart (Addons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>!Skin.HasSetting(ShowAddonsThumbnailFanart)</selected>
 				<onclick>Skin.ToggleSetting(ShowAddonsThumbnailFanart)</onclick>	
@@ -192,7 +192,7 @@
 			</control>
 			<control type="radiobutton" id="3041">
 				<description>List Extra Thumbs (Movies) (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31014]</label>
 				<selected>Skin.HasSetting(EnableListExtraThumbs)</selected>
 				<onclick>Skin.ToggleSetting(EnableListExtraThumbs)</onclick>
@@ -202,7 +202,7 @@
 			</control>
 			<control type="radiobutton" id="3014">
 				<description>List Hide Cover</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31045]</label>
 				<selected>Skin.HasSetting(HideListCover)</selected>
 				<onclick>Skin.ToggleSetting(HideListCover)</onclick>
@@ -210,7 +210,7 @@
 			</control>
 			<control type="radiobutton" id="3055">
 				<description>List Hide Overlay (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideMoviesListOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesListOverlay)</onclick>	
@@ -218,7 +218,7 @@
 			</control>
 			<control type="radiobutton" id="3056">
 				<description>List Hide Overlay (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideTVShowsListOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsListOverlay)</onclick>	
@@ -226,7 +226,7 @@
 			</control>
 			<control type="radiobutton" id="3057">
 				<description>List Hide Overlay (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideEpisodesListOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideEpisodesListOverlay)</onclick>	
@@ -234,7 +234,7 @@
 			</control>
 			<control type="radiobutton" id="3058">
 				<description>List Hide Overlay (Seasons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideSeasonsListOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideSeasonsListOverlay)</onclick>	
@@ -242,7 +242,7 @@
 			</control>
 			<control type="radiobutton" id="3043">
 				<description>List TV Show Logo (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31016]</label>
 				<selected>Skin.HasSetting(EnableListTVShowsLogo)</selected>
 				<onclick>Skin.ToggleSetting(EnableListTVShowsLogo)</onclick>
@@ -253,7 +253,7 @@
 			</control>
 			<control type="radiobutton" id="1005">
 				<description>List Hide Fanart (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMusicListFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicListFanart)</onclick>
@@ -261,7 +261,7 @@
 			</control>
 			<control type="radiobutton" id="2005">
 				<description>List Hide Fanart (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMoviesListFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesListFanart)</onclick>	
@@ -269,7 +269,7 @@
 			</control>
 			<control type="radiobutton" id="2037">
 				<description>List Hide Fanart (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideTVShowsListFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsListFanart)</onclick>	
@@ -277,7 +277,7 @@
 			</control>
 			<control type="radiobutton" id="3003">
 				<description>List Hide Fanart (Addons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideAddonsListFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideAddonsListFanart)</onclick>
@@ -285,7 +285,7 @@
 			</control>
 			<control type="radiobutton" id="1095">
 				<description>Wide List Hide Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31041]</label>
 				<selected>Skin.HasSetting(HideMusicWideListDescription)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicWideListDescription)</onclick>
@@ -293,7 +293,7 @@
 			</control>
 			<control type="radiobutton" id="2087">
 				<description>Wide List Hide Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideMoviesWideListPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesWideListPlot)</onclick>
@@ -301,7 +301,7 @@
 			</control>
 			<control type="radiobutton" id="2091">
 				<description>Wide List Hide Plot (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideTVShowsWideListPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsWideListPlot)</onclick>
@@ -309,7 +309,7 @@
 			</control>
 			<control type="radiobutton" id="2082">
 				<description>Wide List Hide Plot (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideEpisodesWideListPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideEpisodesWideListPlot)</onclick>
@@ -317,7 +317,7 @@
 			</control>
 			<control type="radiobutton" id="1096">
 				<description>Wide List Do Not Auto Scroll Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31402]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMusicWideListDescription)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMusicWideListDescription)</onclick>
@@ -326,7 +326,7 @@
 			</control>
 			<control type="radiobutton" id="2088">
 				<description>Wide List Do Not Auto Scroll Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMoviesWideListPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMoviesWideListPlot)</onclick>
@@ -335,7 +335,7 @@
 			</control>
 			<control type="radiobutton" id="2092">
 				<description>Wide List Do Not Auto Scroll Plot (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollTVShowsWideListPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollTVShowsWideListPlot)</onclick>
@@ -344,7 +344,7 @@
 			</control>
 			<control type="radiobutton" id="2083">
 				<description>Wide List Do Not Auto Scroll Plot (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollEpisodesWideListPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollEpisodesWideListPlot)</onclick>
@@ -353,7 +353,7 @@
 			</control>
 			<control type="radiobutton" id="2089">
 				<description>Wide List Hide Overlay (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideMoviesWideListOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesWideListOverlay)</onclick>	
@@ -361,7 +361,7 @@
 			</control>
 			<control type="radiobutton" id="2093">
 				<description>Wide List Hide Overlay (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideTVShowsWideListOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsWideListOverlay)</onclick>	
@@ -369,7 +369,7 @@
 			</control>
 			<control type="radiobutton" id="2085">
 				<description>Wide List Hide Overlay (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideEpisodesWideListOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideEpisodesWideListOverlay)</onclick>	
@@ -377,7 +377,7 @@
 			</control>
 			<control type="radiobutton" id="3045">
 				<description>Wide List TV Show Logo (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31016]</label>
 				<selected>Skin.HasSetting(EnableWideListTVShowsLogo)</selected>
 				<onclick>Skin.ToggleSetting(EnableWideListTVShowsLogo)</onclick>
@@ -388,7 +388,7 @@
 			</control>
 			<control type="radiobutton" id="1097">
 				<description>Wide List Hide Fanart (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMusicWideListFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicWideListFanart)</onclick>
@@ -396,7 +396,7 @@
 			</control>
 			<control type="radiobutton" id="2090">
 				<description>Wide List Hide Fanart (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMoviesWideListFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesWideListFanart)</onclick>
@@ -404,7 +404,7 @@
 			</control>
 			<control type="radiobutton" id="2094">
 				<description>Wide List Hide Fanart (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideTVShowsWideListFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsWideListFanart)</onclick>
@@ -412,7 +412,7 @@
 			</control>
 			<control type="radiobutton" id="2084">
 				<description>Wide List Hide Fanart (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideEpisodesWideListFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideEpisodesWideListFanart)</onclick>
@@ -420,7 +420,7 @@
 			</control>
 			<control type="radiobutton" id="3004">
 				<description>Wide List Hide Fanart (Addons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideAddonsWideListFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideAddonsWideListFanart)</onclick>
@@ -428,7 +428,7 @@
 			</control>
 			<control type="radiobutton" id="1036">
 				<description>List Info Hide Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31041]</label>
 				<selected>Skin.HasSetting(HideMusicListInfoDescription)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicListInfoDescription)</onclick>
@@ -436,7 +436,7 @@
 			</control>
 			<control type="radiobutton" id="2006">
 				<description>List Info Hide Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideMoviesListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesListInfoPlot)</onclick>
@@ -444,7 +444,7 @@
 			</control>
 			<control type="radiobutton" id="2039">
 				<description>List Info Hide Plot (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideTVShowsListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsListInfoPlot)</onclick>
@@ -452,7 +452,7 @@
 			</control>
 			<control type="radiobutton" id="2041">
 				<description>List Info Hide Plot (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideEpisodesListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideEpisodesListInfoPlot)</onclick>
@@ -460,7 +460,7 @@
 			</control>
 			<control type="radiobutton" id="4021">
 				<description>List Info Hide Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideProgramsListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsListInfoPlot)</onclick>
@@ -468,7 +468,7 @@
 			</control>
 			<control type="radiobutton" id="1037">
 				<description>List Info Do Not Auto Scroll Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31402]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMusicListInfoDescription)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMusicListInfoDescription)</onclick>
@@ -477,7 +477,7 @@
 			</control>
 			<control type="radiobutton" id="2008">
 				<description>List Info Do Not Auto Scroll Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMoviesListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMoviesListInfoPlot)</onclick>
@@ -486,7 +486,7 @@
 			</control>
 			<control type="radiobutton" id="2040">
 				<description>List Info Do Not Auto Scroll Plot (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollTVShowsListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollTVShowsListInfoPlot)</onclick>
@@ -495,7 +495,7 @@
 			</control>
 			<control type="radiobutton" id="2042">
 				<description>List Info Do Not Auto Scroll Plot (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollEpisodesListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollEpisodesListInfoPlot)</onclick>
@@ -504,7 +504,7 @@
 			</control>
 			<control type="radiobutton" id="4022">
 				<description>List Info Do Not Auto Scroll Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollProgramsListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollProgramsListInfoPlot)</onclick>
@@ -513,7 +513,7 @@
 			</control>
 			<control type="radiobutton" id="3046">
 				<description>List Info TV Show Logo (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31016]</label>
 				<selected>Skin.HasSetting(EnableListInfoTVShowsLogo)</selected>
 				<onclick>Skin.ToggleSetting(EnableListInfoTVShowsLogo)</onclick>
@@ -524,7 +524,7 @@
 			</control>
 			<control type="radiobutton" id="1011">
 				<description>List Info Hide Fanart (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMusicListInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicListInfoFanart)</onclick>
@@ -532,7 +532,7 @@
 			</control>
 			<control type="radiobutton" id="2009">
 				<description>List Info Hide Fanart (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMoviesListInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesListInfoFanart)</onclick>
@@ -540,7 +540,7 @@
 			</control>
 			<control type="radiobutton" id="2043">
 				<description>List Info Hide Fanart (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideTVShowsListInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsListInfoFanart)</onclick>
@@ -548,7 +548,7 @@
 			</control>
 			<control type="radiobutton" id="2078">
 				<description>List Info Hide Fanart (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideEpisodesListInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideEpisodesListInfoFanart)</onclick>
@@ -556,7 +556,7 @@
 			</control>
 			<control type="radiobutton" id="3005">
 				<description>List Info Hide Fanart (Addons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideAddonsListInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideAddonsListInfoFanart)</onclick>
@@ -564,7 +564,7 @@
 			</control>
 			<control type="radiobutton" id="4023">
 				<description>List Info Hide Fanart (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideProgramsListInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsListInfoFanart)</onclick>
@@ -572,7 +572,7 @@
 			</control>
 			<control type="radiobutton" id="1009">
 				<description>List Info 2 Hide Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31041]</label>
 				<selected>Skin.HasSetting(HideMusicListInfo2Description)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicListInfo2Description)</onclick>
@@ -580,7 +580,7 @@
 			</control>
 			<control type="radiobutton" id="2013">
 				<description>List Info 2 Hide Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideMoviesListInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesListInfo2Plot)</onclick>
@@ -588,7 +588,7 @@
 			</control>
 			<control type="radiobutton" id="2047">
 				<description>List Info 2 Hide Plot (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideTVShowsListInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsListInfo2Plot)</onclick>
@@ -596,7 +596,7 @@
 			</control>
 			<control type="radiobutton" id="2053">
 				<description>List Info 2 Hide Plot (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideEpisodesListInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(HideEpisodesListInfo2Plot)</onclick>
@@ -604,7 +604,7 @@
 			</control>
 			<control type="radiobutton" id="4031">
 				<description>List Info 2 Hide Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideProgramsListInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsListInfo2Plot)</onclick>
@@ -612,7 +612,7 @@
 			</control>
 			<control type="radiobutton" id="1010">
 				<description>List Info 2 Do Not Auto Scroll Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31402]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMusicListInfo2Description)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMusicListInfo2Description)</onclick>
@@ -621,7 +621,7 @@
 			</control>
 			<control type="radiobutton" id="2015">
 				<description>List Info 2 Do Not Auto Scroll Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMoviesListInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMoviesListInfo2Plot)</onclick>
@@ -630,7 +630,7 @@
 			</control>
 			<control type="radiobutton" id="2048">
 				<description>List Info 2 Do Not Auto Scroll Plot (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollTVShowsListInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollTVShowsListInfo2Plot)</onclick>
@@ -639,7 +639,7 @@
 			</control>	
 			<control type="radiobutton" id="2054">
 				<description>List Info 2 Do Not Auto Scroll Plot (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollEpisodesListInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollEpisodesListInfo2Plot)</onclick>
@@ -648,7 +648,7 @@
 			</control>
 			<control type="radiobutton" id="4032">
 				<description>List Info 2 Do Not Auto Scroll Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollProgramsListInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollProgramsListInfo2Plot)</onclick>
@@ -657,7 +657,7 @@
 			</control>
 			<control type="radiobutton" id="2016">
 				<description>List Info 2 Hide Overlay (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideMoviesListInfo2Overlay)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesListInfo2Overlay)</onclick>	
@@ -665,7 +665,7 @@
 			</control>
 			<control type="radiobutton" id="2079">
 				<description>List Info 2 Hide Overlay (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideTVShowsListInfo2Overlay)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsListInfo2Overlay)</onclick>	
@@ -673,7 +673,7 @@
 			</control>
 			<control type="radiobutton" id="2055">
 				<description>List Info 2 Hide Overlay (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideEpisodesListInfo2Overlay)</selected>
 				<onclick>Skin.ToggleSetting(HideEpisodesListInfo2Overlay)</onclick>	
@@ -681,7 +681,7 @@
 			</control>
 			<control type="radiobutton" id="3047">
 				<description>List Info 2 TV Show Logo (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31016]</label>
 				<selected>Skin.HasSetting(EnableListInfo2TVShowsLogo)</selected>
 				<onclick>Skin.ToggleSetting(EnableListInfo2TVShowsLogo)</onclick>
@@ -692,7 +692,7 @@
 			</control>
 			<control type="radiobutton" id="3036">
 				<description>List Info 2 Extra Thumbs (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31014]</label>
 				<selected>Skin.HasSetting(EnableMoviesListInfo2ExtraThumbs)</selected>
 				<onclick>Skin.ToggleSetting(EnableMoviesListInfo2ExtraThumbs)</onclick>
@@ -702,7 +702,7 @@
 			</control>
 			<control type="radiobutton" id="3037">
 				<description>List Info 2 Extra Thumbs (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31014]</label>
 				<selected>Skin.HasSetting(EnableEpisodesListInfo2ExtraThumbs)</selected>
 				<onclick>Skin.ToggleSetting(EnableEpisodesListInfo2ExtraThumbs)</onclick>
@@ -712,7 +712,7 @@
 			</control>
 			<control type="radiobutton" id="1038">
 				<description>List Info 2 Hide Fanart (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMusicListInfo2Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicListInfo2Fanart)</onclick>
@@ -720,7 +720,7 @@
 			</control>
 			<control type="radiobutton" id="2072">
 				<description>List Info 2 Hide Fanart (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMoviesListInfo2Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesListInfo2Fanart)</onclick>
@@ -728,7 +728,7 @@
 			</control>
 			<control type="radiobutton" id="2075">
 				<description>List Info 2 Hide Fanart (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideTVShowsListInfo2Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsListInfo2Fanart)</onclick>
@@ -736,7 +736,7 @@
 			</control>
 			<control type="radiobutton" id="2077">
 				<description>List Info 2 Hide Fanart (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideEpisodesListInfo2Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideEpisodesListInfo2Fanart)</onclick>
@@ -744,7 +744,7 @@
 			</control>
 			<control type="radiobutton" id="4033">
 				<description>List Info 2 Hide Fanart (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideProgramsListInfo2Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsListInfo2Fanart)</onclick>
@@ -752,7 +752,7 @@
 			</control>
 			<control type="radiobutton" id="3031">
 				<description>List Info 3 Hide Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31041]</label>
 				<selected>Skin.HasSetting(HideMusicListInfo3Description)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicListInfo3Description)</onclick>
@@ -760,7 +760,7 @@
 			</control>
 			<control type="radiobutton" id="3028">
 				<description>List Info 3 Hide Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideMoviesListInfo3Plot)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesListInfo3Plot)</onclick>
@@ -768,7 +768,7 @@
 			</control>
 			<control type="radiobutton" id="3024">
 				<description>List Info 3 Hide Plot (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideEpisodesListInfo3Plot)</selected>
 				<onclick>Skin.ToggleSetting(HideEpisodesListInfo3Plot)</onclick>
@@ -776,7 +776,7 @@
 			</control>
 			<control type="radiobutton" id="4041">
 				<description>List Info 3 Hide Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideProgramsListInfo3Plot)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsListInfo3Plot)</onclick>
@@ -784,7 +784,7 @@
 			</control>
 			<control type="radiobutton" id="3032">
 				<description>List Info 3 Do Not Auto Scroll Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31402]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMusicListInfo3Description)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMusicListInfo3Description)</onclick>
@@ -793,7 +793,7 @@
 			</control>
 			<control type="radiobutton" id="3029">
 				<description>List Info 3 Do Not Auto Scroll Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMoviesListInfo3Plot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMoviesListInfo3Plot)</onclick>
@@ -802,7 +802,7 @@
 			</control>
 			<control type="radiobutton" id="3025">
 				<description>List Info 3 Do Not Auto Scroll Plot (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollEpisodesListInfo3Plot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollEpisodesListInfo3Plot)</onclick>
@@ -811,7 +811,7 @@
 			</control>
 			<control type="radiobutton" id="4042">
 				<description>List Info 3 Do Not Auto Scroll Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollProgramsListInfo3Plot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollProgramsListInfo3Plot)</onclick>
@@ -820,7 +820,7 @@
 			</control>
 			<control type="radiobutton" id="3039">
 				<description>List Info 3 Extra Thumbs (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31014]</label>
 				<selected>Skin.HasSetting(EnableMoviesListInfo3ExtraThumbs)</selected>
 				<onclick>Skin.ToggleSetting(EnableMoviesListInfo3ExtraThumbs)</onclick>
@@ -830,7 +830,7 @@
 			</control>
 			<control type="radiobutton" id="3040">
 				<description>List Info 3 Extra Thumbs (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31014]</label>
 				<selected>Skin.HasSetting(EnableEpisodesListInfo3ExtraThumbs)</selected>
 				<onclick>Skin.ToggleSetting(EnableEpisodesListInfo3ExtraThumbs)</onclick>
@@ -840,7 +840,7 @@
 			</control>
 			<control type="radiobutton" id="3033">
 				<description>List Info 3 Hide Fanart (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMusicListInfo3Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicListInfo3Fanart)</onclick>
@@ -848,7 +848,7 @@
 			</control>
 			<control type="radiobutton" id="3030">
 				<description>List Info 3 Hide Fanart (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMoviesListInfo3Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesListInfo3Fanart)</onclick>
@@ -856,7 +856,7 @@
 			</control>
 			<control type="radiobutton" id="3026">
 				<description>List Info 3 Hide Fanart (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideEpisodesListInfo3Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideEpisodesListInfo3Fanart)</onclick>
@@ -864,7 +864,7 @@
 			</control>
 			<control type="radiobutton" id="4043">
 				<description>List Info 3 Hide Fanart (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideProgramsListInfo3Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsListInfo3Fanart)</onclick>
@@ -872,7 +872,7 @@
 			</control>
 			<control type="radiobutton" id="3084">
 				<description>Thumbs Info Hide Label (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideMusicThumbsInfoLabel)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicThumbsInfoLabel)</onclick>	
@@ -880,7 +880,7 @@
 			</control>
 			<control type="radiobutton" id="3085">
 				<description>Thumbs Info Hide Label (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideMoviesThumbsInfoLabel)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesThumbsInfoLabel)</onclick>	
@@ -888,7 +888,7 @@
 			</control>
 			<control type="radiobutton" id="3086">
 				<description>Thumbs Info Hide Label (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideTVShowsThumbsInfoLabel)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsThumbsInfoLabel)</onclick>	
@@ -896,7 +896,7 @@
 			</control>
 			<control type="radiobutton" id="4051">
 				<description>Thumbs Info Hide Label (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideProgramsThumbsInfoLabel)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsThumbsInfoLabel)</onclick>	
@@ -904,7 +904,7 @@
 			</control>
 			<control type="radiobutton" id="3072">
 				<description>Thumbs Info Hide Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31041]</label>
 				<selected>Skin.HasSetting(HideMusicThumbsInfoDescription)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicThumbsInfoDescription)</onclick>
@@ -912,7 +912,7 @@
 			</control>
 			<control type="radiobutton" id="3067">
 				<description>Thumbs Info Hide Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideMoviesThumbsInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesThumbsInfoPlot)</onclick>
@@ -920,7 +920,7 @@
 			</control>
 			<control type="radiobutton" id="3075">
 				<description>Thumbs Info Hide Plot (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideTVShowsThumbsInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsThumbsInfoPlot)</onclick>
@@ -928,7 +928,7 @@
 			</control>
 			<control type="radiobutton" id="4052">
 				<description>Thumbs Info Hide Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideProgramsThumbsInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsThumbsInfoPlot)</onclick>
@@ -936,7 +936,7 @@
 			</control>
 			<control type="radiobutton" id="3073">
 				<description>Thumbs Info Do Not Auto Scroll Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31402]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMusicThumbsInfoDescription)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMusicThumbsInfoDescription)</onclick>
@@ -945,7 +945,7 @@
 			</control>
 			<control type="radiobutton" id="3068">
 				<description>Thumbs Info Do Not Auto Scroll Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMoviesThumbsInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMoviesThumbsInfoPlot)</onclick>
@@ -954,7 +954,7 @@
 			</control>
 			<control type="radiobutton" id="3076">
 				<description>Thumbs Info Do Not Auto Scroll Plot (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollTVShowsThumbsInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollTVShowsThumbsInfoPlot)</onclick>
@@ -963,7 +963,7 @@
 			</control>
 			<control type="radiobutton" id="4053">
 				<description>Thumbs Info Do Not Auto Scroll Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollProgramsThumbsInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollProgramsThumbsInfoPlot)</onclick>
@@ -972,7 +972,7 @@
 			</control>
 			<control type="radiobutton" id="3069">
 				<description>Thumbs Info Hide Overlay (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideMoviesThumbsInfoOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesThumbsInfoOverlay)</onclick>	
@@ -980,7 +980,7 @@
 			</control>
 			<control type="radiobutton" id="3077">
 				<description>Thumbs Info Hide Overlay (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideTVShowsThumbsInfoOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsThumbsInfoOverlay)</onclick>	
@@ -988,7 +988,7 @@
 			</control>
 			<control type="radiobutton" id="3079">
 				<description>ThumbsInfo Show Logo (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31016]</label>
 				<selected>Skin.HasSetting(EnableThumbsInfoTVShowsLogo)</selected>
 				<onclick>Skin.ToggleSetting(EnableThumbsInfoTVShowsLogo)</onclick>
@@ -998,7 +998,7 @@
 			</control>
 			<control type="radiobutton" id="3074">
 				<description>Thumbs Info Hide Fanart (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMusicThumbsInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicThumbsInfoFanart)</onclick>
@@ -1006,7 +1006,7 @@
 			</control>
 			<control type="radiobutton" id="3071">
 				<description>Thumbs Info Hide Fanart (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMoviesThumbsInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesThumbsInfoFanart)</onclick>
@@ -1014,7 +1014,7 @@
 			</control>
 			<control type="radiobutton" id="3078">
 				<description>Thumbs Info Hide Fanart (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideTVShowsThumbsInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideTVShowsThumbsInfoFanart)</onclick>
@@ -1022,7 +1022,7 @@
 			</control>
 			<control type="radiobutton" id="4054">
 				<description>Thumbs Info Hide Fanart (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideProgramsThumbsInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsThumbsInfoFanart)</onclick>
@@ -1030,7 +1030,7 @@
 			</control>
 			<control type="radiobutton" id="4061">
 				<description>Thumbs Info 2 Hide Label (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideProgramsThumbsInfo2Label)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsThumbsInfo2Label)</onclick>	
@@ -1038,7 +1038,7 @@
 			</control>
 			<control type="radiobutton" id="4062">
 				<description>Thumbs Info 2 Hide Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideProgramsThumbsInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsThumbsInfo2Plot)</onclick>
@@ -1046,7 +1046,7 @@
 			</control>
 			<control type="radiobutton" id="4063">
 				<description>Thumbs Info 2 Do Not Auto Scroll Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollProgramsThumbsInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollProgramsThumbsInfo2Plot)</onclick>
@@ -1055,7 +1055,7 @@
 			</control>
 			<control type="radiobutton" id="4064">
 				<description>Thumbs Info 2 Hide Fanart (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideProgramsThumbsInfo2Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsThumbsInfo2Fanart)</onclick>
@@ -1063,7 +1063,7 @@
 			</control>
 			<control type="radiobutton" id="4071">
 				<description>Thumbs Info 3 Hide Label (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31042]</label>
 				<selected>Skin.HasSetting(HideProgramsThumbsInfo3Label)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsThumbsInfo3Label)</onclick>	
@@ -1071,7 +1071,7 @@
 			</control>
 			<control type="radiobutton" id="4072">
 				<description>Thumbs Info 3 Hide Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideProgramsThumbsInfo3Plot)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsThumbsInfo3Plot)</onclick>
@@ -1079,7 +1079,7 @@
 			</control>
 			<control type="radiobutton" id="4073">
 				<description>Thumbs Info 3 Do Not Auto Scroll Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollProgramsThumbsInfo3Plot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollProgramsThumbsInfo3Plot)</onclick>
@@ -1088,7 +1088,7 @@
 			</control>
 			<control type="radiobutton" id="4074">
 				<description>Thumbs Info 3 Hide Fanart (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideProgramsThumbsInfo3Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsThumbsInfo3Fanart)</onclick>
@@ -1096,7 +1096,7 @@
 			</control>
 			<control type="radiobutton" id="1015">
 				<description>Wrap List Info Enable Compact Mode (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31414]</label>
 				<selected>Skin.HasSetting(EnableMusicWrapListInfoCompactMode)</selected>
 				<onclick>Skin.ToggleSetting(EnableMusicWrapListInfoCompactMode)</onclick>
@@ -1104,7 +1104,7 @@
 			</control>
 			<control type="radiobutton" id="2020">
 				<description>Wrap List Info Enable Compact Mode (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31414]</label>
 				<selected>Skin.HasSetting(EnableMoviesWrapListInfoCompactMode)</selected>
 				<onclick>Skin.ToggleSetting(EnableMoviesWrapListInfoCompactMode)</onclick>
@@ -1112,7 +1112,7 @@
 			</control>
 			<control type="radiobutton" id="4081">
 				<description>Wrap List Info Enable Compact Mode (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31414]</label>
 				<selected>Skin.HasSetting(EnableProgramsWrapListInfoCompactMode)</selected>
 				<onclick>Skin.ToggleSetting(EnableProgramsWrapListInfoCompactMode)</onclick>
@@ -1120,7 +1120,7 @@
 			</control>
 			<control type="radiobutton" id="1017">
 				<description>Wrap List Info Hide Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31041]</label>
 				<selected>Skin.HasSetting(HideMusicWrapListInfoDescription)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicWrapListInfoDescription)</onclick>
@@ -1129,7 +1129,7 @@
 			</control>
 			<control type="radiobutton" id="2022">
 				<description>Wrap List Info Hide Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideMoviesWrapListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesWrapListInfoPlot)</onclick>
@@ -1138,7 +1138,7 @@
 			</control>
 			<control type="radiobutton" id="4082">
 				<description>Wrap List Info Hide Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideProgramsWrapListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsWrapListInfoPlot)</onclick>
@@ -1147,7 +1147,7 @@
 			</control>
 			<control type="radiobutton" id="1018">
 				<description>Wrap List Info Do Not Auto Scroll Description (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31402]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMusicWrapListInfoDescription)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMusicWrapListInfoDescription)</onclick>
@@ -1156,7 +1156,7 @@
 			</control>
 			<control type="radiobutton" id="2024">
 				<description>Wrap List Info Do Not Auto Scroll Plot (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollMoviesWrapListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollMoviesWrapListInfoPlot)</onclick>
@@ -1165,7 +1165,7 @@
 			</control>
 			<control type="radiobutton" id="4083">
 				<description>Wrap List Info Do Not Auto Scroll Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollProgramsWrapListInfoPlot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollProgramsWrapListInfoPlot)</onclick>
@@ -1174,7 +1174,7 @@
 			</control>
 			<control type="radiobutton" id="2025">
 				<description>Wrap List Info Hide Overlay (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideMoviesWrapListInfoOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesWrapListInfoOverlay)</onclick>
@@ -1182,7 +1182,7 @@
 			</control>
 			<control type="radiobutton" id="1020">
 				<description>Wrap List Info Hide Fanart (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMusicWrapListInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicWrapListInfoFanart)</onclick>
@@ -1190,7 +1190,7 @@
 			</control>
 			<control type="radiobutton" id="2027">
 				<description>Wrap List Info Hide Fanart (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideMoviesWrapListInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesWrapListInfoFanart)</onclick>
@@ -1198,7 +1198,7 @@
 			</control>
 			<control type="radiobutton" id="3011">
 				<description>Wrap List Info Hide Fanart (Addons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideAddonsWrapListInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideAddonsWrapListInfoFanart)</onclick>
@@ -1206,7 +1206,7 @@
 			</control>
 			<control type="radiobutton" id="4084">
 				<description>Wrap List Info Hide Fanart (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideProgramsWrapListInfoFanart)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsWrapListInfoFanart)</onclick>
@@ -1214,7 +1214,7 @@
 			</control>
 			<control type="radiobutton" id="4091">
 				<description>Wrap List Info 2 Enable Compact Mode (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31414]</label>
 				<selected>Skin.HasSetting(EnableProgramsWrapListInfo2CompactMode)</selected>
 				<onclick>Skin.ToggleSetting(EnableProgramsWrapListInfo2CompactMode)</onclick>
@@ -1222,7 +1222,7 @@
 			</control>
 			<control type="radiobutton" id="4092">
 				<description>Wrap List Info 2 Hide Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideProgramsWrapListInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsWrapListInfo2Plot)</onclick>
@@ -1231,7 +1231,7 @@
 			</control>
 			<control type="radiobutton" id="4093">
 				<description>Wrap List Info 2 Do Not Auto Scroll Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollProgramsWrapListInfo2Plot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollProgramsWrapListInfo2Plot)</onclick>
@@ -1240,7 +1240,7 @@
 			</control>
 			<control type="radiobutton" id="4094">
 				<description>Wrap List Info 2 Hide Fanart (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideProgramsWrapListInfo2Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsWrapListInfo2Fanart)</onclick>
@@ -1248,7 +1248,7 @@
 			</control>
 			<control type="radiobutton" id="4101">
 				<description>Wrap List Info 3 Enable Compact Mode (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31414]</label>
 				<selected>Skin.HasSetting(EnableProgramsWrapListInfo3CompactMode)</selected>
 				<onclick>Skin.ToggleSetting(EnableProgramsWrapListInfo3CompactMode)</onclick>
@@ -1256,7 +1256,7 @@
 			</control>
 			<control type="radiobutton" id="4102">
 				<description>Wrap List Info 3 Hide Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31044]</label>
 				<selected>Skin.HasSetting(HideProgramsWrapListInfo3Plot)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsWrapListInfo3Plot)</onclick>
@@ -1265,7 +1265,7 @@
 			</control>
 			<control type="radiobutton" id="4103">
 				<description>Wrap List Info 3 Do Not Auto Scroll Plot (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31401]</label>
 				<selected>!Skin.HasSetting(DoNotAutoScrollProgramsWrapListInfo3Plot)</selected>
 				<onclick>Skin.ToggleSetting(DoNotAutoScrollProgramsWrapListInfo3Plot)</onclick>
@@ -1274,7 +1274,7 @@
 			</control>
 			<control type="radiobutton" id="4104">
 				<description>Wrap List Info 3 Hide Fanart (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31043]</label>
 				<selected>Skin.HasSetting(HideProgramsWrapListInfo3Fanart)</selected>
 				<onclick>Skin.ToggleSetting(HideProgramsWrapListInfo3Fanart)</onclick>
@@ -1282,7 +1282,7 @@
 			</control>
 			<control type="radiobutton" id="1033">
 				<description>Wall Do Not Dim Cover (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31424]</label>
 				<selected>!Skin.HasSetting(DoNotDimMusicWallCover)</selected>
 				<onclick>Skin.ToggleSetting(DoNotDimMusicWallCover)</onclick>	
@@ -1290,7 +1290,7 @@
 			</control>
 			<control type="radiobutton" id="3083">
 				<description>Thumbnail Show Rating (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31047]</label>
 				<selected>Skin.HasSetting(ShowMoviesWallRating)</selected>
 				<onclick>Skin.ToggleSetting(ShowMoviesWallRating)</onclick>	
@@ -1298,7 +1298,7 @@
 			</control>
 			<control type="radiobutton" id="2069">
 				<description>Wall Do Not Dim Cover (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31424]</label>
 				<selected>!Skin.HasSetting(DoNotDimMoviesWallCover)</selected>
 				<onclick>Skin.ToggleSetting(DoNotDimMoviesWallCover)</onclick>	
@@ -1306,7 +1306,7 @@
 			</control>
 			<control type="radiobutton" id="3081">
 				<description>Wall Hide Overlay (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31046]</label>
 				<selected>Skin.HasSetting(HideMoviesWallOverlay)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesWallOverlay)</onclick>	
@@ -1314,7 +1314,7 @@
 			</control>
 			<control type="radiobutton" id="3021">
 				<description>Wall Hide Info Panel (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31021]</label>
 				<selected>Skin.HasSetting(HideMoviesWallInfoPanel)</selected>
 				<onclick>Skin.ToggleSetting(HideMoviesWallInfoPanel)</onclick>
@@ -1322,7 +1322,7 @@
 			</control>
 			<control type="radiobutton" id="3022">
 				<description>Wall Hide Info Panel (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31021]</label>
 				<selected>Skin.HasSetting(HideMusicWallInfoPanel)</selected>
 				<onclick>Skin.ToggleSetting(HideMusicWallInfoPanel)</onclick>
@@ -1330,7 +1330,7 @@
 			</control>
 			<control type="radiobutton" id="3042">
 				<description>Extra Fanart (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31015]</label>
 				<selected>Skin.HasSetting(EnableMoviesExtraFanart)</selected>
 				<onclick>Skin.ToggleSetting(EnableMoviesExtraFanart)</onclick>
@@ -1340,7 +1340,7 @@
 			</control>
 			<control type="radiobutton" id="3038">
 				<description>Extra Fanart (TVShows) (Seasons) (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31015]</label>
 				<selected>Skin.HasSetting(EnableTVShowsExtraFanart)</selected>
 				<onclick>Skin.ToggleSetting(EnableTVShowsExtraFanart)</onclick>
@@ -1351,7 +1351,7 @@
 			</control>
 			<control type="radiobutton" id="1022">
 				<description>Animate Fanart</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31063]</label>
 				<selected>Skin.HasSetting(AnimateFanart)</selected>
 				<onclick>Skin.ToggleSetting(AnimateFanart)</onclick>
@@ -1360,7 +1360,7 @@
 			</control>
 			<control type="radiobutton" id="1035">
 				<description>Do Not Show Star Rating (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31050]</label>
 				<selected>!Skin.HasSetting(DoNotUseStarRatingMusic)</selected>
 				<onclick>Skin.ToggleSetting(DoNotUseStarRatingMusic)</onclick>
@@ -1369,7 +1369,7 @@
 			</control>
 			<control type="radiobutton" id="2073">
 				<description>Do Not Use Star Rating (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31050]</label>
 				<selected>!Skin.HasSetting(DoNotUseStarRatingMovies)</selected>
 				<onclick>Skin.ToggleSetting(DoNotUseStarRatingMovies)</onclick>
@@ -1381,7 +1381,7 @@
 			</control>
 			<control type="radiobutton" id="2074">
 				<description>Do Not Use Star Rating (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31050]</label>
 				<selected>!Skin.HasSetting(DoNotUseStarRatingTVShows)</selected>
 				<onclick>Skin.ToggleSetting(DoNotUseStarRatingTVShows)</onclick>
@@ -1390,7 +1390,7 @@
 			</control>
 			<control type="radiobutton" id="2076">
 				<description>Do Not Use Star Rating (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31050]</label>
 				<selected>!Skin.HasSetting(DoNotUseStarRatingEpisodes)</selected>
 				<onclick>Skin.ToggleSetting(DoNotUseStarRatingEpisodes)</onclick>
@@ -1399,7 +1399,7 @@
 			</control>
 			<control type="radiobutton" id="3006">
 				<description>Do Not Show Star Rating (Addons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31050]</label>
 				<selected>!Skin.HasSetting(DoNotUseStarRatingAddons)</selected>
 				<onclick>Skin.ToggleSetting(DoNotUseStarRatingAddons)</onclick>
@@ -1407,7 +1407,7 @@
 			</control>
 			<control type="radiobutton" id="2058">
 				<description>Use Poster For Covers (TVShows) (Seasons) (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31404]</label>
 				<selected>Skin.HasSetting(UseTVShowsPosterCover)</selected>
 				<onclick>Skin.ToggleSetting(UseTVShowsPosterCover)</onclick>
@@ -1417,7 +1417,7 @@
 			</control>
 			<control type="radiobutton" id="1023">
 				<description>Icon Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>!Skin.HasSetting(ShowIconViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(ShowIconViewScrollbar)</onclick>
@@ -1425,7 +1425,7 @@
 			</control>
 			<control type="radiobutton" id="1024">
 				<description>Big Icon Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>!Skin.HasSetting(ShowBigIconViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(ShowBigIconViewScrollbar)</onclick>
@@ -1433,7 +1433,7 @@
 			</control>
 			<control type="radiobutton" id="3020">
 				<description>Wide Icon Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>!Skin.HasSetting(ShowWideIconViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(ShowWideIconViewScrollbar)</onclick>
@@ -1441,7 +1441,7 @@
 			</control>
 			<control type="radiobutton" id="1026">
 				<description>Thumbnail Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>!Skin.HasSetting(ShowThumbnailViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(ShowThumbnailViewScrollbar)</onclick>
@@ -1449,7 +1449,7 @@
 			</control>
 			<control type="radiobutton" id="2062">
 				<description>Thumbnail Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>!Skin.HasSetting(ShowThumbnailViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(ShowThumbnailViewScrollbar)</onclick>
@@ -1457,7 +1457,7 @@
 			</control>
 			<control type="radiobutton" id="3015">
 				<description>List Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideListViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideListViewScrollbar)</onclick>
@@ -1465,7 +1465,7 @@
 			</control>
 			<control type="radiobutton" id="2098">
 				<description>Wide List Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideWideListViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideWideListViewScrollbar)</onclick>
@@ -1474,7 +1474,7 @@
 			</control>
 			<control type="radiobutton" id="3016">
 				<description>List Info Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideListInfoViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideListInfoViewScrollbar)</onclick>
@@ -1483,7 +1483,7 @@
 			</control>
 			<control type="radiobutton" id="3017">
 				<description>List Info 2 Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideListInfoView2Scrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideListInfoView2Scrollbar)</onclick>
@@ -1492,7 +1492,7 @@
 			</control>
 			<control type="radiobutton" id="3027">
 				<description>List Info 3 Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideListInfoView3Scrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideListInfoView3Scrollbar)</onclick>
@@ -1500,7 +1500,7 @@
 			</control>
 			<control type="radiobutton" id="3070">
 				<description>Thumbs Info Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideThumbsInfoViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideThumbsInfoViewScrollbar)</onclick>
@@ -1508,7 +1508,7 @@
 			</control>
 			<control type="radiobutton" id="1031">
 				<description>Wrap Info Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>!Skin.HasSetting(ShowWrapInfoViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(ShowWrapInfoViewScrollbar)</onclick>
@@ -1516,7 +1516,7 @@
 			</control>
 			<control type="radiobutton" id="1034">
 				<description>Wall Hide Scrollbar</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>!Skin.HasSetting(ShowWallViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(ShowWallViewScrollbar)</onclick>
@@ -1524,7 +1524,7 @@
 			</control>
 			<control type="radiobutton" id="4024">
 				<description>List Info Hide Scrollbar (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideListInfoView2Scrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideListInfoView2Scrollbar)</onclick>
@@ -1532,7 +1532,7 @@
 			</control>
 			<control type="radiobutton" id="4034">
 				<description>List Info 2 Hide Scrollbar (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideListInfoView2Scrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideListInfoView2Scrollbar)</onclick>
@@ -1540,7 +1540,7 @@
 			</control>
 			<control type="radiobutton" id="4044">
 				<description>List Info 3 Hide Scrollbar (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideListInfoView2Scrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideListInfoView2Scrollbar)</onclick>
@@ -1548,7 +1548,7 @@
 			</control>
 			<control type="radiobutton" id="4055">
 				<description>Thumbs Info Hide Scrollbar (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideThumbsInfoViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideThumbsInfoViewScrollbar)</onclick>
@@ -1556,7 +1556,7 @@
 			</control>
 			<control type="radiobutton" id="4065">
 				<description>Thumbs Info 2 Hide Scrollbar (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideThumbsInfoViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideThumbsInfoViewScrollbar)</onclick>
@@ -1564,7 +1564,7 @@
 			</control>
 			<control type="radiobutton" id="4075">
 				<description>Thumbs Info 3 Hide Scrollbar (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>Skin.HasSetting(HideThumbsInfoViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(HideThumbsInfoViewScrollbar)</onclick>
@@ -1572,7 +1572,7 @@
 			</control>
 			<control type="radiobutton" id="4085">
 				<description>Wrap Info Hide Scrollbar (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>!Skin.HasSetting(ShowWrapInfoViewScrollbar)</selected>
 				<onclick>Skin.ToggleSetting(ShowWrapInfoViewScrollbar)</onclick>
@@ -1580,7 +1580,7 @@
 			</control>
 			<control type="radiobutton" id="4095">
 				<description>Wrap Info 2 Hide Scrollbar (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>!Skin.HasSetting(ShowWrapInfoView2Scrollbar)</selected>
 				<onclick>Skin.ToggleSetting(ShowWrapInfoView2Scrollbar)</onclick>
@@ -1588,7 +1588,7 @@
 			</control>
 			<control type="radiobutton" id="4105">
 				<description>Wrap Info 3 Hide Scrollbar (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31025]</label>
 				<selected>!Skin.HasSetting(ShowWrapInfoView3Scrollbar)</selected>
 				<onclick>Skin.ToggleSetting(ShowWrapInfoView3Scrollbar)</onclick>
@@ -1596,25 +1596,25 @@
 			</control>
 			<control type="button" id="3023">
 				<description>Add-on Options Header</description>
-				<include>DropDownMenuHeader</include>
+				<include file="includes_MenuBar.xml">DropDownMenuHeader</include>
 				<label>$LOCALIZE[24002]</label>
 				<visible>Window.IsActive(AddonBrowser)</visible>
 			</control>
 			<control type="radiobutton" id="5">
 				<description>Auto Update</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[24063]</label>
 				<visible>Window.IsActive(AddonBrowser)</visible>
 			</control>
 			<control type="radiobutton" id="6">
 				<description>Notifications</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[25000]</label>
 				<visible>Window.IsActive(AddonBrowser)</visible>
 			</control>
 			<control type="button" id="1039">
 				<description>View Styles Header</description>
-				<include>DropDownMenuHeader</include>
+				<include file="includes_MenuBar.xml">DropDownMenuHeader</include>
 				<label>$LOCALIZE[31206]</label>
 				<visible>Control.IsVisible(3050) | Control.IsVisible(3052) | Control.IsVisible(3018) | Control.IsVisible(3019)
 				| Control.IsVisible(1006) | Control.IsVisible(1012) | Control.IsVisible(2010) | Control.IsVisible(2017) 
@@ -1622,37 +1622,37 @@
 			</control>
 			<control type="button" id="4025">
 				<description>List Info View Styles Header (Programs)</description>
-				<include>DropDownMenuHeader</include>
+				<include file="includes_MenuBar.xml">DropDownMenuHeader</include>
 				<label>$LOCALIZE[31206]</label>
 				<visible>Control.IsVisible(4026)</visible>
 			</control>
 			<control type="button" id="4035">
 				<description>List Info 2 View Styles Header (Programs)</description>
-				<include>DropDownMenuHeader</include>
+				<include file="includes_MenuBar.xml">DropDownMenuHeader</include>
 				<label>$LOCALIZE[31206]</label>
 				<visible>Control.IsVisible(4036)</visible>
 			</control>
 			<control type="button" id="4045">
 				<description>List Info 3 View Styles Header (Programs)</description>
-				<include>DropDownMenuHeader</include>
+				<include file="includes_MenuBar.xml">DropDownMenuHeader</include>
 				<label>$LOCALIZE[31206]</label>
 				<visible>Control.IsVisible(4046)</visible>
 			</control>
 			<control type="button" id="4086">
 				<description>Wrap Info View Styles Header (Programs)</description>
-				<include>DropDownMenuHeader</include>
+				<include file="includes_MenuBar.xml">DropDownMenuHeader</include>
 				<label>$LOCALIZE[31206]</label>
 				<visible>Control.IsVisible(4087)</visible>
 			</control>
 			<control type="button" id="4096">
 				<description>Wrap Info 2 View Styles Header (Programs)</description>
-				<include>DropDownMenuHeader</include>
+				<include file="includes_MenuBar.xml">DropDownMenuHeader</include>
 				<label>$LOCALIZE[31206]</label>
 				<visible>Control.IsVisible(4097)</visible>
 			</control>
 			<control type="radiobutton" id="3050">
 				<description>Common DVD Thumbs Use Style 1</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(CommonDVDThumbsStyle,1) | Skin.String(CommonDVDThumbsStyle,)</selected>
 				<onclick>Skin.SetString(CommonDVDThumbsStyle,1)</onclick>
@@ -1663,7 +1663,7 @@
 			</control>
 			<control type="radiobutton" id="3051">
 				<description>Common DVD Thumbs Use Style 2</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31412]</label>
 				<selected>Skin.String(CommonDVDThumbsStyle,2)</selected>
 				<onclick>Skin.SetString(CommonDVDThumbsStyle,2)</onclick>
@@ -1674,7 +1674,7 @@
 			</control>
 			<control type="radiobutton" id="3052">
 				<description>Common Album Thumbs Use Style 1</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(CommonAlbumThumbsStyle,1) | Skin.String(CommonAlbumThumbsStyle,)</selected>
 				<onclick>Skin.SetString(CommonAlbumThumbsStyle,1)</onclick>
@@ -1685,7 +1685,7 @@
 			</control>
 			<control type="radiobutton" id="3053">
 				<description>Common Album Thumbs Use Style 2</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31412]</label>
 				<selected>Skin.String(CommonAlbumThumbsStyle,2)</selected>
 				<onclick>Skin.SetString(CommonAlbumThumbsStyle,2)</onclick>
@@ -1696,7 +1696,7 @@
 			</control>
 			<control type="radiobutton" id="3018">
 				<description>Common List Use Style 1</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(CommonListStyle,1) | Skin.String(CommonListStyle,)</selected>
 				<onclick>Skin.SetString(CommonListStyle,1)</onclick>
@@ -1707,7 +1707,7 @@
 			</control>
 			<control type="radiobutton" id="3019">
 				<description>Common List Use Style 2</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31417]</label>
 				<selected>Skin.String(CommonListStyle,2)</selected>
 				<onclick>Skin.SetString(CommonListStyle,2)</onclick>
@@ -1718,7 +1718,7 @@
 			</control>
 			<control type="radiobutton" id="3064">
 				<description>Common List Use Style 3</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[20395]</label>
 				<selected>Skin.String(CommonListStyle,3)</selected>
 				<onclick>Skin.SetString(CommonListStyle,3)</onclick>
@@ -1729,7 +1729,7 @@
 			</control>
 			<control type="radiobutton" id="4026">
 				<description>List Info Use Style 1 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(ProgramsListInfoStyle,1)</selected>
 				<onclick>Skin.SetString(ProgramsListInfoStyle,1)</onclick>
@@ -1740,7 +1740,7 @@
 			</control>
 			<control type="radiobutton" id="4027">
 				<description>List Info Use Style 2 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31417]</label>
 				<selected>Skin.String(ProgramsListInfoStyle,2) | Skin.String(ProgramsListInfoStyle,)</selected>
 				<onclick>Skin.SetString(ProgramsListInfoStyle,2)</onclick>
@@ -1751,7 +1751,7 @@
 			</control>
 			<control type="radiobutton" id="4028">
 				<description>List Info Use Style 3 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[20395]</label>
 				<selected>Skin.String(ProgramsListInfoStyle,3)</selected>
 				<onclick>Skin.SetString(ProgramsListInfoStyle,3)</onclick>
@@ -1762,7 +1762,7 @@
 			</control>
 			<control type="radiobutton" id="1006">
 				<description>List Info 2 Use Style 1 (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(MusicListInfo2Style,1)</selected>
 				<onclick>Skin.SetString(MusicListInfo2Style,1)</onclick>
@@ -1773,7 +1773,7 @@
 			</control>
 			<control type="radiobutton" id="1007">
 				<description>List Info 2 Use Style 2 (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31417]</label>
 				<selected>Skin.String(MusicListInfo2Style,2) | Skin.String(MusicListInfo2Style,)</selected>
 				<onclick>Skin.SetString(MusicListInfo2Style,2)</onclick>
@@ -1784,7 +1784,7 @@
 			</control>
 			<control type="radiobutton" id="1008">
 				<description>List Info 2 Use Style 3 (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[20395]</label>
 				<selected>Skin.String(MusicListInfo2Style,3)</selected>
 				<onclick>Skin.SetString(MusicListInfo2Style,3)</onclick>
@@ -1795,7 +1795,7 @@
 			</control>
 			<control type="radiobutton" id="4036">
 				<description>List Info 2 Use Style 1 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(ProgramsListInfo2Style,1)</selected>
 				<onclick>Skin.SetString(ProgramsListInfo2Style,1)</onclick>
@@ -1806,7 +1806,7 @@
 			</control>
 			<control type="radiobutton" id="4037">
 				<description>List Info 2 Use Style 2 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31417]</label>
 				<selected>Skin.String(ProgramsListInfo2Style,2) | Skin.String(ProgramsListInfo2Style,)</selected>
 				<onclick>Skin.SetString(ProgramsListInfo2Style,2)</onclick>
@@ -1817,7 +1817,7 @@
 			</control>
 			<control type="radiobutton" id="4038">
 				<description>List Info 2 Use Style 3 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[20395]</label>
 				<selected>Skin.String(ProgramsListInfo2Style,3)</selected>
 				<onclick>Skin.SetString(ProgramsListInfo2Style,3)</onclick>
@@ -1828,7 +1828,7 @@
 			</control>
 			<control type="radiobutton" id="4046">
 				<description>List Info 3 Use Style 1 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(ProgramsListInfo3Style,1)</selected>
 				<onclick>Skin.SetString(ProgramsListInfo3Style,1)</onclick>
@@ -1839,7 +1839,7 @@
 			</control>
 			<control type="radiobutton" id="4047">
 				<description>List Info 3 Use Style 2 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31417]</label>
 				<selected>Skin.String(ProgramsListInfo3Style,2) | Skin.String(ProgramsListInfo3Style,)</selected>
 				<onclick>Skin.SetString(ProgramsListInfo3Style,2)</onclick>
@@ -1850,7 +1850,7 @@
 			</control>
 			<control type="radiobutton" id="4048">
 				<description>List Info 3 Use Style 3 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[20395]</label>
 				<selected>Skin.String(ProgramsListInfo3Style,3)</selected>
 				<onclick>Skin.SetString(ProgramsListInfo3Style,3)</onclick>
@@ -1861,7 +1861,7 @@
 			</control>
 			<control type="radiobutton" id="1012">
 				<description>Wrap List Info Use Style 1 (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(MusicWrapInfoStyle,1) | Skin.String(MusicWrapInfoStyle,)</selected>
 				<onclick>Skin.SetString(MusicWrapInfoStyle,1)</onclick>
@@ -1871,7 +1871,7 @@
 			</control>
 			<control type="radiobutton" id="1013">
 				<description>Wrap List Info Use Style 2 (Music)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31413]</label>
 				<selected>Skin.String(MusicWrapInfoStyle,2)</selected>
 				<onclick>Skin.SetString(MusicWrapInfoStyle,2)</onclick>
@@ -1881,7 +1881,7 @@
 			</control>
 			<control type="radiobutton" id="2010">
 				<description>List Info 2 Use Style 1 (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(MoviesListInfo2Style,1)</selected>
 				<onclick>Skin.SetString(MoviesListInfo2Style,1)</onclick>
@@ -1892,7 +1892,7 @@
 			</control>
 			<control type="radiobutton" id="2011">
 				<description>List Info 2 Use Style 2 (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31417]</label>
 				<selected>Skin.String(MoviesListInfo2Style,2) | Skin.String(MoviesListInfo2Style,)</selected>
 				<onclick>Skin.SetString(MoviesListInfo2Style,2)</onclick>
@@ -1903,7 +1903,7 @@
 			</control>
 			<control type="radiobutton" id="2071">
 				<description>List Info 2 Use Style 3 (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[20395]</label>
 				<selected>Skin.String(MoviesListInfo2Style,3)</selected>
 				<onclick>Skin.SetString(MoviesListInfo2Style,3)</onclick>
@@ -1914,7 +1914,7 @@
 			</control>
 			<control type="radiobutton" id="2017">
 				<description>Wrap List Info Use Style 1 (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(MoviesWrapListInfoStyle,1) | Skin.String(MoviesWrapListInfoStyle,)</selected>
 				<onclick>Skin.SetString(MoviesWrapListInfoStyle,1)</onclick>
@@ -1924,7 +1924,7 @@
 			</control>
 			<control type="radiobutton" id="2018">
 				<description>Wrap List Info Use Style 2 (Movies)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31413]</label>
 				<selected>Skin.String(MoviesWrapListInfoStyle,2)</selected>
 				<onclick>Skin.SetString(MoviesWrapListInfoStyle,2)</onclick>
@@ -1934,7 +1934,7 @@
 			</control>
 				<control type="radiobutton" id="2044">
 				<description>List Info 2 Use Style 1 (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(TVShowsListInfo2Style,1)</selected>
 				<onclick>Skin.SetString(TVShowsListInfo2Style,1)</onclick>
@@ -1945,7 +1945,7 @@
 			</control>
 			<control type="radiobutton" id="2045">
 				<description>List Info 2 Use Style 2 (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31108]</label>
 				<selected>Skin.String(TVShowsListInfo2Style,2) | Skin.String(TVShowsListInfo2Style,)</selected>
 				<onclick>Skin.SetString(TVShowsListInfo2Style,2)</onclick>
@@ -1956,7 +1956,7 @@
 			</control>
 			<control type="radiobutton" id="3080">
 				<description>List Info 2 Use Style 2 (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31417]</label>
 				<selected>Skin.String(TVShowsListInfo2Style,2) | Skin.String(TVShowsListInfo2Style,)</selected>
 				<onclick>Skin.SetString(TVShowsListInfo2Style,2)</onclick>
@@ -1967,7 +1967,7 @@
 			</control>
 			<control type="radiobutton" id="3066">
 				<description>List Info 2 Use Style 3 (TVShows)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[20395]</label>
 				<selected>Skin.String(TVShowsListInfo2Style,3)</selected>
 				<onclick>Skin.SetString(TVShowsListInfo2Style,3)</onclick>
@@ -1978,7 +1978,7 @@
 			</control>
 			<control type="radiobutton" id="2050">
 				<description>List Info 2 Use Style 1 (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(EpisodesListInfo2Style,1)</selected>
 				<onclick>Skin.SetString(EpisodesListInfo2Style,1)</onclick>
@@ -1989,7 +1989,7 @@
 			</control>
 			<control type="radiobutton" id="2051">
 				<description>List Info 2 Use Style 2 (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31417]</label>
 				<selected>Skin.String(EpisodesListInfo2Style,2) | Skin.String(EpisodesListInfo2Style,)</selected>
 				<onclick>Skin.SetString(EpisodesListInfo2Style,2)</onclick>
@@ -2000,7 +2000,7 @@
 			</control>
 			<control type="radiobutton" id="3065">
 				<description>List Info 2 Use Style 3 (Episodes)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[20395]</label>
 				<selected>Skin.String(EpisodesListInfo2Style,3)</selected>
 				<onclick>Skin.SetString(EpisodesListInfo2Style,3)</onclick>
@@ -2011,7 +2011,7 @@
 			</control>
 			<control type="radiobutton" id="3008">
 				<description>List Info 2 Use Style 1 (Addons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(AddonsListInfo2Style,1)</selected>
 				<onclick>Skin.SetString(AddonsListInfo2Style,1)</onclick>
@@ -2022,7 +2022,7 @@
 			</control>
 			<control type="radiobutton" id="3009">
 				<description>List Info 2 Use Style 2 (Addons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31417]</label>
 				<selected>Skin.String(AddonsListInfo2Style,2) | Skin.String(AddonsListInfo2Style,)</selected>
 				<onclick>Skin.SetString(AddonsListInfo2Style,2)</onclick>
@@ -2033,7 +2033,7 @@
 			</control>
 			<control type="radiobutton" id="3012">
 				<description>Wrap List Info Use Style 1 (Addons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(AddonsWrapInfoStyle,1) | Skin.String(AddonsWrapInfoStyle,)</selected>
 				<onclick>Skin.SetString(AddonsWrapInfoStyle,1)</onclick>
@@ -2043,7 +2043,7 @@
 			</control>
 			<control type="radiobutton" id="3013">
 				<description>Wrap List Info Use Style 2 (Addons)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31413]</label>
 				<selected>Skin.String(AddonsWrapInfoStyle,2)</selected>
 				<onclick>Skin.SetString(AddonsWrapInfoStyle,2)</onclick>
@@ -2053,7 +2053,7 @@
 			</control>
 			<control type="radiobutton" id="4087">
 				<description>Wrap List Info Use Style 1 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(ProgramsWrapListInfoStyle,1) | Skin.String(ProgramsWrapListInfoStyle,)</selected>
 				<onclick>Skin.SetString(ProgramsWrapListInfoStyle,1)</onclick>
@@ -2063,7 +2063,7 @@
 			</control>
 			<control type="radiobutton" id="4088">
 				<description>Wrap List Info Use Style 2 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31413]</label>
 				<selected>Skin.String(ProgramsWrapListInfoStyle,2)</selected>
 				<onclick>Skin.SetString(ProgramsWrapListInfoStyle,2)</onclick>
@@ -2073,7 +2073,7 @@
 			</control>
 			<control type="radiobutton" id="4097">
 				<description>Wrap List Info 2 Use Style 1 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31418]</label>
 				<selected>Skin.String(ProgramsWrapListInfo2Style,1) | Skin.String(ProgramsWrapListInfo2Style,)</selected>
 				<onclick>Skin.SetString(ProgramsWrapListInfo2Style,1)</onclick>
@@ -2083,7 +2083,7 @@
 			</control>
 			<control type="radiobutton" id="4098">
 				<description>Wrap List Info 2 Use Style 2 (Programs)</description>
-				<include>DropDownMenuRadioBtn</include>
+				<include file="includes_MenuBar.xml">DropDownMenuRadioBtn</include>
 				<label>$LOCALIZE[31413]</label>
 				<selected>Skin.String(ProgramsWrapListInfo2Style,2)</selected>
 				<onclick>Skin.SetString(ProgramsWrapListInfo2Style,2)</onclick>
@@ -2092,7 +2092,7 @@
 				<visible>Skin.String(CurrentViewMode,597) + Substring(Container.FolderPath,plugin://plugin.program)</visible>
 			</control>
 			<control type="image" id="781">
-				<include>DropDownMenuBottomBorder</include>
+				<include file="includes_MenuBar.xml">DropDownMenuBottomBorder</include>
 			</control>
 		</control>
 	</controls>

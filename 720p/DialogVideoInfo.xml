@@ -233,7 +233,7 @@
 				</content>
 			</control>
 			
-			<include>VideoInfoStudioMediaFlag</include>
+			<include file="includes_MediaFlags.xml">VideoInfoStudioMediaFlag</include>
 		
 			<control type="grouplist">
 				<description>Media Flags Area</description>
@@ -246,16 +246,16 @@
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<include>MediaFlagFadeAnim</include>
-				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">VideoSourceMediaFlags</include>
-				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">VideoSourceAltMediaFlags</include>
-				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">VideoCodecMediaFlags</include>
-				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">VideoCodecAltMediaFlags</include>
-				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">AudioMediaFlags</include>
-				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">AudioAltMediaFlags</include>
-				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">AspectMediaFlags</include>
-				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">AspectAltMediaFlags</include>
-				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">RatingMediaFlags</include>
-				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">RatingAltMediaFlags</include>
+				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoSourceMediaFlags</include>
+				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoSourceAltMediaFlags</include>
+				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoCodecMediaFlags</include>
+				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoCodecAltMediaFlags</include>
+				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AudioMediaFlags</include>
+				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AudioAltMediaFlags</include>
+				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AspectMediaFlags</include>
+				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AspectAltMediaFlags</include>
+				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">RatingMediaFlags</include>
+				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">RatingAltMediaFlags</include>
 			</control>
 		</control>
 			
@@ -397,7 +397,7 @@
 				</content>
 			</control>
 			
-			<include>VideoInfoStudioMediaFlag</include>
+			<include file="includes_MediaFlags.xml">VideoInfoStudioMediaFlag</include>
 		
 			<control type="grouplist">
 				<description>Media Flags Area</description>
@@ -410,12 +410,12 @@
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<include>MediaFlagFadeAnim</include>
-				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">VideoCodecMediaFlags</include>
-				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">VideoCodecAltMediaFlags</include>
-				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">AudioMediaFlags</include>
-				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">AudioAltMediaFlags</include>
-				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">AspectMediaFlags</include>
-				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">AspectAltMediaFlags</include>
+				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoCodecMediaFlags</include>
+				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoCodecAltMediaFlags</include>
+				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AudioMediaFlags</include>
+				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AudioAltMediaFlags</include>
+				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AspectMediaFlags</include>
+				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AspectAltMediaFlags</include>
 			</control>
 		</control>
 			
@@ -569,7 +569,7 @@
 				</content>
 			</control>
 			
-			<include>VideoInfoStudioMediaFlag</include>
+			<include file="includes_MediaFlags.xml">VideoInfoStudioMediaFlag</include>
 		
 			<control type="grouplist">
 				<description>Media Flags Area</description>
@@ -582,12 +582,12 @@
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<include>MediaFlagFadeAnim</include>
-				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">VideoCodecMediaFlags</include>
-				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">VideoCodecAltMediaFlags</include>
-				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">AudioMediaFlags</include>
-				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">AudioAltMediaFlags</include>
-				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">AspectMediaFlags</include>
-				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">AspectAltMediaFlags</include>
+				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoCodecMediaFlags</include>
+				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoCodecAltMediaFlags</include>
+				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AudioMediaFlags</include>
+				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AudioAltMediaFlags</include>
+				<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AspectMediaFlags</include>
+				<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AspectAltMediaFlags</include>
 			</control>
 		</control>
 		
@@ -729,7 +729,7 @@
 				</content>
 			</control>
 			
-			<include>VideoInfoStudioMediaFlag</include>
+			<include file="includes_MediaFlags.xml">VideoInfoStudioMediaFlag</include>
 		</control>
 			
 		<control type="group">
@@ -871,7 +871,7 @@
 				</content>
 			</control>
 			
-			<include>VideoInfoStudioMediaFlag</include>
+			<include file="includes_MediaFlags.xml">VideoInfoStudioMediaFlag</include>
 		</control>
 
 		<control type="textbox">
@@ -1089,9 +1089,9 @@
 		<control type="group" id="505">
 			<description>Menu Bar Area</description>
 			<posy>MenuBarOffsetY</posy>
-			<include>MenuBarImage</include>
+			<include file="includes_MenuBar.xml">MenuBarImage</include>
 			<include>MenuBarOpenCloseAnim</include>
-			<include>VideoInfoMenuBar</include>
+			<include file="includes_MenuBar.xml">VideoInfoMenuBar</include>
 		</control>
 		
 		<control type="group">

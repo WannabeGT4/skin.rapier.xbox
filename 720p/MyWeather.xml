@@ -475,9 +475,9 @@
 	
 		<control type="group" id="505">
 			<posy>MenuBarOffsetY</posy>
-			<include>MenuBarImage</include>
+			<include file="includes_MenuBar.xml">MenuBarImage</include>
 			<include>MenuBarOpenCloseAnim</include>	
-			<include>MyWeatherMenuBar</include>
+			<include file="includes_MenuBar.xml">MyWeatherMenuBar</include>
 		</control>
 		
 		<control type="group">
@@ -491,7 +491,7 @@
 		<control type="group">
 			<description>Bottom Bar Area</description>
 			<posy>BottomPaneOffsetY</posy>	
-			<include>InfoPaneWeatherDetails</include>
+			<include file="includes_InfoPane.xml">InfoPaneWeatherDetails</include>
 			<include>BottomPaneOpenCloseAnim</include>
 		</control>
 	</controls>	

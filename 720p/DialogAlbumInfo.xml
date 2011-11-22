@@ -520,9 +520,9 @@
 		<control type="group" id="505">
 			<description>Menu Bar Area</description>
 			<posy>MenuBarOffsetY</posy>
-			<include>MenuBarImage</include>
+			<include file="includes_MenuBar.xml">MenuBarImage</include>
 			<include>MenuBarOpenCloseAnim</include>
-			<include>AlbumInfoMenuBar</include>
+			<include file="includes_MenuBar.xml">AlbumInfoMenuBar</include>
 		</control>
 		
 		<control type="group">

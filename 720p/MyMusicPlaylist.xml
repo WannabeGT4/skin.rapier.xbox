@@ -23,7 +23,7 @@
 			<include file="ViewsMusic.xml">MusicWideListView</include> <!-- 77 -->
 		</control>	
 		
-		<include condition="!Skin.HasSetting(EnableKioskMode)">MediaMenuBar</include>
+		<include condition="!Skin.HasSetting(EnableKioskMode)" file="includes_MenuBar.xml">MediaMenuBar</include>
 		
 		<control type="group">
 			<description>Top Bar Area</description>

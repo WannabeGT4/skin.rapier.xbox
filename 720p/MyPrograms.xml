@@ -32,7 +32,7 @@
 			<include file="ViewsPrograms.xml">ProgramsWrapListInfoView3</include> <!-- 598 -->
 		</control>
 		
-		<include condition="!Skin.HasSetting(EnableKioskMode)">MediaMenuBar</include>
+		<include condition="!Skin.HasSetting(EnableKioskMode)" file="includes_MenuBar.xml">MediaMenuBar</include>
 		
 		<control type="group">
 			<description>Top Bar Area</description>

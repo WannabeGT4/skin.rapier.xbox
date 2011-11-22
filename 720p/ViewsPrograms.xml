@@ -171,15 +171,15 @@
 
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,590)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(590)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>	
 
@@ -598,15 +598,15 @@
 
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,591)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(591)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>	
 
@@ -1025,15 +1025,15 @@
 
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,592)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(592)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>	
 
@@ -1573,27 +1573,27 @@
 
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,593)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(593)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 
 				<control type="group">
 					<visible>!Skin.HasSetting(HideProgramsThumbsInfoLabel)</visible>
 
 					<control type="label">
-						<include>InfoPaneItemTitle</include>
+						<include file="includes_InfoPane.xml">InfoPaneItemTitle</include>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 
 					<control type="label">
-						<include>InfoPaneItemTitle2</include>
+						<include file="includes_InfoPane.xml">InfoPaneItemTitle2</include>
 						<label>$INFO[ListItem.Premiered]</label>
 					</control>
 				</control>
@@ -1897,27 +1897,27 @@
 
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,594)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(594)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 
 				<control type="group">
 					<visible>!Skin.HasSetting(HideProgramsThumbsInfo2Label)</visible>
 
 					<control type="label">
-						<include>InfoPaneItemTitle</include>
+						<include file="includes_InfoPane.xml">InfoPaneItemTitle</include>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 
 					<control type="label">
-						<include>InfoPaneItemTitle2</include>
+						<include file="includes_InfoPane.xml">InfoPaneItemTitle2</include>
 						<label>$INFO[ListItem.Premiered]</label>
 					</control>
 				</control>
@@ -2222,27 +2222,27 @@
 
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,595)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(595)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 
 				<control type="group">
 					<visible>!Skin.HasSetting(HideProgramsThumbsInfo3Label)</visible>
 
 					<control type="label">
-						<include>InfoPaneItemTitle</include>
+						<include file="includes_InfoPane.xml">InfoPaneItemTitle</include>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 
 					<control type="label">
-						<include>InfoPaneItemTitle2</include>
+						<include file="includes_InfoPane.xml">InfoPaneItemTitle2</include>
 						<label>$INFO[ListItem.Premiered]</label>
 					</control>
 				</control>
@@ -2273,15 +2273,15 @@
 
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,596)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(596)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>
 
@@ -2921,15 +2921,15 @@
 
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,597)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(597)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>
 
@@ -3568,15 +3568,15 @@
 
 			<control type="button" id="188">
 				<onfocus>Skin.SetString(CurrentViewMode,598)</onfocus>
-				<include>ViewOptionsHelperBtn</include>
+				<include file="includes_MenuBar.xml">ViewOptionsHelperBtn</include>
 				<visible>Control.IsVisible(598)</visible>
 			</control>
 
 			<control type="group">
 				<description>Bottom Bar Area</description>
 				<posy>BottomPaneOffsetY</posy>	
-				<!--<include>InfoPaneImage</include>-->
-				<include>InfoPaneMediaDetails</include>
+				
+				<include file="includes_InfoPane.xml">InfoPaneMediaDetails</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>
 

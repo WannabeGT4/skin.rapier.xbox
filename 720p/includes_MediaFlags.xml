@@ -1289,20 +1289,6 @@
 		</control>
 	</include>
 	
-	<include name="VideoInfoStudioAltMediaFlag">
-		<control type="image" id="735">
-			<description>Studio</description>
-			<posx>254</posx>
-			<posy>635</posy>
-			<width>96</width>
-			<height>65</height>
-			<aspectratio>keep</aspectratio>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<texture>studios/$INFO[ListItem.Studio].png</texture>
-			<include>MediaFlagFadeAnim</include>
-		</control>
-	</include>
-	
 	<include name="StudioAltMediaFlag">
 		<control type="group">
 			<visible>!IsEmpty(ListItem.Studio) + !Window.IsActive(scandialog) + !Window.IsActive(InfoDialog)</visible>

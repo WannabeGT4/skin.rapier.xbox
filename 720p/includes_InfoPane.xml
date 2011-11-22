@@ -104,14 +104,14 @@
 			<orientation>horizontal</orientation>
 			<include>InfoPaneElementOpenCloseAnim</include>
 			<include>MediaFlagFadeAnim</include>
-			<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">VideoSourceMediaFlags</include>
-			<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">VideoSourceAltMediaFlags</include>
-			<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">VideoCodecMediaFlags</include>
-			<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">VideoCodecAltMediaFlags</include>
-			<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">AudioMediaFlags</include>
-			<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">AudioAltMediaFlags</include>
-			<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">AspectMediaFlags</include>
-			<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">AspectAltMediaFlags</include>
+			<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoSourceMediaFlags</include>
+			<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoSourceAltMediaFlags</include>
+			<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoCodecMediaFlags</include>
+			<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">VideoCodecAltMediaFlags</include>
+			<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AudioMediaFlags</include>
+			<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AudioAltMediaFlags</include>
+			<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AspectMediaFlags</include>
+			<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">AspectAltMediaFlags</include>
 		</control>
 	</include>
 
@@ -132,59 +132,59 @@
 	<include name="InfoPaneMediaDetails">	
 		<control type="group">
 			<control type="label">
-				<include>InfoPaneHeadLabel</include>
+				<include file="includes_InfoPane.xml">InfoPaneHeadLabel</include>
 				<label>$INFO[Container.NumItems,, $LOCALIZE[31202]]$INFO[Container.SortMethod, $LOCALIZE[31002] ,]</label>
 			</control>
 			
-			<include condition="Window.IsActive(VideoLibrary)">VideoDetails</include>
-			<include condition="Window.IsActive(MusicLibrary)">MusicDetails</include>
+			<include condition="Window.IsActive(VideoLibrary)" file="includes_InfoPane.xml">VideoDetails</include>
+			<include condition="Window.IsActive(MusicLibrary)" file="includes_InfoPane.xml">MusicDetails</include>
 		</control>
 	</include>
 	
 	<include name="VideoDetails">	
 		<control type="group">
 			<visible>Container.Content(Movies)</visible>
-			<include condition="!Skin.HasSetting(DisableMediaFlags)">InfoPaneMediaFlag</include>
+			<include condition="!Skin.HasSetting(DisableMediaFlags)" file="includes_InfoPane.xml">InfoPaneMediaFlag</include>
 			
 			<control type="label">
-				<include>InfoPaneHeadLabel2</include>
+				<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 				<label>$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[20342] $LOCALIZE[20161]]$INFO[Window(Home).Property(Movies.Watched),  -  , $LOCALIZE[16102]]</label>
 			</control>
 		</control>
 		
 		<control type="group">
 			<visible>Container.Content(TVShows)</visible>
-			<include condition="!Skin.HasSetting(DisableMediaFlags) + !Skin.HasSetting(UseAltMediaFlagTheme)">StudioMediaFlag</include>
-			<include condition="!Skin.HasSetting(DisableMediaFlags) + Skin.HasSetting(UseAltMediaFlagTheme)">StudioAltMediaFlag</include>
+			<include condition="!Skin.HasSetting(DisableMediaFlags) + !Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">StudioMediaFlag</include>
+			<include condition="!Skin.HasSetting(DisableMediaFlags) + Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">StudioAltMediaFlag</include>
 				
 			<control type="label">
-				<include>InfoPaneHeadLabel2</include>
+				<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 				<label>$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[20343] $LOCALIZE[20161]]$INFO[Window(Home).Property(TVShows.Watched),  -  , $LOCALIZE[16102]]</label>
 			</control>
 		</control>
 		
 		<control type="label">
-			<include>InfoPaneHeadLabel2</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 			<label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20360]]$INFO[ListItem.Property(WatchedEpisodes),  -  , $LOCALIZE[16102]]</label>
 			<visible>Container.Content(Seasons)</visible>
 		</control>
 		
 		<control type="group">
 			<visible>Container.Content(Episodes)</visible>
-			<include condition="!Skin.HasSetting(DisableMediaFlags)">InfoPaneMediaFlag</include>
+			<include condition="!Skin.HasSetting(DisableMediaFlags)" file="includes_InfoPane.xml">InfoPaneMediaFlag</include>
 				
 			<control type="label">
-				<include>InfoPaneHeadLabel2</include>
+				<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 				<label>$INFO[Container.Totaltime,, $LOCALIZE[31003] $LOCALIZE[20161]]</label>
 			</control>
 		</control>
 		
 		<control type="group">
 			<visible>Container.Content(MusicVideos)</visible>
-			<include condition="!Skin.HasSetting(DisableMediaFlags)">InfoPaneMediaFlag</include>
+			<include condition="!Skin.HasSetting(DisableMediaFlags)" file="includes_InfoPane.xml">InfoPaneMediaFlag</include>
 					
 			<control type="label">
-				<include>InfoPaneHeadLabel2</include>
+				<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 				<label>$INFO[Window(Home).Property(MusicVideos.Count),, $LOCALIZE[20389] $LOCALIZE[20161]]$INFO[Window(Home).Property(MusicVideos.Watched),  -  , $LOCALIZE[16102]]</label>
 			</control>
 		</control>
@@ -193,40 +193,40 @@
 	<include name="MusicDetails">		
 		<control type="group">
 			<visible>Container.Content(Albums)</visible>
-			<include>InfoPaneStarRating</include>
+			<include file="includes_InfoPane.xml">InfoPaneStarRating</include>
 				
 			<control type="label">
-				<include>InfoPaneHeadLabel2</include>
+				<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 				<label>$INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[132] $LOCALIZE[20161]]$INFO[Window(Home).Property(Music.SongsCount),  -  , $LOCALIZE[134]]</label>
 			</control>
 		</control>
 
 		<control type="group">
 			<visible>Container.Content(Songs)</visible>
-			<include>InfoPaneStarRating</include>
+			<include file="includes_InfoPane.xml">InfoPaneStarRating</include>
 				
 			<control type="label">
-				<include>InfoPaneHeadLabel2</include>
+				<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 				<label>$INFO[Container.Totaltime,, $LOCALIZE[31003] $LOCALIZE[20161]]</label>
 			</control>
 		</control>
 
 		<control type="group">
 			<visible>Container.Content(Artists)</visible>
-			<include>InfoPaneStarRating</include>
+			<include file="includes_InfoPane.xml">InfoPaneStarRating</include>
 				
 			<control type="label">
-				<include>InfoPaneHeadLabel2</include>
+				<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 				<label>$INFO[Window(Home).Property(Music.ArtistsCount),, $LOCALIZE[133] $LOCALIZE[20161]]</label>
 			</control>
 		</control>
 		
 		<control type="group">
 			<visible>Container.Content(MusicVideos)</visible>
-			<include condition="!Skin.HasSetting(DisableMediaFlags)">InfoPaneMediaFlag</include>
+			<include condition="!Skin.HasSetting(DisableMediaFlags)" file="includes_InfoPane.xml">InfoPaneMediaFlag</include>
 			
 			<control type="label">
-				<include>InfoPaneHeadLabel2</include>
+				<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 				<label>$INFO[Window(Home).Property(MusicVideos.Count),, $LOCALIZE[20389] $LOCALIZE[20161]]$INFO[Window(Home).Property(MusicVideos.Watched),  -  , $LOCALIZE[16102]]</label>
 			</control>
 		</control>
@@ -234,27 +234,27 @@
 
 	<include name="InfoPaneFileManagerDetails">	
 		<control type="label">
-			<include>InfoPaneHeadLabel</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel</include>
 			<label>$INFO[Container(20).NumItems,, $LOCALIZE[31202]]</label>
 			<visible>Control.HasFocus(20)</visible>
 		</control>
 		
 		<control type="label">
-			<include>InfoPaneHeadLabel2</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 			<label>[UPPERCASE]$INFO[Container(20).ListItem.Label2][/UPPERCASE]</label>
 			<visible>Control.HasFocus(20)</visible>
 		</control>
 		
 		<control type="label">
 			<posx>750</posx>
-			<include>InfoPaneHeadLabel</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel</include>
 			<label>$INFO[Container(21).NumItems,, $LOCALIZE[31202]]</label>
 			<visible>Control.HasFocus(21)</visible>
 		</control>
 				
 		<control type="label">
 			<posx>750</posx>
-			<include>InfoPaneHeadLabel2</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 			<label>[UPPERCASE]$INFO[Container(21).ListItem.Label2][/UPPERCASE]</label>
 			<visible>Control.HasFocus(21)</visible>
 		</control>				
@@ -262,27 +262,27 @@
 	
 	<include name="InfoPaneMusicPlaylistEditorDetails">	
 		<control type="label">
-			<include>InfoPaneHeadLabel</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel</include>
 			<label>$INFO[Container(50).NumItems,, $LOCALIZE[31202]]</label>
 			<visible>Control.HasFocus(50)</visible>
 		</control>
 		
 		<control type="label">
-			<include>InfoPaneHeadLabel2</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 			<label>[UPPERCASE]$INFO[Container(50).ListItem.Label2][/UPPERCASE]</label>
 			<visible>Control.HasFocus(50)</visible>
 		</control>
 		
 		<control type="label">
 			<posx>750</posx>
-			<include>InfoPaneHeadLabel</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel</include>
 			<label>$INFO[Container(100).NumItems,, $LOCALIZE[31202]]</label>
 			<visible>Control.HasFocus(100)</visible>
 		</control>
 				
 		<control type="label">
 			<posx>750</posx>
-			<include>InfoPaneHeadLabel2</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 			<label>[UPPERCASE]$INFO[Container(100).ListItem.Label2][/UPPERCASE]</label>
 			<visible>Control.HasFocus(100)</visible>
 		</control>								
@@ -290,109 +290,47 @@
 	
 	<include name="InfoPaneWeatherDetails">		
 		<control type="label">
-			<include>InfoPaneHeadLabel</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel</include>
 			<label>[UPPERCASE]$INFO[Weather.Location][/UPPERCASE]</label>
 		</control>
 				
 		<control type="label">
-			<include>InfoPaneHeadLabel2</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 			<label>[UPPERCASE]$INFO[Window.Property(Updated),$LOCALIZE[31300] ][/UPPERCASE]</label>
 		</control>		
 	</include>
 	
-	<include name="InfoPaneSettingsDetails">		
-		<control type="image">
-			<include>InfoPaneIcon</include>
-			<texture>Settings.png</texture>
-		</control>
-		
-		<control type="label" id="2">
-			<posx>80</posx>
-			<include>InfoPaneHeadLabel</include>
-			<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
-		</control>
-				
-		<control type="label">
-			<posx>80</posx>
-			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[166], $LOCALIZE[14090], $LOCALIZE[14081], $LOCALIZE[360][/UPPERCASE]</label>
-			<visible>Window.IsActive(AppearanceSettings)</visible>
-		</control>
-
-		<control type="label">
-			<posx>80</posx>
-			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[14081], $LOCALIZE[108][/UPPERCASE]</label>
-			<visible>Window.IsActive(PicturesSettings)</visible>
-		</control>	
-		
-		<control type="label">
-			<posx>80</posx>
-			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[14022], $LOCALIZE[14086], $LOCALIZE[14081], $LOCALIZE[15221], $LOCALIZE[620], $LOCALIZE[13327][/UPPERCASE]</label>
-			<visible>Window.IsActive(MusicSettings)</visible>
-		</control>	
-		
-		<control type="label">
-			<posx>80</posx>
-			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[14022], $LOCALIZE[14086], $LOCALIZE[14081], $LOCALIZE[287], $LOCALIZE[14087], $LOCALIZE[21412][/UPPERCASE]</label>
-			<visible>Window.IsActive(VideosSettings)</visible>
-		</control>	
-		
-		<control type="label">
-			<posx>80</posx>
-			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[128][/UPPERCASE]</label>
-			<visible>Window.IsActive(WeatherSettings)</visible>
-		</control>	
-		
-		<control type="label">
-			<posx>80</posx>
-			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[14036], $LOCALIZE[798][/UPPERCASE]</label>
-			<visible>Window.IsActive(NetworkSettings)</visible>
-		</control>	
-		
-		<control type="label">
-			<posx>80</posx>
-			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[21373], $LOCALIZE[337], $LOCALIZE[14094], $LOCALIZE[14095], $LOCALIZE[14092], $LOCALIZE[12360][/UPPERCASE]</label>
-			<visible>Window.IsActive(SystemSettings)</visible>
-		</control>	
-	</include>
-	
 	<include name="InfoPaneSystemInfoDetails">		
 		<control type="label">
-			<include>InfoPaneHeadLabel</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel</include>
 			<label>[UPPERCASE]$LOCALIZE[482]:[/UPPERCASE]</label>
 		</control>
 		
 		<control type="label" id="52">
-			<include>InfoPaneHeadLabel2</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 		</control>
 	</include>
 	
 	<include name="InfoPaneProfileDetails">
 		<control type="label">
-			<include>InfoPaneHeadLabel</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel</include>
 			<label>[UPPERCASE]$LOCALIZE[13204][/UPPERCASE]</label>
 		</control>
 
 		<control type="label">
-			<include>InfoPaneHeadLabel2</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 			<label>[UPPERCASE]$INFO[System.ProfileName][/UPPERCASE]</label>
 		</control>
 	</include>
 	
 	<include name="InfoPaneAboutDetails">		
 		<control type="label">
-			<include>InfoPaneHeadLabel</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel</include>
 			<label>[UPPERCASE]Developer: Scarfa[/UPPERCASE]</label>
 		</control>
 		
 		<control type="label" id="52">
-			<include>InfoPaneHeadLabel2</include>
+			<include file="includes_InfoPane.xml">InfoPaneHeadLabel2</include>
 			<label>[UPPERCASE]Contact: trizinn@gmail.com[/UPPERCASE]</label>
 		</control>
 	</include>

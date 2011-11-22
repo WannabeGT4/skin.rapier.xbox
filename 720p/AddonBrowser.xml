@@ -24,7 +24,7 @@
 			<include file="ViewsAddons.xml">AddonsWrapListInfoView</include> <!-- 93 -->
 		</control>
 			
-		<include condition="!Skin.HasSetting(EnableKioskMode)">MediaMenuBar</include>
+		<include condition="!Skin.HasSetting(EnableKioskMode)" file="includes_MenuBar.xml">MediaMenuBar</include>
 		
 		<control type="group">
 			<description>Top Bar Area</description>

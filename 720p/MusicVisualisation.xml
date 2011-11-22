@@ -112,8 +112,8 @@
 					<usecontrolcoords>true</usecontrolcoords>
 					<orientation>horizontal</orientation>
 					<include>MediaFlagFadeAnim</include>
-					<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)">PlayerAudioMediaFlags</include>
-					<include condition="Skin.HasSetting(UseAltMediaFlagTheme)">PlayerAudioAltMediaFlags</include>
+					<include condition="!Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">PlayerAudioMediaFlags</include>
+					<include condition="Skin.HasSetting(UseAltMediaFlagTheme)" file="includes_MediaFlags.xml">PlayerAudioAltMediaFlags</include>
 				</control>
 			</control>
 			

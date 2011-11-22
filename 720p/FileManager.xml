@@ -390,7 +390,7 @@
 		<control type="group">
 			<description>Bottom Bar Area</description>
 			<posy>BottomPaneOffsetY</posy>	
-			<include>InfoPaneFileManagerDetails</include>
+			<include file="includes_InfoPane.xml">InfoPaneFileManagerDetails</include>
 			<include>BottomPaneOpenCloseAnim</include>
 		</control>
 	</controls>	

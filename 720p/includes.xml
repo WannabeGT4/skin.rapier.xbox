@@ -1,14 +1,11 @@
 <includes>
 	<include file="Defaults.xml"/>
 	<include file="Views.xml"/>
-	<include file="includes_InfoPane.xml"/>
-	<include file="includes_MenuBar.xml"/>
 	<include file="includes_StatusBar.xml"/>
 	<include file="includes_BreadCrumbs.xml"/>
 	<include file="includes_Animations.xml"/>
 	<include file="includes_Dialogs.xml"/>
 	<include file="includes_Backgrounds.xml"/>
-	<include file="includes_MediaFlags.xml"/>
 	<include file="includes_Scrollbars.xml"/>
 	<constant name="ScreenWidth">1280</constant>
 	<constant name="ScreenHeight">720</constant>

@@ -89,9 +89,9 @@
 		<control type="group">
 			<description>Menu Bar Area</description>
 			<posy>MenuBarOffsetY</posy>
-			<include>MenuBarImage</include>
+			<include file="includes_MenuBar.xml">MenuBarImage</include>
 			<include>MenuBarOpenCloseAnim</include>	
-			<include>ProfileSettingsMenuBar</include>
+			<include file="includes_MenuBar.xml">ProfileSettingsMenuBar</include>
 		</control>
 		
 		<control type="group">
@@ -105,7 +105,7 @@
 		<control type="group">
 			<description>Bottom Bar Area</description>
 			<posy>BottomPaneOffsetY</posy>
-			<include>InfoPaneProfileDetails</include>
+			<include file="includes_InfoPane.xml">InfoPaneProfileDetails</include>
 			<include>BottomPaneOpenCloseAnim</include>
 		</control>
 	</controls>

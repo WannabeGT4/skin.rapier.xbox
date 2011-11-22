@@ -20,16 +20,16 @@
 			</control>	
 
 			<control type="image">
-				<include>InfoPaneIcon</include>
+				<include file="includes_InfoPane.xml">InfoPaneIcon</include>
 				<texture>notification-download.png</texture>
 			</control>
 			
 			<control type="label" id="401">
-				<include>InfoPaneNotifyLabel</include>
+				<include file="includes_InfoPane.xml">InfoPaneNotifyLabel</include>
 			</control>
 			
 			<control type="label" id="405">
-				<include>InfoPaneNotifyLabel2</include>
+				<include file="includes_InfoPane.xml">InfoPaneNotifyLabel2</include>
 			</control>
 			
 			<control type="progress" id="403">

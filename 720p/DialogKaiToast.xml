@@ -26,17 +26,17 @@
 			</control>	
 			
 			<control type="image">
-				<include>InfoPaneIcon</include>
+				<include file="includes_InfoPane.xml">InfoPaneIcon</include>
 				<texture>notification-icon.png</texture>
 			</control>
 			
 			<control type="label">
-				<include>InfoPaneNotifyLabel</include>
+				<include file="includes_InfoPane.xml">InfoPaneNotifyLabel</include>
 				<label>$INFO[Control.GetLabel(401)]</label>
 			</control>
 			
 			<control type="label">
-				<include>InfoPaneNotifyLabel2</include>
+				<include file="includes_InfoPane.xml">InfoPaneNotifyLabel2</include>
 				<label>$INFO[Control.GetLabel(402)]</label>
 			</control>
 			
@@ -65,17 +65,17 @@
 				<animation effect="slide" end="0,16" condition="true">Conditional</animation>
 
 				<control type="image">
-					<include>InfoPaneIcon</include>
+					<include file="includes_InfoPane.xml">InfoPaneIcon</include>
 					<texture>notification-icon.png</texture>
 				</control>
 				
 				<control type="label">
-					<include>InfoPaneNotifyLabel</include>
+					<include file="includes_InfoPane.xml">InfoPaneNotifyLabel</include>
 					<label>$INFO[Control.GetLabel(401)]</label>
 				</control>
 				
 				<control type="label">
-					<include>InfoPaneNotifyLabel2</include>
+					<include file="includes_InfoPane.xml">InfoPaneNotifyLabel2</include>
 					<label>$INFO[Control.GetLabel(402)]</label>
 				</control>
 				

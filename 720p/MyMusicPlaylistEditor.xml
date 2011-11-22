@@ -380,7 +380,7 @@
 		<control type="group">
 			<description>Bottom Bar Area</description>
 			<posy>BottomPaneOffsetY</posy>	
-			<include>InfoPaneMusicPlaylistEditorDetails</include>
+			<include file="includes_InfoPane.xml">InfoPaneMusicPlaylistEditorDetails</include>
 			<include>BottomPaneOpenCloseAnim</include>
 		</control>
 	</controls>	
