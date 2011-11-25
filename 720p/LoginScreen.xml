@@ -3,7 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 	
 	<controls>
-		<include>LoginScreenBackground</include>
+		<include file="includes_Backgrounds.xml">LoginScreenBackground</include>
 
 		<control type="label">
 			<posx>345</posx>

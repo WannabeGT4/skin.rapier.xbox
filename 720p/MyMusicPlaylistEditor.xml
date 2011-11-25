@@ -4,11 +4,11 @@
 	
 	<controls>
 		<control type="group">		
-			<include>BackgroundDefault</include>
+			<include file="includes_Backgrounds.xml">BackgroundDefault</include>
 			<include condition="[[!IsEmpty(Skin.String(CustomMusicBGPath)) + [Skin.String(CustomMusicBGType,) | Skin.String(CustomMusicBGType,2) | Skin.String(CustomMusicBGType,3)]] 
-			| Skin.String(CustomMusicBGType,4)] + Skin.HasSetting(ApplyAllMusicCustomBG)">BackgroundMusic</include>
-			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)">BackgroundVideoPlaying</include>
-			<include condition="!Skin.HasSetting(DisableMusicPlayingBG)">BackgroundMusicPlaying</include>
+			| Skin.String(CustomMusicBGType,4)] + Skin.HasSetting(ApplyAllMusicCustomBG)" file="includes_Backgrounds.xml">BackgroundMusic</include>
+			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)" file="includes_Backgrounds.xml">BackgroundVideoPlaying</include>
+			<include condition="!Skin.HasSetting(DisableMusicPlayingBG)" file="includes_Backgrounds.xml">BackgroundMusicPlaying</include>
 			<include>BackgroundOpenCloseAnim</include>		
 		</control>
 		

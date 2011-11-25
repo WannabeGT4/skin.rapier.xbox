@@ -5,12 +5,12 @@
 	
 	<controls>
 		<control type="group">	
-			<include>BackgroundDefault</include>
+			<include file="includes_Backgrounds.xml">BackgroundDefault</include>
 			<include condition="[!IsEmpty(Skin.String(CustomProgramsBGPath)) + [Skin.String(CustomProgramsBGType,) | Skin.String(CustomProgramsBGType,2) | Skin.String(CustomProgramsBGType,3)]]
-			+ Skin.HasSetting(ApplyAllProgramsCustomBG)">BackgroundPrograms</include>
-			<include>BackgroundProgramsFanart</include>
-			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)">BackgroundVideoPlaying</include>
-			<include condition="!Skin.HasSetting(DisableMusicPlayingBG)">BackgroundMusicPlaying</include>
+			+ Skin.HasSetting(ApplyAllProgramsCustomBG)" file="includes_Backgrounds.xml">BackgroundPrograms</include>
+			<include file="includes_Backgrounds.xml">BackgroundProgramsFanart</include>
+			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)" file="includes_Backgrounds.xml">BackgroundVideoPlaying</include>
+			<include condition="!Skin.HasSetting(DisableMusicPlayingBG)" file="includes_Backgrounds.xml">BackgroundMusicPlaying</include>
 			<include>BackgroundOpenCloseAnim</include>
 		</control>
 

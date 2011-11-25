@@ -1778,7 +1778,7 @@
 					<include condition="Skin.HasSetting(AnimateBackground)">CustomBackgroundAnim</include>
 				</control>
 				
-				<include>HomeBackgroundDim</include>
+				<include file="includes_Backgrounds.xml">HomeBackgroundDim</include>
 			</control>
 			
 			<control type="group">
@@ -1959,7 +1959,7 @@
 					<include condition="Skin.HasSetting(AnimateBackground)">CustomBackgroundAnim</include>
 				</control>
 				
-				<include>HomeBackgroundDim</include>
+				<include file="includes_Backgrounds.xml">HomeBackgroundDim</include>
 			</control>
 			
 			<control type="group">
@@ -2140,7 +2140,7 @@
 					<include condition="Skin.HasSetting(AnimateBackground)">CustomBackgroundAnim</include>
 				</control>
 				
-				<include>HomeBackgroundDim</include>
+				<include file="includes_Backgrounds.xml">HomeBackgroundDim</include>
 			</control>
 			
 			<control type="group">

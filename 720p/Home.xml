@@ -4,9 +4,9 @@
 	
 	<controls>		
 		<control type="group">	
-			<include>BackgroundHome</include>
-			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)">BackgroundVideoPlaying</include>
-			<include condition="!Skin.HasSetting(DisableMusicPlayingBG)">BackgroundMusicPlaying</include>
+			<include file="includes_Backgrounds.xml">BackgroundHome</include>
+			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)" file="includes_Backgrounds.xml">BackgroundVideoPlaying</include>
+			<include condition="!Skin.HasSetting(DisableMusicPlayingBG)" file="includes_Backgrounds.xml">BackgroundMusicPlaying</include>
 			<include>BackgroundOpenCloseAnim</include>	
 		</control>
 
