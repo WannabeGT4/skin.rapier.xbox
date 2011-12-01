@@ -74,6 +74,14 @@
 			<include>RedirectBtn</include>
 			<onfocus>XBMC.RunScript(special://skin/scripts/RecentlyAdded.py,limit=8&amp;albums=True&amp;totals=True)</onfocus>
 			<onfocus>Control.SetFocus(6100)</onfocus>
+			<visible>!Skin.HasSetting(HideRecentlyAddedHomePanel)</visible>
+		</control>
+		
+		<control type="button" id="6887">
+			<description>No Recently Added Script Trigger</description>
+			<include>RedirectBtn</include>
+			<onfocus>Control.SetFocus(6100)</onfocus>
+			<visible>Skin.HasSetting(HideRecentlyAddedHomePanel)</visible>
 		</control>
 		
 		<control type="button" id="6100">
@@ -196,7 +204,7 @@
 		<control type="button" id="6900">
 			<include>RedirectBtn</include>
 			<onfocus>Skin.Reset(ShowMediaExtraOptions)</onfocus>
-			<onfocus>Control.SetFocus(9)</onfocus>
+			<onfocus>Control.SetFocus(99)</onfocus>
 		</control>
 	</include>
 	
