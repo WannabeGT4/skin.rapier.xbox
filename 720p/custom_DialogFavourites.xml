@@ -11,7 +11,6 @@
 	
 	<controls>
 		<control type="group">
-			<visible>System.HasAddon(script.favourites)</visible>
 			<include>FavouritesDialogBox</include>
 			
 			<control type="label">
@@ -321,7 +320,7 @@
 
 			<control type="button" id="999">
 				<include>RedirectBtn</include>
-				<onfocus>RunScript(script.favourites,playlists=window)</onfocus>
+				<onfocus>XBMC.RunScript(special://skin/scripts/favourites.py,playlists=window)</onfocus>
 				<onfocus>Control.SetFocus(450)</onfocus>
 			</control>
 		</control>
