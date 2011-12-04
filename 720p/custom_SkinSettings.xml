@@ -574,7 +574,7 @@
 						<onclick>Skin.Reset(Custom1BtnParam)</onclick>
 						<onclick>Skin.Reset(Custom1IconPath)</onclick>
 						<onclick>Skin.SetString(Custom1NoFocusImagePath,special://skin/media/homecategories/custom1-text-nofocus.png)</onclick>
-						<onclick>Skin.Reset(Custom1FocusImagePath)</onclick>
+						<onclick>Skin.SetString(Custom1FocusImagePath,special://skin/media/homecategories/custom1-text-focus.png)</onclick>
 						<onclick>Skin.Reset(Custom1BackgroundImagePath)</onclick>
 						<onfocus>Skin.SetString(SelectedExpandedBtn,1)</onfocus>
 					</control>
@@ -587,7 +587,7 @@
 						<onclick>Skin.Reset(Custom2BtnParam)</onclick>
 						<onclick>Skin.Reset(Custom2IconPath)</onclick>
 						<onclick>Skin.SetString(Custom2NoFocusImagePath,special://skin/media/homecategories/custom2-text-nofocus.png)</onclick>
-						<onclick>Skin.Reset(Custom2FocusImagePath)</onclick>
+						<onclick>Skin.SetString(Custom2FocusImagePath,special://skin/media/homecategories/custom2-text-focus.png)</onclick>
 						<onclick>Skin.Reset(Custom2BackgroundImagePath)</onclick>
 						<onfocus>Skin.SetString(SelectedExpandedBtn,2)</onfocus>
 					</control>
@@ -600,7 +600,7 @@
 						<onclick>Skin.Reset(Custom3BtnParam)</onclick>
 						<onclick>Skin.Reset(Custom3IconPath)</onclick>
 						<onclick>Skin.SetString(Custom3NoFocusImagePath,special://skin/media/homecategories/custom3-text-nofocus.png)</onclick>
-						<onclick>Skin.Reset(Custom3FocusImagePath)</onclick>
+						<onclick>Skin.SetString(Custom3FocusImagePath,special://skin/media/homecategories/custom3-text-focus.png)</onclick>
 						<onclick>Skin.Reset(Custom3BackgroundImagePath)</onclick>
 						<onfocus>Skin.SetString(SelectedExpandedBtn,3)</onfocus>
 					</control>
@@ -613,7 +613,7 @@
 						<onclick>Skin.Reset(Custom4BtnParam)</onclick>
 						<onclick>Skin.Reset(Custom4IconPath)</onclick>
 						<onclick>Skin.SetString(Custom4NoFocusImagePath,special://skin/media/homecategories/custom4-text-nofocus.png)</onclick>
-						<onclick>Skin.Reset(Custom4FocusImagePath)</onclick>
+						<onclick>Skin.SetString(Custom4FocusImagePath,special://skin/media/homecategories/custom4-text-focus.png)</onclick>
 						<onclick>Skin.Reset(Custom4BackgroundImagePath)</onclick>
 						<onfocus>Skin.SetString(SelectedExpandedBtn,4)</onfocus>
 					</control>
@@ -1109,7 +1109,7 @@
 						<onclick>Skin.Reset(Custom5BtnParam)</onclick>
 						<onclick>Skin.Reset(Custom5IconPath)</onclick>
 						<onclick>Skin.SetString(Custom5NoFocusImagePath,special://skin/media/homecategories/custom5-text-nofocus.png)</onclick>
-						<onclick>Skin.Reset(Custom5FocusImagePath)</onclick>
+						<onclick>Skin.SetString(Custom5FocusImagePath,special://skin/media/homecategories/custom5-text-focus.png)</onclick>
 						<onclick>Skin.Reset(Custom5BackgroundImagePath)</onclick>
 						<onfocus>Skin.SetString(SelectedExpandedBtn,1)</onfocus>
 					</control>
@@ -1122,7 +1122,7 @@
 						<onclick>Skin.Reset(Custom6BtnParam)</onclick>
 						<onclick>Skin.Reset(Custom6IconPath)</onclick>
 						<onclick>Skin.SetString(Custom6NoFocusImagePath,special://skin/media/homecategories/custom6-text-nofocus.png)</onclick>
-						<onclick>Skin.Reset(Custom6FocusImagePath)</onclick>
+						<onclick>Skin.SetString(Custom6FocusImagePath,special://skin/media/homecategories/custom6-text-focus.png)</onclick>
 						<onclick>Skin.Reset(Custom6BackgroundImagePath)</onclick>
 						<onfocus>Skin.SetString(SelectedExpandedBtn,2)</onfocus>
 					</control>
@@ -1135,7 +1135,7 @@
 						<onclick>Skin.Reset(Custom7BtnParam)</onclick>
 						<onclick>Skin.Reset(Custom7IconPath)</onclick>
 						<onclick>Skin.SetString(Custom7NoFocusImagePath,special://skin/media/homecategories/custom7-text-nofocus.png)</onclick>
-						<onclick>Skin.Reset(Custom7FocusImagePath)</onclick>
+						<onclick>Skin.SetString(Custom7FocusImagePath,special://skin/media/homecategories/custom7-text-focus.png)</onclick>
 						<onclick>Skin.Reset(Custom7BackgroundImagePath)</onclick>
 						<onfocus>Skin.SetString(SelectedExpandedBtn,3)</onfocus>
 					</control>
@@ -1148,7 +1148,7 @@
 						<onclick>Skin.Reset(Custom8BtnParam)</onclick>
 						<onclick>Skin.Reset(Custom8IconPath)</onclick>
 						<onclick>Skin.SetString(Custom8NoFocusImagePath,special://skin/media/homecategories/custom8-text-nofocus.png)</onclick>
-						<onclick>Skin.Reset(Custom8FocusImagePath)</onclick>
+						<onclick>Skin.SetString(Custom8FocusImagePath,special://skin/media/homecategories/custom8-text-focus.png)</onclick>
 						<onclick>Skin.Reset(Custom8BackgroundImagePath)</onclick>
 						<onfocus>Skin.SetString(SelectedExpandedBtn,4)</onfocus>
 					</control>
