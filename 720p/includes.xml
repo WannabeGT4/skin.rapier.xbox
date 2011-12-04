@@ -152,15 +152,6 @@
 		<scroll>yes</scroll>
 	</include>
 	
-	<include name="SettingsHelperBtn">
-		<posx>125</posx>
-		<posy>119</posy>
-		<width>253</width>
-		<height>500</height>
-		<texturenofocus>-</texturenofocus>
-		<texturefocus>-</texturefocus>
-	</include>
-	
 	<include name="SettingsCatBtn">
 		<width>210</width>
 		<height>60</height>
