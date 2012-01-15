@@ -1158,6 +1158,12 @@
 						<visible>Skin.HasSetting(EditProgramsSubMenuBtn1)</visible>
 					</item>
 					<item id="2">
+						<description>Scripts</description>
+						<label>$LOCALIZE[247]</label>
+						<onclick>ActivateWindow(Scripts)</onclick>
+						<visible>!Skin.HasSetting(EditProgramsSubMenuBtn2)</visible>
+					</item>					
+					<item id="2">
 						<description>Custom Button</description>
 						<label fallback="31209">$INFO[Skin.String(ProgramsSubMenuBtn2Label)]</label>
 						<onclick>$INFO[Skin.String(ProgramsSubMenuBtn2Param)]</onclick>
